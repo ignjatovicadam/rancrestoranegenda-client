@@ -3,6 +3,6 @@
 
 <template>
   <div>
-    <span>Ranc legenda</span>
+    <span class="fs-secondary-heading">Ranc legenda</span>
   </div>
 </template>
