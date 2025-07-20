@@ -40,8 +40,96 @@
 
 .fs-primary-heading {
     font-size: var(--fs-primary-heading);
+    font-family: var(--ff-primary);
+    line-height: 1.1;
 }
 
 .fs-secondary-heading {
     font-size: var(--fs-secondary-heading);
+    font-family: var(--ff-primary);
+    line-height: 1.1;
+}
+
+.fs-tertiary-heading {
+    font-size: var(--fs-tertiary-heading);
+    font-family: var(--ff-primary);
+    line-height: 1.1;
+}
+
+.padding-block-400 {
+    padding-block: var(--size-400);
+}
+
+.padding-inline-400 {
+    padding-inline: var(--size-400);
+}
+
+.padding-block-700 {
+    padding-block: var(--size-700);
+}
+
+.padding-inline-700 {
+    padding-inline: var(--size-700);
+}
+
+.padding-block-900 {
+    padding-block: var(--size-900);
+}
+
+.padding-inline-900 {
+    padding-inline: var(--size-900);
+}
+
+.padding-bottom-400 {
+    padding-bottom: var(--size-400);
+}
+
+.padding-top-400 {
+    padding-top: var(--size-400);
+}
+
+.container {
+    --max-width: 1170px;
+    --padding: 1rem;
+
+    width: min(var(--max-width), 100% - var(--padding) * 2);
+    margin-inline: auto;
+}
+
+.large-container {
+    --max-width: 1600px;
+    --padding: 1rem;
+
+    width: min(var(--max-width), 100% - var(--padding) * 2);
+    margin-inline: auto;
+}
+
+.even-columns {
+    display: grid;
+    gap: 2rem;
+}
+
+.flow * + * {
+    margin-top: var(--flow-spacer, 2em);
+}
+
+@media (min-width: 50em) {
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
