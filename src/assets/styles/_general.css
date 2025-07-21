@@ -159,8 +159,8 @@ body {
 
 /* Hero */
 .hero {
-    min-height: calc(100vh - 65px);
-    background-image: url(https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/banner-1.jpg);
+    min-height: calc(100vh - 85px);
+    background-image: url(https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg);
     background-size: cover;
     background-position: right right;
     color: white;
@@ -173,7 +173,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .hero .welcome-text {
@@ -211,12 +211,82 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .3);
     z-index: 2;
 }
 
 @media (min-width: 50em) {
     .services img {
         height: 350px;
+    }
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding-top: var(--size-900);
+    padding-bottom: var(--size-700);
+}
+
+footer .even-columns {
+    gap: 2em;
+}
+
+footer p {
+    max-width: 42ch;
+    opacity: 0.7;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+@media (min-width: 50em) {
+    .two-columns {
+        gap: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer-item ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item ul li a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+}
+
+.footer-note {
+    border-top: 1px solid lightgray;
+    justify-content: flex-start;
+    gap: 1em;
+    padding-top: var(--size-500);
+}
+
+.footer-note p {
+    font-size: var(--fs-300);
+}
+
+.footer-note a {
+    color: inherit;
+}
+
+@media (min-width: 50em) {
+    .footer-note {
+        justify-content: space-between;
+        align-items: center;
     }
 }
