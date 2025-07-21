@@ -68,54 +68,55 @@
     <router-view />
   </main>
 
-  <footer class="padding-block-700">
-    <div class="container">
+  <footer>
+    <div class="container footer-flex">
       <div class="two-columns">
-        <div>
-          <span>Lorem ipsum dolor sit amet.</span>
+        <div class="flow">
+          <h3 class="fs-tertiary-heading fw-bold">Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatibus rerum quasi pariatur asperiores, quae blanditiis quo consequatur repellendus aut.</p>
         </div>
 
         <div class="even-columns">
-          <div>
-            <h4>Lorem</h4>
+          <div class="footer-item flow">
+            <h3 class="fs-tertiary-heading fw-bold">Lorem</h3>
             <ul role="list">
-              <li>
+              <li style="--flow-spacer: 0.5em">
                 <a href="http://">Lorem ipsum</a>
               </li>
-              <li>
+              <li style="--flow-spacer: 0.5em">
                 <a href="http://">Lorem ipsum</a>
               </li>
-              <li>
+              <li style="--flow-spacer: 0.5em">
                 <a href="http://">Lorem ipsum</a>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h4>Ipsum</h4>
+          <div class="footer-item flow">
+            <h3 class="fs-tertiary-heading fw-bold">Ipsum</h3>
             <ul role="list">
-              <li>
+              <li style="--flow-spacer: 0.5em">
                 <a href="http://">Lorem ipsum</a>
               </li>
-              <li>
+              <li style="--flow-spacer: 0.5em">
                 <a href="http://">Lorem ipsum</a>
               </li>
-              <li>
+              <li style="--flow-spacer: 0.5em">
                 <a href="http://">Lorem ipsum</a>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h4>Dorem</h4>
+          <div class="footer-item flow">
+            <h3 class="fs-tertiary-heading fw-bold">Dorem</h3>
             <ul role="list">
-              <li>
+              <li style="--flow-spacer: 0.5em">
                 <a href="http://">Instagram</a>
               </li>
-              <li>
+              <li style="--flow-spacer: 0.5em">
                 <a href="http://">Facebook</a>
               </li>
-              <li>
+              <li style="--flow-spacer: 0.5em">
                 <a href="http://">Tiktok</a>
               </li>
             </ul>
@@ -123,10 +124,12 @@
         </div>
       </div>
 
-      <div class="even-columns footer-note">
+      <div class="two-columns footer-note">
         <p>&copy; 2025 Your Company Name. All rights reserved.</p>
         <p>
-          <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a>
+          <a href="/privacy">Privacy Policy</a>
+          &nbsp;
+          <a href="/terms">Terms of Service</a>
         </p>
       </div>
     </div>
