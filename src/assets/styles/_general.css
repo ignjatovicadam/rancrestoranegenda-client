@@ -371,7 +371,7 @@ footer p {
     .restaurant .container {
         display: flex;
         justify-content: space-between;
-        gap: 2em;
+        gap: 3em;
         align-items: center;
         flex-direction: row;
     }
@@ -383,4 +383,14 @@ footer p {
     .description-text {
         flex-basis: 50%;
     }
+}
+
+/* Team Building */
+.central-column-reservation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
 }

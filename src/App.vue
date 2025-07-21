@@ -33,13 +33,7 @@
               <router-link to="/restaurant">RESTAURANT</router-link>
             </li>
             <li class="fw-semi-bold">
-              <router-link to="/about">FEATURES</router-link>
-            </li>
-            <li class="fw-semi-bold">
-              <router-link to="/about">BRUNCH</router-link>
-            </li>
-            <li class="fw-semi-bold">
-              <router-link to="/about">CONTACT</router-link>
+              <router-link to="/teambuilding">TEAM BUILDING</router-link>
             </li>
           </ul>
         </nav>
@@ -58,13 +52,7 @@
           <router-link to="/restaurant">RESTAURANT</router-link>
         </li>
         <li class="fw-semi-bold">
-          <router-link to="/about">FEATURES</router-link>
-        </li>
-        <li class="fw-semi-bold">
-          <router-link to="/about">BRUNCH</router-link>
-        </li>
-        <li class="fw-semi-bold">
-          <router-link to="/about">CONTACT</router-link>
+          <router-link to="/teambuilding">TEAM BUILDING</router-link>
         </li>
       </ul>
     </div>

@@ -21,19 +21,29 @@
         <div class="large-container">
             <div class="even-columns">
                 <div>
-                    <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg" alt="">
+                    <div class="image-overlay">
+                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg" alt="">
+                    </div>
                 </div>
                 <div>
-                    <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg" alt="">
+                    <div class="image-overlay">
+                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg" alt="">
+                    </div>
                 </div>
                 <div>
-                    <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-1.jpg" alt="">
+                    <div class="image-overlay">
+                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-1.jpg" alt="">
+                    </div>
                 </div>
                 <div>
-                    <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-2.jpg" alt="">
+                    <div class="image-overlay">
+                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-2.jpg" alt="">
+                    </div>
                 </div>
                 <div>
-                    <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/contact-1.jpg" alt="">
+                    <div class="image-overlay">
+                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/contact-1.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>

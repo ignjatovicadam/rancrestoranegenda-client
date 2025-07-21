@@ -14,12 +14,7 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg" alt="">
-                    </div>
-                </div>
-                <div>
-                    <div class="image-overlay">
-                        <img class="" src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg" alt="">
+                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-13.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -39,13 +34,32 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg" alt="">
+                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-15.jpg" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: black;">
+        <div class="large-container">
+            <div class="even-columns">
                 <div>
-                    <div class="image-overlay">
-                        <img class="" src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg" alt="">
-                    </div>
+                    <a href="#" class="flow" style="--flow-spacer: 1em">
+                        <div class="image-overlay">
+                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/reservation-1.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="central-column-reservation flow">
+                    <h2 class="fs-secondary-heading fw-bold">LOREM, IPSUM.</h2>
+                    <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, praesentium?</p>
+                </div>
+                <div>
+                    <a href="#" class="flow" style="--flow-spacer: 1em">
+                        <div class="image-overlay">
+                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/reservation-2.jpg" alt="">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
