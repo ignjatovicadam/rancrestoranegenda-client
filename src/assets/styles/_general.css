@@ -159,7 +159,8 @@ body {
 
 /* Hero */
 .hero {
-    min-height: calc(100vh - 85px);
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
     background-image: url(https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg);
     background-size: cover;
     background-position: right right;
@@ -288,5 +289,98 @@ footer p {
     .footer-note {
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+/* About */
+.intro {
+    margin-top: 80px;
+    min-height: calc(60vh - 80px);
+    background-image: url(https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg);
+    background-size: cover;
+    background-position: right right;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.intro .welcome-text {
+    max-width: 650px;
+    position: relative;
+    z-index: 1;
+}
+
+.intro .welcome-text p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.restaurant .even-columns {
+    /* gap: unset; */
+}
+
+/* Restaurant */
+.restaurant a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.restaurant img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.restaurant .image-overlay {
+    position: relative;
+    margin-bottom: var(--size-400);
+}
+
+.restaurant .image-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2;
+}
+
+@media (min-width: 50em) {
+    .restaurant img {
+        height: 350px;
+    }
+}
+
+.restaurant .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.restaurant .container .even-columns {
+    flex-basis: 50%;
+}
+
+@media (min-width: 50em) {
+    .restaurant .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .restaurant .container .even-columns {
+        flex-basis: 50%;
+    }
+
+    .description-text {
+        flex-basis: 50%;
     }
 }

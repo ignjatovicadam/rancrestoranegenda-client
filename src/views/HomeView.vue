@@ -2,7 +2,6 @@
 
 <template>
     <section class="hero">
-        <div class="background-overlay"></div>
         <div class="container">
             <div class="welcome-text flow">
                 <h1 class="fs-primary-heading fw-bold">Lorem ipsum dolor sit amet.</h1>

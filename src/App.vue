@@ -24,10 +24,13 @@
         <nav class="navigation">
           <ul role="list" class="navigation-list">
             <li class="fw-semi-bold">
+              <router-link to="/">HOME</router-link>
+            </li>
+            <li class="fw-semi-bold">
               <router-link to="/about">ABOUT US</router-link>
             </li>
             <li class="fw-semi-bold">
-              <router-link to="/about">MENU</router-link>
+              <router-link to="/restaurant">RESTAURANT</router-link>
             </li>
             <li class="fw-semi-bold">
               <router-link to="/about">FEATURES</router-link>
@@ -46,10 +49,13 @@
     <div :class="['mobile-navigation', { open: open }]">
       <ul role="list">
         <li class="fw-semi-bold">
+          <router-link to="/">HOME</router-link>
+        </li>
+        <li class="fw-semi-bold">
           <router-link to="/about">ABOUT US</router-link>
         </li>
         <li class="fw-semi-bold">
-          <router-link to="/about">MENU</router-link>
+          <router-link to="/restaurant">RESTAURANT</router-link>
         </li>
         <li class="fw-semi-bold">
           <router-link to="/about">FEATURES</router-link>

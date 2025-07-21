@@ -88,6 +88,10 @@
     padding-top: var(--size-400);
 }
 
+.bg-primary-100 {
+    background-color: var(--bg-primary-100);
+}
+
 .container {
     --max-width: 1170px;
     --padding: 1rem;
@@ -132,4 +136,14 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.hidden-on-mobile {
+    display: none;
+}
+
+@media (min-width: 50em) {
+    .hidden-on-mobile {
+        display: block;
+    }
 }

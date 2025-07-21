@@ -7,6 +7,9 @@
 
     --clr-accent-400: yellow;
 
+    --bg-primary-400: white;
+    --bg-primary-100: rgb(247, 245, 240);
+
     --ff-primary: 'Barlow Condensed', sans-serif;
     --ff-secondary: 'Inter', sans-serif;
 
