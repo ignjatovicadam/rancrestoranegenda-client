@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <section class="hero">
+    <section id="hero-welcome" class="hero hero-size-large">
         <div class="container">
             <div class="welcome-text flow">
                 <h1 class="fs-primary-heading fw-bold">Lorem ipsum dolor sit amet.</h1>
@@ -9,7 +9,6 @@
             </div>
         </div>
     </section>
-
     <section class="padding-block-900">
         <div class="container">
             <div class="flow">
@@ -18,12 +17,11 @@
             </div>
         </div>
     </section>
-
-    <section class="services padding-block-900">
+    <section class="services padding-block-900 bg-primary-200">
         <div class="large-container">
             <div class="even-columns">
                 <div>
-                    <a href="#" class="flow" style="--flow-spacer: 1em">
+                    <a href="#" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg" alt="">
                         </div>
@@ -32,7 +30,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="#" class="flow" style="--flow-spacer: 1em">
+                    <a href="#" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg" alt="">
                         </div>
@@ -41,7 +39,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="#" class="flow" style="--flow-spacer: 1em">
+                    <a href="#" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-1.jpg" alt="">
                         </div>
@@ -50,7 +48,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="#" class="flow" style="--flow-spacer: 1em">
+                    <a href="#" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-2.jpg" alt="">
                         </div>
@@ -59,7 +57,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="#" class="flow" style="--flow-spacer: 1em">
+                    <a href="#" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/contact-1.jpg" alt="">
                         </div>

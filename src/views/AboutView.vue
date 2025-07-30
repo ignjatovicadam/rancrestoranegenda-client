@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <section class="intro">
+    <section id="hero-about" class="hero hero-size-medium">
         <div class="container">
             <div class="welcome-text flow">
                 <h1 class="fs-primary-heading fw-bold">Lorem ipsum dolor sit amet.</h1>
@@ -17,7 +17,7 @@
             </div>
         </div>
     </section>
-    <section class="services padding-block-900">
+    <section class="services padding-block-900 bg-primary-200">
         <div class="large-container">
             <div class="even-columns">
                 <div>

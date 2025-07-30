@@ -74,13 +74,13 @@
           <div class="footer-item flow">
             <h3 class="fs-tertiary-heading fw-bold">Lorem</h3>
             <ul role="list">
-              <li style="--flow-spacer: 0.5em">
+              <li class="flow-spacer-200">
                 <a href="http://">Lorem ipsum</a>
               </li>
-              <li style="--flow-spacer: 0.5em">
+              <li class="flow-spacer-200">
                 <a href="http://">Lorem ipsum</a>
               </li>
-              <li style="--flow-spacer: 0.5em">
+              <li class="flow-spacer-200">
                 <a href="http://">Lorem ipsum</a>
               </li>
             </ul>
@@ -89,13 +89,13 @@
           <div class="footer-item flow">
             <h3 class="fs-tertiary-heading fw-bold">Ipsum</h3>
             <ul role="list">
-              <li style="--flow-spacer: 0.5em">
+              <li class="flow-spacer-200">
                 <a href="http://">Lorem ipsum</a>
               </li>
-              <li style="--flow-spacer: 0.5em">
+              <li class="flow-spacer-200">
                 <a href="http://">Lorem ipsum</a>
               </li>
-              <li style="--flow-spacer: 0.5em">
+              <li class="flow-spacer-200">
                 <a href="http://">Lorem ipsum</a>
               </li>
             </ul>
@@ -104,13 +104,13 @@
           <div class="footer-item flow">
             <h3 class="fs-tertiary-heading fw-bold">Dorem</h3>
             <ul role="list">
-              <li style="--flow-spacer: 0.5em">
+              <li class="flow-spacer-200">
                 <a href="http://">Instagram</a>
               </li>
-              <li style="--flow-spacer: 0.5em">
+              <li class="flow-spacer-200">
                 <a href="http://">Facebook</a>
               </li>
-              <li style="--flow-spacer: 0.5em">
+              <li class="flow-spacer-200">
                 <a href="http://">Tiktok</a>
               </li>
             </ul>

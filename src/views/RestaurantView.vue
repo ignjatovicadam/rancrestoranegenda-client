@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <section class="intro">
+    <section id="hero-restaurant" class="hero hero-size-medium">
         <div class="container">
             <div class="welcome-text flow">
                 <h1 class="fs-primary-heading fw-bold">Lorem ipsum dolor sit amet.</h1>
@@ -30,7 +30,7 @@
             </div>
         </div>
     </section>
-    <section class="restaurant padding-block-900 bg-primary-100">
+    <section class="restaurant padding-block-900 bg-primary-200">
         <div class="container">
             <div class="flow description-text">
                 <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
