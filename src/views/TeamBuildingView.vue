@@ -64,4 +64,49 @@
             </div>
         </div>
     </section>
+    <section class="services padding-block-900 bg-primary-200">
+        <div class="container">
+            <div>
+                <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
+                <div class="form" style="margin-top: 2em">
+                    <div class="form-group">
+                        <div class="form-input">
+                            <label for="name">First name</label>
+                            <input type="text" name="" id="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-input">
+                            <label for="last-name">Last name</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-input">
+                            <label for="phone-number">Phone number</label>
+                            <input type="text" name="phone-number" id="phone-number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-input">
+                            <label for="date">Date</label>
+                            <input type="text" name="date" id="date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-input">
+                            <label for="">Message</label>
+                            <input type="text" name="message" id="message">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
