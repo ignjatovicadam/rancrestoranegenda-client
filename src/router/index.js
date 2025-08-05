@@ -3,6 +3,11 @@ import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/AboutView.vue';
 import RestaurantView from '../views/RestaurantView.vue';
 import TeamBuildingView from '../views/TeamBuildingView.vue';
+import ContactView from '../views/ContactView.vue';
+import PrivacyPolicyView from '../views/PrivacyPolicyView.vue';
+import TermsOfUseView from '../views/TermsOfUseView.vue';
+import BrunchView from '../views/BrunchView.vue';
+import EventsView from '../views/EventsView.vue';
 
 const routes = [
     {
@@ -24,12 +29,40 @@ const routes = [
         path: '/teambuilding',
         name: 'TeamBuilding',
         component: TeamBuildingView,
+    },
+    {
+        path: '/contact',
+        name: 'Contact',
+        component: ContactView,
+    },
+    {
+        path: '/privacypolicy',
+        name: 'PrivacyPolicy',
+        component: PrivacyPolicyView,
+    },
+    {
+        path: '/termsofuse',
+        name: 'TermsOfUse',
+        component: TermsOfUseView,
+    },
+    {
+        path: '/brunch',
+        name: 'Brunch',
+        component: BrunchView,
+    },
+    {
+        path: '/events',
+        name: 'Events',
+        component: EventsView,
     }
 ];
 
 const router = createRouter({
     history: createWebHashHistory(),
     routes,
+    scrollBehavior() {
+        return { top: 0 }
+    },
 })
 
 export default router;

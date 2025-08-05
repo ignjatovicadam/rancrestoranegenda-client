@@ -24,16 +24,25 @@
         <nav class="navigation">
           <ul role="list" class="navigation-list">
             <li class="fw-semi-bold">
-              <router-link to="/">HOME</router-link>
+              <router-link to="/">Home</router-link>
             </li>
             <li class="fw-semi-bold">
-              <router-link to="/about">ABOUT US</router-link>
+              <router-link to="/about">About us</router-link>
             </li>
             <li class="fw-semi-bold">
-              <router-link to="/restaurant">RESTAURANT</router-link>
+              <router-link to="/restaurant">Restaurant</router-link>
             </li>
             <li class="fw-semi-bold">
-              <router-link to="/teambuilding">TEAM BUILDING</router-link>
+              <router-link to="/teambuilding">Team building</router-link>
+            </li>
+            <li class="fw-semi-bold">
+              <router-link to="/brunch">Vikend brunch</router-link>
+            </li>
+            <li class="fw-semi-bold">
+              <router-link to="/events">Events</router-link>
+            </li>
+            <li class="fw-semi-bold">
+              <router-link to="/contact">Contact</router-link>
             </li>
           </ul>
         </nav>
@@ -42,17 +51,26 @@
 
     <div :class="['mobile-navigation', { open: open }]">
       <ul role="list">
-        <li class="fw-semi-bold">
-          <router-link to="/">HOME</router-link>
+        <li class="fw-semi-bold" @click="open = false">
+          <router-link to="/">Home</router-link>
         </li>
-        <li class="fw-semi-bold">
-          <router-link to="/about">ABOUT US</router-link>
+        <li class="fw-semi-bold" @click="open = false">
+          <router-link to="/about">About us</router-link>
         </li>
-        <li class="fw-semi-bold">
-          <router-link to="/restaurant">RESTAURANT</router-link>
+        <li class="fw-semi-bold" @click="open = false">
+          <router-link to="/restaurant">Restaurant</router-link>
         </li>
-        <li class="fw-semi-bold">
-          <router-link to="/teambuilding">TEAM BUILDING</router-link>
+        <li class="fw-semi-bold" @click="open = false">
+          <router-link to="/teambuilding">Team building</router-link>
+        </li>
+        <li class="fw-semi-bold" @click="open = false">
+          <router-link to="/brunch">Vikend brunch</router-link>
+        </li>
+        <li class="fw-semi-bold" @click="open = false">
+          <router-link to="/events">Events</router-link>
+        </li>
+        <li class="fw-semi-bold" @click="open = false">
+          <router-link to="/contact">Contact</router-link>
         </li>
       </ul>
     </div>
@@ -119,11 +137,11 @@
       </div>
 
       <div class="two-columns footer-note">
-        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+        <p>&copy; 2025 Lorem, ipsum. All rights reserved.</p>
         <p>
-          <a href="/privacy">Privacy Policy</a>
+          <router-link to="/privacypolicy">Privacy Policy</router-link>
           &nbsp;
-          <a href="/terms">Terms of Service</a>
+          <router-link to="/termsofuse">Terms of use</router-link>
         </p>
       </div>
     </div>

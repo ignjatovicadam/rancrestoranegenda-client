@@ -101,7 +101,7 @@
 }
 
 .container {
-    --max-width: 1170px;
+    --max-width: 1200px;
     --padding: var(--size-400);
 
     width: min(var(--max-width), 100% - var(--padding) * 2);
