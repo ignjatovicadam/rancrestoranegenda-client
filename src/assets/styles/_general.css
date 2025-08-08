@@ -448,3 +448,12 @@ footer p {
         grid-auto-rows: auto;
     }
 }
+
+/* Menu */
+.menu-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-500) var(--size-500) var(--size-500) 0;
+    border-bottom: 1px dashed #a79362;
+}
