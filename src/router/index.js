@@ -8,6 +8,7 @@ import PrivacyPolicyView from '../views/PrivacyPolicyView.vue';
 import TermsOfUseView from '../views/TermsOfUseView.vue';
 import BrunchView from '../views/BrunchView.vue';
 import EventsView from '../views/EventsView.vue';
+import MenuView from '../views/MenuView.vue';
 
 const routes = [
     {
@@ -54,6 +55,11 @@ const routes = [
         path: '/events',
         name: 'Events',
         component: EventsView,
+    },
+    {
+        path: '/menu',
+        name: 'Menu',
+        component: MenuView,
     }
 ];
 

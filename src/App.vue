@@ -39,7 +39,7 @@
               <router-link to="/brunch">Vikend brunch</router-link>
             </li>
             <li class="fw-semi-bold">
-              <router-link to="/events">Events</router-link>
+              <router-link to="/menu">Menu</router-link>
             </li>
             <li class="fw-semi-bold">
               <router-link to="/contact">Contact</router-link>
@@ -68,6 +68,9 @@
         </li>
         <li class="fw-semi-bold" @click="open = false">
           <router-link to="/events">Events</router-link>
+        </li>
+        <li class="fw-semi-bold" @click="open = false">
+          <router-link to="/menu">Menu</router-link>
         </li>
         <li class="fw-semi-bold" @click="open = false">
           <router-link to="/contact">Contact</router-link>
