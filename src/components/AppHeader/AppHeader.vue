@@ -219,6 +219,10 @@
     font-size: var(--fs-400);
 }
 
+.mobile-navigation ul li a.router-link-exact-active {
+    color: var(--clr-accent-400);
+}
+
 .mobile-navigation.open {
     display: block;
 }
