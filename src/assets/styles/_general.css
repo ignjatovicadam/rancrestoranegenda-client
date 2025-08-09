@@ -20,42 +20,6 @@ body {
     background-color: var(--clr-accent-300);
 }
 
-/* Hero */
-.hero {
-    margin-top: 80px;
-    background-size: cover;
-    background-position: center;
-    color: var(--clr-primary-100);
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.hero-size-medium {
-    min-height: calc(60vh - 80px);
-}
-
-.hero-size-large {
-    min-height: calc(100vh - 80px);
-}
-
-#hero-welcome {
-    background-image: url(https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg);
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-}
-
-.hero .welcome-text {
-    max-width: 650px;
-    position: relative;
-    z-index: 1;
-}
-
 /* Services */
 .services a {
     text-decoration: none;
@@ -87,16 +51,7 @@ body {
     }
 }
 
-/* About */
-#hero-about {
-    background-image: url(https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg);
-}
-
 /* Restaurant */
-#hero-restaurant {
-    background-image: url(https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg);
-}
-
 .restaurant a {
     text-decoration: none;
     color: inherit;
@@ -157,10 +112,6 @@ body {
 }
 
 /* Team Building */
-#hero-team-building {
-    background-image: url(https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg);
-}
-
 .central-column-reservation {
     display: flex;
     align-items: center;

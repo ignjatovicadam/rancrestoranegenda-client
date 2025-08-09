@@ -1,14 +1,14 @@
-<script setup></script>
+<script setup>
+    import { AppHero } from '../components/AppHero';
+</script>
 
 <template>
-    <section id="hero-team-building" class="hero hero-size-medium">
-        <div class="container">
-            <div class="welcome-text flow">
-                <h1 class="fs-primary-heading fw-bold">Lorem ipsum dolor sit amet.</h1>
-                <p class="fw-semi-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita autem nobis laborum consectetur accusamus nemo.</p>
-            </div>
+    <app-hero id="hero-team-building" size="medium" image-url="https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg">
+        <div class="welcome-text flow">
+            <h1 class="fs-primary-heading fw-bold">Lorem ipsum dolor sit amet.</h1>
+            <p class="fw-semi-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita autem nobis laborum consectetur accusamus nemo.</p>
         </div>
-    </section>
+    </app-hero>
     <section class="restaurant padding-block-900">
         <div class="container">
             <div class="even-columns">
