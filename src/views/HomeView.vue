@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+    import { ref } from 'vue';
+
+    const open = ref(false);
+</script>
 
 <template>
     <section id="hero-welcome" class="hero hero-size-large">
@@ -191,9 +195,20 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="form-input">
+                        <div :class="['form-input custom-select', { 'open': open }]" @focusout="open = false" tabindex="0">
+                            <label for="">Type</label>
+                            <div class="select-display" @click="open = !open">Select an option</div>
+                            <ul class="select-options">
+                                <li data-value="option1">Option 1</li>
+                                <li data-value="option2">Option 2</li>
+                                <li data-value="option3">Option 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-input form-message">
                             <label for="">Message</label>
-                            <input type="text" name="message" id="message">
+                            <textarea id="message"> </textarea>
                         </div>
                     </div>
                 </div>

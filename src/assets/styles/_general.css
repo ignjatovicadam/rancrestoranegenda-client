@@ -20,143 +20,6 @@ body {
     background-color: var(--clr-accent-300);
 }
 
-/* Navigation */
-.header {
-    position: fixed;
-    top: 0;
-    background-color: var(--clr-primary-100);
-    width: 100%;
-    z-index: 3;
-    padding-block: var(--size-500);
-    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
-}
-
-.navigation {
-    display: none;
-}
-
-.navigation-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.navigation-list li a {
-    text-decoration: none;
-    color: var(--clr-primary-400);
-    font-size: var(--fs-nav);
-    font-family: var(--ff-secondary);
-}
-
-.mobile-navigation-toggle {
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-@media (min-width: 50em) {
-    .mobile-navigation-toggle {
-        display: none;
-    }
-
-    .navigation {
-        display: block;
-    }
-}
-
-.mobile-navigation-hamburger {
-    position: relative;
-    width: 1.25em;
-    height: 1.25em;
-    font-size: inherit;
-    transition: all 0.3s ease;
-}
-
-.mobile-navigation-hamburger span {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    height: 0.125em;
-    border-radius: 0.125em;
-    background: var(--clr-primary-400);
-    transition: all 0.3s ease;
-}
-
-.mobile-navigation-hamburger span:nth-child(1) {
-    top: 0.125em;
-}
-
-.mobile-navigation-hamburger span:nth-child(2) {
-    top: 0.438em;
-}
-
-.mobile-navigation-hamburger span:nth-child(3) {
-    top: 0.75em;
-    width: 0.625em;
-}
-
-.mobile-navigation-hamburger.open span:nth-child(1) {
-    top: 50%;
-    transform: translateY(-50%) rotateZ(-135deg);
-}
-
-.mobile-navigation-hamburger.open span:nth-child(2) {
-    right: 50%;
-    width: 0;
-}
-
-.mobile-navigation-hamburger.open span:nth-child(3) {
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%) rotateZ(135deg);
-}
-
-.mobile-navigation {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease;
-    background: var(--clr-primary-100);
-}
-
-.mobile-navigation.open {
-    max-height: 400px;
-}
-
-.mobile-navigation ul {
-    display: flex;
-    flex-direction: column;
-    padding-inline: var(--size-400);
-    padding-block: var(--size-400);
-}
-
-.mobile-navigation ul li {
-    border-bottom: 1px solid rgba(15, 15, 15, 0.2);
-    padding-block: 1rem;
-}
-
-.mobile-navigation ul li a {
-    text-decoration: none;
-    color: var(--clr-primary-400);
-    font-size: var(--fs-400);
-}
-
-.mobile-navigation.open {
-    display: block;
-}
-
-.navigation-wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-@media (min-width: 50em) {
-    .navigation-wrapper {
-        align-items: center;
-    }
-}
-
 /* Hero */
 .hero {
     margin-top: 80px;
@@ -430,10 +293,13 @@ footer p {
 .form-input input {
     padding: 2rem 0 .5rem .5rem;
     margin: 0;
-    bottom: 0;
     height: 100%;
     font-size: 16px;
     border: 0;
+    appearance: none; /* Remove native select styles in most browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
 }
 
 .form {
@@ -442,10 +308,71 @@ footer p {
 
 }
 
+.select-display {
+    padding: 2rem 0 0.5rem 0.5rem;
+    font-size: 16px;
+    height: 100%;
+    background-color: white;
+}
+
+.select-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    border: none; /* No border */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* optional shadow */
+    display: none;
+}
+
+.select-options li {
+    padding: 0.75rem 0.5rem;
+    cursor: pointer;
+}
+
+.select-options li:hover {
+    background: #f2f2f2;
+}
+
+/* Show dropdown */
+.custom-select.open .select-options {
+    display: block;
+}
+
 @media (min-width: 50em) {
     .form {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
+    }
+
+    .form > :last-child {
+        grid-column: span 2;
+    }
+}
+
+.form-message {
+    height: 200px;
+}
+
+.form-input textarea {
+    padding: 2rem 0 0.5rem 0.5rem;
+    margin: 0;
+    height: 100%;
+    font-size: 16px;
+    border: 0;
+    resize: none;
+    background: transparent;
+    background-color: white;
+}
+
+@media (min-width: 50em) {
+    .form textarea {
+        min-height: 120px; /* or whatever suits your layout */
     }
 }
 

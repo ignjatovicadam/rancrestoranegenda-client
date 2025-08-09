@@ -1,83 +1,9 @@
 <script setup>
-  import { ref } from 'vue';
-
-  const open = ref(false);
+  import { AppHeader } from './components/AppHeader';
 </script>
 
 <template>
-  <header :class="['header', { open: open }]">
-    <div class="container">
-      <div class="navigation-wrapper">
-        <router-link to="/">
-          <img src="/vite.svg" alt="" srcset="">
-        </router-link>
-  
-        <button class="mobile-navigation-toggle">
-          <span class="visually-hidden">Menu</span>
-          <div :class="['mobile-navigation-hamburger', { open: open }]" @click="open = !open">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </button>
-  
-        <nav class="navigation">
-          <ul role="list" class="navigation-list">
-            <li class="fw-semi-bold">
-              <router-link to="/">Home</router-link>
-            </li>
-            <li class="fw-semi-bold">
-              <router-link to="/about">About us</router-link>
-            </li>
-            <li class="fw-semi-bold">
-              <router-link to="/restaurant">Restaurant</router-link>
-            </li>
-            <li class="fw-semi-bold">
-              <router-link to="/teambuilding">Team building</router-link>
-            </li>
-            <li class="fw-semi-bold">
-              <router-link to="/brunch">Vikend brunch</router-link>
-            </li>
-            <li class="fw-semi-bold">
-              <router-link to="/menu">Menu</router-link>
-            </li>
-            <li class="fw-semi-bold">
-              <router-link to="/contact">Contact</router-link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-    <div :class="['mobile-navigation', { open: open }]">
-      <ul role="list">
-        <li class="fw-semi-bold" @click="open = false">
-          <router-link to="/">Home</router-link>
-        </li>
-        <li class="fw-semi-bold" @click="open = false">
-          <router-link to="/about">About us</router-link>
-        </li>
-        <li class="fw-semi-bold" @click="open = false">
-          <router-link to="/restaurant">Restaurant</router-link>
-        </li>
-        <li class="fw-semi-bold" @click="open = false">
-          <router-link to="/teambuilding">Team building</router-link>
-        </li>
-        <li class="fw-semi-bold" @click="open = false">
-          <router-link to="/brunch">Vikend brunch</router-link>
-        </li>
-        <li class="fw-semi-bold" @click="open = false">
-          <router-link to="/events">Events</router-link>
-        </li>
-        <li class="fw-semi-bold" @click="open = false">
-          <router-link to="/menu">Menu</router-link>
-        </li>
-        <li class="fw-semi-bold" @click="open = false">
-          <router-link to="/contact">Contact</router-link>
-        </li>
-      </ul>
-    </div>
-  </header>
+  <app-header />
 
   <main>
     <router-view />
