@@ -110,3 +110,14 @@
         </div>
     </section>
 </template>
+
+<style scoped>
+.central-column-reservation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: var(--clr-primary-100);
+}
+</style>

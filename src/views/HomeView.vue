@@ -215,3 +215,45 @@
         </div>
     </section>
 </template>
+
+<style scoped>
+.services a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.services img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.services .image-overlay {
+    position: relative;
+    margin-bottom: var(--size-400);
+    overflow: hidden;
+    display: block;
+}
+
+.services .image-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background-color: rgba(0, 0, 0, .3); */
+    z-index: 2;
+}
+
+a:hover .image-overlay img,
+a:focus .image-overlay img {
+    transform: scale(1.1);
+}
+
+@media (min-width: 50em) {
+    .services img {
+        height: 370px;
+    }
+}
+</style>

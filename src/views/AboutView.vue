@@ -57,3 +57,30 @@
         </div>
     </section>
 </template>
+
+<style scoped>
+.services img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.services .image-overlay {
+    position: relative;
+    margin-bottom: var(--size-400);
+}
+
+.services .image-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background-color: rgba(0, 0, 0, .3); */
+    z-index: 2;
+}
+
+@media (min-width: 50em) {
+    .services img {
+        height: 370px;
+    }
+}
+</style>

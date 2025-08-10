@@ -97,3 +97,64 @@
         </div>
     </section>
 </template>
+
+<style scoped>
+.restaurant a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.restaurant img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.restaurant .image-overlay {
+    position: relative;
+    margin-bottom: var(--size-400);
+}
+
+.restaurant .image-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2;
+    
+}
+
+@media (min-width: 50em) {
+    .restaurant img {
+        height: 350px;
+    }
+}
+
+.restaurant .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.restaurant .container .even-columns {
+    flex-basis: 50%;
+}
+
+@media (min-width: 50em) {
+    .restaurant .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .restaurant .container .even-columns {
+        flex-basis: 50%;
+    }
+
+    .description-text {
+        flex-basis: 50%;
+    }
+}
+</style>
