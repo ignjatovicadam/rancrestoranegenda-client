@@ -156,6 +156,17 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: white;
+    transition: all 0.1s ease-in;
+}
+
+.form-group.error input {
+    background: rgba(220, 20, 60, 0.1);
+    border: 1px solid #fe0032;
+}
+
+.error-notice {
+    color: #fe0032;
+    font-weight: var(--fw-bold);
 }
 
 .form {

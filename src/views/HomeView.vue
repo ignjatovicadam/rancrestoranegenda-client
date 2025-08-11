@@ -1,24 +1,6 @@
 <script setup>
-    import { ref } from 'vue';
     import { AppHero } from '../components/AppHero';
-    import { InputText } from '../components/InputText';
-    import { InputEmail } from '../components/InputEmail';
-    import { InputCombobox } from '../components/InputCombobox';
-    import { InputTextArea } from '../components/InputTextArea';
-
-    const name = ref('');
-    const lastName = ref('');
-    const tel = ref('');
-    const email = ref('');
-    const bookingDate = ref('');
-    const bookingType = ref({});
-    const message = ref('');
-
-    const options = [
-        { label: 'Option 1', value: 'option1' },
-        { label: 'Option 2', value: 'option2' },
-        { label: 'Option 3', value: 'option3' },
-    ];
+    import { BookingForm } from '../components/BookingForm';
 </script>
 
 <template>
@@ -181,32 +163,7 @@
         <div class="container">
             <div>
                 <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
-                <div class="form" style="margin-top: 2em">
-                    <div class="form-group">
-                        <input-text v-model="name" name="firstName" id="firstName" label="Name" />
-                    </div>
-                    <div class="form-group">
-                        <input-text v-model="lastName" name="lastName" id="lastName" label="Last name" />
-                    </div>
-                    <div class="form-group">
-                        <input-text v-model="tel" name="phoneNumber" id="phoneNumber" label="Phone number" />
-                    </div>
-                    <div class="form-group">
-                        <input-email v-model="email" name="email" id="email" label="Email" />
-                    </div>
-                    <div class="form-group">
-                        <input-text v-model="bookingDate" name="bookingDate" id="bookingDate" label="Booking date" />
-                    </div>
-                    <div class="form-group">
-                        <input-combobox v-model="bookingType" name="bookingType" id="bookingType" label="Booking type" placeholder="Select type" :options="options"/>
-                    </div>
-                    <div class="form-group span-2">
-                        <input-text-area v-model="message" name="message" id="message" label="Message" />
-                    </div>
-                    <div class="form-group">
-                        <button class="button button-primary">Send</button>
-                    </div>
-                </div>
+                <booking-form />
             </div>
         </div>
     </section>
