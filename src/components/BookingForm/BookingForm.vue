@@ -42,18 +42,21 @@
         }
 
         errors.value = {};
+        success.value = true;
 
         setTimeout(() => {
-            success.value = true;
-        }, 0);
+            success.value = false;
+        }, 2000);
     };
 </script>
 
 <template>
     <div>
-        <div v-if="success" class="success-message" style="margin-top: 2em">
-            Your message has been sent successfully
-        </div>
+        <transition>
+            <div v-if="success" class="success-message" style="margin-top: 2em">
+                Your message has been sent successfully
+            </div>
+        </transition>
         <div class="form" style="margin-top: 2em">
             <div :class="['form-group', { 'error': errors?.properties?.firstName}]">
                 <input-text v-model="form.firstName" name="firstName" id="firstName" label="Name" />
@@ -99,14 +102,24 @@
     animation: fadeIn 0.3s ease-in-out;
 }
 
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+
 @keyframes fadeIn {
     from {
-    opacity: 0;
-    transform: translateY(-6px);
+        opacity: 0;
+        transform: translateY(-6px);
     }
     to {
-    opacity: 1;
-    transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 </style>
