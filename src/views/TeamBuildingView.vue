@@ -53,6 +53,7 @@
                 <div class="central-column-reservation flow">
                     <h2 class="fs-secondary-heading fw-bold">LOREM, IPSUM.</h2>
                     <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, praesentium?</p>
+                    <button class="button button-primary">Send</button>
                 </div>
                 <div>
                     <a href="#" class="flow flow-spacer-400">

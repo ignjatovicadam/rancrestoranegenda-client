@@ -1,0 +1,1 @@
+export { default as InputCombobox } from './InputCombobox.vue';

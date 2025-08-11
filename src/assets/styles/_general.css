@@ -5,19 +5,25 @@ body {
 }
 
 .button {
+    display: inline-flex;
     cursor: pointer;
     text-decoration: none;
-    border: 0;
-    border-radius: 100vmax;
     padding: 1.25em 2.5em;
     font-weight: var(--fw-bold);
     font-size: var(--fs-button);
     line-height: 1;
+    border: 0;
+    box-shadow: 0 1.125em 1em -1em rgba(0, 0, 0, 0.171);
+}
+
+.button-primary {
+    background-color: var(--clr-accent-400);
+    color: var(--clr-primary-100) !important;
 }
 
 .button:hover,
 .button:focus-visible {
-    background-color: var(--clr-accent-300);
+    opacity: 0.8;
 }
 
 /* Restaurant */
@@ -125,7 +131,7 @@ body {
 
 /* Form */
 .form-input {
-    border: 1px solid lightgray;;
+    border: 1px solid lightgray;
     height: 60px;
     position: relative;
     display: flex;
@@ -200,7 +206,7 @@ body {
         grid-auto-rows: auto;
     }
 
-    .form > :last-child {
+    .form > .span-2 {
         grid-column: span 2;
     }
 }
@@ -218,12 +224,6 @@ body {
     resize: none;
     background: transparent;
     background-color: white;
-}
-
-@media (min-width: 50em) {
-    .form textarea {
-        min-height: 120px; /* or whatever suits your layout */
-    }
 }
 
 /* Menu */

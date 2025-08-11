@@ -1,8 +1,24 @@
 <script setup>
     import { ref } from 'vue';
     import { AppHero } from '../components/AppHero';
+    import { InputText } from '../components/InputText';
+    import { InputEmail } from '../components/InputEmail';
+    import { InputCombobox } from '../components/InputCombobox';
+    import { InputTextArea } from '../components/InputTextArea';
 
-    const open = ref(false);
+    const name = ref('');
+    const lastName = ref('');
+    const tel = ref('');
+    const email = ref('');
+    const bookingDate = ref('');
+    const bookingType = ref({});
+    const message = ref('');
+
+    const options = [
+        { label: 'Option 1', value: 'option1' },
+        { label: 'Option 2', value: 'option2' },
+        { label: 'Option 3', value: 'option3' },
+    ];
 </script>
 
 <template>
@@ -105,6 +121,9 @@
                     </div>
                 </div>
             </div>
+            <div class="menu-action-link" style="margin-top: 2em; display: flex; align-items: center; justify-content: center;">
+                <router-link to="/menu" class="button button-primary">Discover more</router-link>
+            </div>
         </div>
     </section>
     <section class="services padding-block-900">
@@ -164,51 +183,28 @@
                 <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
                 <div class="form" style="margin-top: 2em">
                     <div class="form-group">
-                        <div class="form-input">
-                            <label for="name">First name</label>
-                            <input type="text" name="" id="name">
-                        </div>
+                        <input-text v-model="name" name="firstName" id="firstName" label="Name" />
                     </div>
                     <div class="form-group">
-                        <div class="form-input">
-                            <label for="last-name">Last name</label>
-                            <input type="text" name="last-name" id="last-name">
-                        </div>
+                        <input-text v-model="lastName" name="lastName" id="lastName" label="Last name" />
                     </div>
                     <div class="form-group">
-                        <div class="form-input">
-                            <label for="phone-number">Phone number</label>
-                            <input type="text" name="phone-number" id="phone-number">
-                        </div>
+                        <input-text v-model="tel" name="phoneNumber" id="phoneNumber" label="Phone number" />
                     </div>
                     <div class="form-group">
-                        <div class="form-input">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
-                        </div>
+                        <input-email v-model="email" name="email" id="email" label="Email" />
                     </div>
                     <div class="form-group">
-                        <div class="form-input">
-                            <label for="date">Date</label>
-                            <input type="text" name="date" id="date">
-                        </div>
+                        <input-text v-model="bookingDate" name="bookingDate" id="bookingDate" label="Booking date" />
                     </div>
                     <div class="form-group">
-                        <div :class="['form-input custom-select', { 'open': open }]" @focusout="open = false" tabindex="0">
-                            <label for="">Type</label>
-                            <div class="select-display" @click="open = !open">Select an option</div>
-                            <ul class="select-options">
-                                <li data-value="option1">Option 1</li>
-                                <li data-value="option2">Option 2</li>
-                                <li data-value="option3">Option 3</li>
-                            </ul>
-                        </div>
+                        <input-combobox v-model="bookingType" name="bookingType" id="bookingType" label="Booking type" placeholder="Select type" :options="options"/>
+                    </div>
+                    <div class="form-group span-2">
+                        <input-text-area v-model="message" name="message" id="message" label="Message" />
                     </div>
                     <div class="form-group">
-                        <div class="form-input form-message">
-                            <label for="">Message</label>
-                            <textarea id="message"> </textarea>
-                        </div>
+                        <button class="button button-primary">Send</button>
                     </div>
                 </div>
             </div>
