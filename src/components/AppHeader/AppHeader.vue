@@ -30,6 +30,9 @@
                             <router-link to="/brunch">Vikend brunch</router-link>
                         </li>
                         <li class="fw-semi-bold">
+                            <router-link to="/events">Events</router-link>
+                        </li>
+                        <li class="fw-semi-bold">
                             <router-link to="/menu">Menu</router-link>
                         </li>
                         <li class="fw-semi-bold">

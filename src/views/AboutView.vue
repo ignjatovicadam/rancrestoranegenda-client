@@ -1,5 +1,24 @@
 <script setup>
     import { AppHero } from '../components/AppHero';
+    import { ImageGallery } from '../components/ImageGallery';
+
+    const images = [
+        {
+            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg"
+        },
+        {
+            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg"
+        },
+        {
+            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-1.jpg"
+        },
+        {
+            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-2.jpg"
+        },
+        {
+            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/contact-1.jpg"
+        },
+    ];
 </script>
 
 <template>
@@ -46,6 +65,10 @@
                     </div>
                 </div>
             </div>
+            <image-gallery
+                :images="images"
+                style="height: 250px;"
+            />
         </div>
     </section>
     <section class="padding-block-900">
@@ -59,6 +82,10 @@
 </template>
 
 <style scoped>
+.services .even-columns {
+    display: none;
+}
+
 .services img {
     height: 250px;
     width: 100%;
@@ -79,8 +106,16 @@
 }
 
 @media (min-width: 50em) {
+    .services .even-columns {
+        display: grid;
+    }
+
     .services img {
         height: 370px;
+    }
+
+    .services .vgo-gallery {
+        display: none;
     }
 }
 </style>

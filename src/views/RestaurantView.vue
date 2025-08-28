@@ -1,6 +1,25 @@
 <script setup>
     import { AppHero } from '../components/AppHero';
     import { BookingForm } from '../components/BookingForm';
+    import { ImageGallery } from '../components/ImageGallery';
+
+    const upperImages = [
+        {
+            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg"
+        },
+        {
+            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg"
+        },
+    ];
+
+    const downImages = [
+        {
+            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg"
+        },
+        {
+            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg"
+        },
+    ];
 </script>
 
 
@@ -26,6 +45,11 @@
                 </div>
             </div>
 
+            <image-gallery
+                :images="downImages"
+                style="height: 250px;"
+            />
+
             <div class="flow description-text">
                 <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
                 <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit, repudiandae culpa voluptas dolores necessitatibus nobis dolore accusantium molestiae ad similique maiores est dicta aliquid ipsam in numquam! Amet, voluptas.</p>
@@ -38,6 +62,11 @@
                 <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
                 <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit, repudiandae culpa voluptas dolores necessitatibus nobis dolore accusantium molestiae ad similique maiores est dicta aliquid ipsam in numquam! Amet, voluptas.</p>
             </div>
+
+            <image-gallery
+                :images="downImages"
+                style="height: 250px;"
+            />
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
@@ -63,6 +92,11 @@
 </template>
 
 <style scoped>
+
+.restaurant .even-columns {
+    display: none;
+}
+
 .restaurant a {
     text-decoration: none;
     color: inherit;
@@ -91,6 +125,14 @@
 @media (min-width: 50em) {
     .restaurant img {
         height: 350px;
+    }
+
+    .restaurant .even-columns {
+        display: grid;
+    }
+
+    .restaurant .vgo-gallery {
+        display: none;
     }
 }
 
