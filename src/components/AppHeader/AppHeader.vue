@@ -2,6 +2,14 @@
     import { ref } from 'vue';
 
     const open = ref(false);
+
+    const navigationLinks = [
+        { to: '/', label: 'Početna' },
+        { to: '/menu', label: 'Jelovnik' },
+        { to: '/events', label: 'Proslave' },
+        { to: '/restaurant', label: 'Restoran' },
+        { to: '/contact', label: 'Kontakt' },
+    ];
 </script>
 
 <template>
@@ -9,41 +17,23 @@
         <div class="container">
             <div class="navigation-wrapper">
                 <router-link to="/">
-                    <img src="/vite.svg" alt="Restoran Ranč Legenda logo">
+                    <img src="/vite.svg" alt="Restoran Ranč Legenda logo" />
                 </router-link>
 
                 <nav class="navigation">
                     <ul role="list" class="navigation-list">
-                        <li class="fw-semi-bold">
-                            <router-link to="/">Home</router-link>
-                        </li>
-                        <li class="fw-semi-bold">
-                            <router-link to="/about">About us</router-link>
-                        </li>
-                        <li class="fw-semi-bold">
-                            <router-link to="/restaurant">Restaurant</router-link>
-                        </li>
-                        <li class="fw-semi-bold">
-                            <router-link to="/teambuilding">Team building</router-link>
-                        </li>
-                        <li class="fw-semi-bold">
-                            <router-link to="/brunch">Vikend brunch</router-link>
-                        </li>
-                        <li class="fw-semi-bold">
-                            <router-link to="/events">Events</router-link>
-                        </li>
-                        <li class="fw-semi-bold">
-                            <router-link to="/menu">Menu</router-link>
-                        </li>
-                        <li class="fw-semi-bold">
-                            <router-link to="/contact">Contact</router-link>
+                        <li v-for="link in navigationLinks" :key="link.to" class="fw-semi-bold">
+                        <router-link :to="link.to">{{ link.label }}</router-link>
                         </li>
                     </ul>
                 </nav>
 
                 <button class="mobile-navigation-toggle">
                     <span class="visually-hidden">Menu</span>
-                    <div :class="['mobile-navigation-hamburger', { open: open }]" @click="open = !open">
+                    <div
+                        :class="['mobile-navigation-hamburger', { open: open }]"
+                        @click="open = !open"
+                    >
                         <span></span>
                         <span></span>
                         <span></span>
@@ -51,36 +41,56 @@
                 </button>
             </div>
         </div>
+
         <div :class="['mobile-navigation', { open: open }]">
-            <ul role="list">
-                <li class="fw-semi-bold" @click="open = false">
-                    <router-link to="/">Home</router-link>
-                </li>
-                <li class="fw-semi-bold" @click="open = false">
-                    <router-link to="/about">About us</router-link>
-                </li>
-                <li class="fw-semi-bold" @click="open = false">
-                    <router-link to="/restaurant">Restaurant</router-link>
-                </li>
-                <li class="fw-semi-bold" @click="open = false">
-                    <router-link to="/teambuilding">Team building</router-link>
-                </li>
-                <li class="fw-semi-bold" @click="open = false">
-                    <router-link to="/brunch">Vikend brunch</router-link>
-                </li>
-                <li class="fw-semi-bold" @click="open = false">
-                    <router-link to="/events">Events</router-link>
-                </li>
-                <li class="fw-semi-bold" @click="open = false">
-                    <router-link to="/menu">Menu</router-link>
-                </li>
-                <li class="fw-semi-bold" @click="open = false">
-                    <router-link to="/contact">Contact</router-link>
+            <ul role="list" class="mobile-links">
+                <li
+                v-for="link in navigationLinks"
+                :key="link.to"
+                class="fw-semi-bold"
+                @click="open = false"
+                >
+                    <router-link :to="link.to">{{ link.label }}</router-link>
                 </li>
             </ul>
+
+            <div class="mobile-navigation-contact-information">
+                <h3 class="fs-tertiary-heading fw-bold">Kontakt informacije.</h3>
+                <div class="mobile-navigation-contact-information-list" style="margin-top: 1.5em;">
+                    <div class="mobile-navigation-contact-informatio-item">
+                        <img src="/ranc-restoran-legenda-ikonica-lokacija.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
+                        <span class="mobile-navigation-contact-description">Obrenovacki drum bb</span>
+                    </div>
+                    <div class="mobile-navigation-contact-informatio-item">
+                        <img src="/ranc-restoran-legenda-ikonica-telefon.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
+                        <span class="mobile-navigation-contact-description">+381 65 31 24 189</span>
+                    </div>
+                    <div class="mobile-navigation-contact-informatio-item">
+                        <img src="/ranc-restoran-legenda-ikonica-email.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
+                        <span class="mobile-navigation-contact-description">lorem.ipsum@gmailcom</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-navigation-social-links">
+                <div class="mobile-navigation-social-link-item">
+                    <ul role="list">
+                        <li class="flow-spacer-200">
+                            <a href="http://">Instagram</a>
+                        </li>
+                        <li class="flow-spacer-200">
+                            <a href="http://">Facebook</a>
+                        </li>
+                        <li class="flow-spacer-200">
+                            <a href="http://">Tiktok</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 </template>
+
 
 <style scoped>
 .header {
@@ -201,28 +211,28 @@
 }
 
 .mobile-navigation.open {
-    max-height: 500px;
+    max-height: 800px;
 }
 
-.mobile-navigation ul {
+.mobile-navigation ul.mobile-links {
     display: flex;
     flex-direction: column;
     padding-inline: var(--size-400);
     padding-block: var(--size-400);
 }
 
-.mobile-navigation ul li {
+.mobile-navigation ul.mobile-links li {
     border-bottom: 1px solid rgba(15, 15, 15, 0.2);
     padding-block: 1rem;
 }
 
-.mobile-navigation ul li a {
+.mobile-navigation ul.mobile-links li a {
     text-decoration: none;
     color: var(--clr-primary-400);
     font-size: var(--fs-400);
 }
 
-.mobile-navigation ul li a.router-link-exact-active {
+.mobile-navigation ul.mobile-links li a.router-link-exact-active {
     color: var(--clr-accent-400);
 }
 
@@ -239,6 +249,53 @@
 @media (min-width: 50em) {
     .navigation-wrapper {
         align-items: center;
+    }
+}
+
+.mobile-navigation-contact-information {
+    margin-top: 4em;
+    padding-inline: var(--size-400);
+}
+
+.mobile-navigation-contact-information-list {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.mobile-navigation-contact-informatio-item {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.mobile-navigation-contact-informatio-item img {
+    width: 15px;
+    height: 15px;
+}
+
+.mobile-navigation-contact-description {
+    font-size: var(--fs-300);
+    opacity: 0.7;
+}
+
+.mobile-navigation-social-links {
+    margin-top: 1em;
+    padding-inline: var(--size-400);
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: inherit;
+        opacity: 0.7;
+        position: relative;
+        display: inline-block;
+        font-size: var(--fs-300);
     }
 }
 </style>

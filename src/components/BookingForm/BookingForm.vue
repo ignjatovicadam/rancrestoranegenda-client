@@ -17,10 +17,10 @@
     });
 
     const schema = z.object({
-        firstName: z.string().min(1, 'First name is required'),
-        email: z.email('Invalid email address'),
-        phoneNumber: z.string().min(1, 'Phone number is required'),
-        bookingDate: z.string().min(1, 'Booking date is required'),
+        firstName: z.string().min(1, 'Ime je obavezno'),
+        email: z.string().email('Neispravna email adresa'),
+        phoneNumber: z.string().min(1, 'Broj telefona je obavezan'),
+        bookingDate: z.string().min(1, 'Datum rezervacije je obavezan'),
     });
 
     const errors = ref({});
@@ -46,7 +46,14 @@
 
         setTimeout(() => {
             success.value = false;
-        }, 2000);
+            form.firstName = "";
+            form.lastName = "";
+            form.phoneNumber = "",
+            form.email = "",
+            form.bookingDate = "",
+            form.bookingType = { label: 'Option 1', value: 'option1' };
+            form.message = "";
+        }, 3000);
     };
 </script>
 
@@ -54,37 +61,37 @@
     <div>
         <transition>
             <div v-if="success" class="success-message" style="margin-top: 2em">
-                Your message has been sent successfully
+                Rezervacija je poslata. Kontaktiraćemo vas uskoro.
             </div>
         </transition>
         <div class="form" style="margin-top: 2em">
             <div :class="['form-group', { 'error': errors?.properties?.firstName}]">
-                <input-text v-model="form.firstName" name="firstName" id="firstName" label="Name" />
+                <input-text v-model="form.firstName" name="firstName" id="firstName" label="Ime" />
                 <div v-if="errors?.properties?.firstName" class="error-notice"><span>{{ errors.properties.firstName.errors[0] }}</span></div>
             </div>
             <div class="form-group">
-                <input-text v-model="form.lastName" name="lastName" id="lastName" label="Last name" />
+                <input-text v-model="form.lastName" name="lastName" id="lastName" label="Prezime" />
             </div>
             <div :class="['form-group', { 'error': errors?.properties?.phoneNumber}]">
-                <input-text v-model="form.phoneNumber" name="phoneNumber" id="phoneNumber" label="Phone number" />
+                <input-text v-model="form.phoneNumber" name="phoneNumber" id="phoneNumber" label="Broj telefona" />
                 <div v-if="errors?.properties?.phoneNumber" class="error-notice"><span>{{ errors.properties.phoneNumber.errors[0] }}</span></div>
             </div>
             <div :class="['form-group', { 'error': errors?.properties?.email}]">
-                <input-email v-model="form.email" name="email" id="email" label="Email" />
+                <input-email v-model="form.email" name="email" id="email" label="E-mail" />
                 <div v-if="errors?.properties?.email" class="error-notice"><span>{{ errors.properties.email.errors[0] }}</span></div>
             </div>
             <div :class="['form-group', { 'error': errors?.properties?.bookingDate}]">
-                <input-text v-model="form.bookingDate" name="bookingDate" id="bookingDate" label="Booking date" />
+                <input-text v-model="form.bookingDate" name="bookingDate" id="bookingDate" label="Datum proslave" />
                 <div v-if="errors?.properties?.bookingDate" class="error-notice"><span>{{ errors.properties.bookingDate.errors[0] }}</span></div>
             </div>
             <div class="form-group">
-                <input-combobox v-model="form.bookingType" name="bookingType" id="bookingType" label="Booking type" placeholder="Select type" :options="options"/>
+                <input-combobox v-model="form.bookingType" name="bookingType" id="bookingType" label="Vrsta proslave" placeholder="Izaberite vrstu proslave" :options="options"/>
             </div>
             <div class="form-group span-2">
-                <input-text-area v-model="form.message" name="message" id="message" label="Message" />
+                <input-text-area v-model="form.message" name="message" id="message" label="Poruka" />
             </div>
             <div class="form-group">
-                <button class="button button-primary" @click="onFormSubmit">Send</button>
+                <button class="button button-primary" @click="onFormSubmit">Rezerviši</button>
             </div>
         </div>
     </div>

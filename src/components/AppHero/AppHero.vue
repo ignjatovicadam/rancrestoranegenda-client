@@ -45,8 +45,7 @@
 }
 
 .hero.large {
-    min-height: calc(100vh - 80px);
-    max-height: 1200px;   
+    height: min(calc(100vh - 80px), 1000px);  
 }
 
 .hero.medium {

@@ -9,6 +9,7 @@ import TermsOfUseView from '../views/TermsOfUseView.vue';
 import BrunchView from '../views/BrunchView.vue';
 import EventsView from '../views/EventsView.vue';
 import MenuView from '../views/MenuView.vue';
+import BirthdatePartiesView from '../views/BirthdatePartiesView.vue';
 
 const routes = [
     {
@@ -60,6 +61,11 @@ const routes = [
         path: '/menu',
         name: 'Menu',
         component: MenuView,
+    },
+    {
+        path: '/birthday-parties',
+        name: 'BirthdateParties',
+        component: BirthdatePartiesView,
     }
 ];
 

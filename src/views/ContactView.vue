@@ -4,17 +4,20 @@
     <section id="contact-form" class="padding-block-900">
         <div class="container">
             <div class="columns">
-                <div class="column flow">
-                    <h2 class="fs-secondary-heading fw-bold">Lorem, ipsum.</h2>
-                    <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, recusandae.</p>
-                    <ul class="contact-list">
-                        <li class="flow-spacer-200 contact-list-item">
+                <div class="column">
+                    <h2 class="fs-secondary-heading fw-bold">Kontaktirajte nas.</h2>
+                    <p class="fw-regular">Ukoliko imate pitanja, želju za rezervacijom ili bilo kakve sugestije, slobodno nas kontaktirajte putem telefona ili e-mailom. Radujemo se vašoj poseti i trudićemo se da vaš boravak učinimo nezaboravnim.</p>
+                    <ul class="contact-list" role="list">
+                        <li class="contact-list-item">
+                            <img src="/ranc-restoran-legenda-ikonica-email.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
                             <span>lorem.ipsum@gmailcom</span>
                         </li>
-                        <li class="flow-spacer-200 contact-list-item">
+                        <li class="contact-list-item">
+                            <img src="/ranc-restoran-legenda-ikonica-telefon.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
                             <span>+381 65 31 24 189</span>
                         </li>
-                        <li class="flow-spacer-200 contact-list-item">
+                        <li class="contact-list-item">
+                            <img src="/ranc-restoran-legenda-ikonica-lokacija.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
                             <span>Obrenovacki drum bb</span>
                         </li>
                     </ul>
@@ -26,3 +29,21 @@
         </div>
     </section>
 </template>
+
+<style scoped>
+    ul, p {
+        margin-top: 2em;
+    }
+
+    ul li {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+        margin-bottom: 1em;
+    }
+
+    li img {
+        height: 20px;
+        width: 20px;
+    }
+</style>

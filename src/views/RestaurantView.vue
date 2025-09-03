@@ -26,8 +26,8 @@
 <template>
     <app-hero id="hero-restaurant" size="medium" image-url="https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg">
         <div class="welcome-text flow">
-            <h1 class="fs-primary-heading fw-bold">Lorem ipsum dolor sit amet.</h1>
-            <p class="fw-semi-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita autem nobis laborum consectetur accusamus nemo.</p>
+            <h1 class="fs-primary-heading fw-bold">Restoran Legenda.</h1>
+            <p class="fw-semi-bold">Nalazi se u hladu velikih vrba, na površini zemljišta od jednog hektara, okružen rekom sa čak 3 strane, sa igralištem na otvorenom i farmom sa domaćim životinjama.</p>
         </div>
     </app-hero>
     <section class="restaurant padding-block-900">
@@ -46,21 +46,40 @@
             </div>
 
             <image-gallery
-                :images="downImages"
+                :images="upperImages"
                 style="height: 250px;"
             />
 
             <div class="flow description-text">
-                <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
-                <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit, repudiandae culpa voluptas dolores necessitatibus nobis dolore accusantium molestiae ad similique maiores est dicta aliquid ipsam in numquam! Amet, voluptas.</p>
+                <h2 class="fs-secondary-heading fw-bold">Otvoreni deo.</h2>
+                <p class="fw-regular">
+                    Otvoreni deo se nalazi u prirodnom hladu velikih vrba, na površini od jednog hektara, potpuno okružen zelenilom i rekom sa čak tri strane.
+                </p>
+                <p class="fw-regular flow-spacer-200">
+                    Ovaj prostor je osmišljen kao mesto za beg od gradske gužve i svakodnevnice, gde posetioci mogu da uživaju u miru, tišini i lepoti prirode.
+                </p>
+                <p class="fw-regular flow-spacer-200">
+                    U okviru prostora nalazi se igralište na otvorenom, idealno za decu svih uzrasta, kao i farma sa domaćim životinjama koje deca mogu da vide, nahrane i upoznaju.
+                </p>
             </div>
         </div>
     </section>
     <section class="restaurant padding-block-900 bg-primary-200">
         <div class="container">
             <div class="flow description-text">
-                <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
-                <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit, repudiandae culpa voluptas dolores necessitatibus nobis dolore accusantium molestiae ad similique maiores est dicta aliquid ipsam in numquam! Amet, voluptas.</p>
+                <h2 class="fs-secondary-heading fw-bold">Zatvoreni deo.</h2>
+                <p class="fw-regular">
+                    Restoran je uređen u autentičnom etno stilu i ima tri funkcionalno opremljene sale.
+                </p>
+                <p class="fw-regular flow-spacer-200">
+                    Prostor je pogodan za različite događaje — od korporativnih proslava i timskih okupljanja do privatnih svečanosti.
+                </p>
+                <p class="fw-regular flow-spacer-200">
+                    Sve sale su klimatizovane, grejane i opremljene kompletnim inventarom, uz fleksibilan raspored stolova i stolica prema potrebama klijenata.
+                </p>
+                <p class="fw-regular flow-spacer-200">
+                    Enterijer spaja tradicionalni ambijent sa savremenim komforom, pružajući prijatan i organizaciono prilagodljiv prostor tokom cele godine.
+                </p>
             </div>
 
             <image-gallery
@@ -81,11 +100,49 @@
             </div>
         </div>
     </section>
-    <section class="services padding-block-900">
+    <section class="bg-primary-400">
+        <div class="large-container">
+            <div class="even-columns">
+                <div>
+                    <a href="#" class="flow flow-spacer-400">
+                        <div class="image-overlay">
+                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/reservation-1.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="central-column-reservation flow">
+                    <h2 class="fs-secondary-heading fw-bold">Pogledajte i.</h2>
+                    <p class="fw-regular">Pogledajte naš meni i otkrijte šta sve nudimo.</p>
+                    <router-link to="/menu" class="button button-primary">Pogledaj jelovnik</router-link>
+                    <p class="fw-regular">Planirate proslavu? Mi imamo pravo mesto!</p>
+                    <router-link to="/events" class="button button-primary">Pogledaj proslave</router-link>
+                </div>
+                <div>
+                    <a href="#" class="flow flow-spacer-400">
+                        <div class="image-overlay">
+                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/reservation-2.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="padding-block-900 bg-primary-200">
         <div class="container">
-            <div>
-                <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
-                <booking-form />
+            <div class="flow">
+                <h2 class="fs-secondary-heading fw-bold">Naš meni je pažljivo kreiran.</h2>
+                <p class="fw-regular">
+                    Već dugi niz godina negujemo filozofiju zasnovanu na kvalitetu i autentičnosti.
+                </p>
+                <p class="fw-regular flow-spacer-200">
+                    Koristimo isključivo pažljivo odabrane proizvode sa jasno definisanim geografskim poreklom. Verujemo da prava svežina i bogatstvo ukusa dolaze iz pažljivog odabira namirnica.
+                </p>
+                <p class="fw-regular flow-spacer-200">
+                    Naš jelovnik oblikovan je oko proverenih sastojaka — od domaće jagnjetine i sveže ribe iz obližnjih reka, do mlečnih proizvoda i lokalnog povrća.
+                </p>
+                <p class="fw-regular flow-spacer-200">
+                    Svako jelo je bogato ukusom i pripremljeno sa posebnom pažnjom. Na taj način čuvamo tradiciju, pružamo raznovrsnost i garantujemo vrhunski kvalitet svakog obroka koji poslužujemo.
+                </p>
             </div>
         </div>
     </section>

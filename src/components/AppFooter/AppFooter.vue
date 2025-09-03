@@ -4,44 +4,46 @@
     <footer>
         <div class="container footer-flex">
             <div class="two-columns">
-                <div class="flow">
-                    <h3 class="fs-tertiary-heading fw-bold">Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptatibus rerum quasi pariatur asperiores, quae blanditiis quo consequatur repellendus aut.</p>
+                <div>
+                    <h3 class="fs-tertiary-heading fw-bold">Restoran-Ranč Legenda.</h3>
+                    <p style="margin-top: 2em;">Hvala vam što ste nas posetili. Rezervacije su moguće putem sajta ili telefonom.</p>
+
+                    <div class="footer-contact-information" style="margin-top: 1.5em;">
+                        <div class="footer-contact-informatio-item">
+                            <img src="/ranc-restoran-legenda-ikonica-lokacija.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
+                            <span class="footer-contact-description">Obrenovacki drum bb</span>
+                        </div>
+                        <div class="footer-contact-informatio-item">
+                            <img src="/ranc-restoran-legenda-ikonica-telefon.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
+                            <span class="footer-contact-description">+381 65 31 24 189</span>
+                        </div>
+                        <div class="footer-contact-informatio-item">
+                            <img src="/ranc-restoran-legenda-ikonica-email.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
+                            <span class="footer-contact-description">lorem.ipsum@gmailcom</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="even-columns">
                     <div class="footer-item flow">
-                        <h3 class="fs-tertiary-heading fw-bold">Lorem</h3>
+                        <h3 class="fs-tertiary-heading fw-bold">Restoran</h3>
                         <ul role="list">
-                            <li class="flow-spacer-200">
-                                <a href="http://">Lorem ipsum</a>
-                            </li>
-                            <li class="flow-spacer-200">
-                                <a href="http://">Lorem ipsum</a>
-                            </li>
-                            <li class="flow-spacer-200">
-                                <a href="http://">Lorem ipsum</a>
-                            </li>
+                            <li class="flow-spacer-200"><router-link to="/restaurant">Restoran</router-link></li>
+                            <li class="flow-spacer-200"><router-link to="/menu">Jelovnik</router-link></li>
                         </ul>
                     </div>
 
                     <div class="footer-item flow">
-                        <h3 class="fs-tertiary-heading fw-bold">Ipsum</h3>
+                        <h3 class="fs-tertiary-heading fw-bold">Proslave</h3>
                         <ul role="list">
-                            <li class="flow-spacer-200">
-                                <a href="http://">Lorem ipsum</a>
-                            </li>
-                            <li class="flow-spacer-200">
-                                <a href="http://">Lorem ipsum</a>
-                            </li>
-                            <li class="flow-spacer-200">
-                                <a href="http://">Lorem ipsum</a>
-                            </li>
+                            <li class="flow-spacer-200"><router-link to="/events">Proslave</router-link></li>
+                            <li class="flow-spacer-200"><router-link to="/teambuilding">Team building</router-link></li>
+                            <li class="flow-spacer-200"><router-link to="/">Dečiji rođendani</router-link></li>
                         </ul>
                     </div>
 
                     <div class="footer-item flow">
-                        <h3 class="fs-tertiary-heading fw-bold">Dorem</h3>
+                        <h3 class="fs-tertiary-heading fw-bold">Prati nas</h3>
                         <ul role="list">
                             <li class="flow-spacer-200">
                                 <a href="http://">Instagram</a>
@@ -58,11 +60,11 @@
             </div>
 
             <div class="two-columns footer-note">
-                <p>&copy; 2025 Lorem, ipsum. All rights reserved.</p>
+                <p>&copy; 2025 Restoran-Ranč Legenda. Sva prava zadržana.</p>
                 <p>
-                <router-link to="/privacypolicy">Privacy Policy</router-link>
+                <router-link to="/privacypolicy">Polisa privatnosti</router-link>
                 &nbsp;
-                <router-link to="/termsofuse">Terms of use</router-link>
+                <router-link to="/termsofuse">Uslovi korišćenja</router-link>
                 </p>
             </div>
         </div>
@@ -160,6 +162,35 @@ footer p {
     .footer-note {
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+.footer-contact-information {
+    display: flex;
+    flex-direction: column;
+    gap: .1em;
+}
+
+.footer-contact-description {
+    font-size: var(--fs-300);
+    opacity: 0.7;
+}
+
+.footer-contact-informatio-item {
+    display: flex;
+    align-items: center;
+    gap: .35em;
+}
+
+.footer-contact-informatio-item img {
+    width: 15px;
+    height: 15px;
+}
+
+@media (min-width: 50em) {
+    .footer-contact-information {
+        flex-direction: row;
+        gap: .7em;
     }
 }
 </style>

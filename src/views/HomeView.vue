@@ -6,14 +6,14 @@
 <template>
     <app-hero id="hero-welcome" size="large" image-url="https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg">
         <div class="welcome-text flow">
-            <h1 class="fs-primary-heading fw-bold">Lorem ipsum dolor sit amet.</h1>
-            <p class="fw-semi-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita autem nobis laborum consectetur accusamus nemo.</p>
+            <h1 class="fs-primary-heading fw-bold">Dobro došli u Legendu,</h1>
+            <p class="fw-semi-bold">Ranč na obali Save idealan za porodična okupljanja, slavlja i uživanje u domaćim specijalitetima.</p>
         </div>
     </app-hero>
     <section class="padding-block-900">
         <div class="container">
             <div class="flow">
-                <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
+                <h2 class="fs-secondary-heading fw-bold">Tradicija i kvalitet idu ruku pod ruku.</h2>
                 <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit, repudiandae culpa voluptas dolores necessitatibus nobis dolore accusantium molestiae ad similique maiores est dicta aliquid ipsam in numquam! Amet, voluptas.</p>
             </div>
         </div>
@@ -22,49 +22,40 @@
         <div class="large-container">
             <div class="even-columns">
                 <div>
-                    <a href="#" class="flow flow-spacer-400">
+                    <router-link to="/events" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg" alt="">
                         </div>
-                        <h3 class="fs-tertiary-heading fw-bold">LOREM, IPSUM.</h3>
-                        <p class="fw-regular">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, rem?</p>
-                    </a>
+                        <h3 class="fs-tertiary-heading fw-bold">PROSLAVE</h3>
+                        <p class="fw-regular">Organizujemo poslovne i porodične proslave na otvorenom, u prirodi, na otvorenom, u zatvorenom ili natkrivenom prostoru.</p>
+                    </router-link>
                 </div>
                 <div>
-                    <a href="#" class="flow flow-spacer-400">
+                    <router-link to="/restaurant" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg" alt="">
                         </div>
-                        <h3 class="fs-tertiary-heading fw-bold">LOREM, IPSUM.</h3>
-                        <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, numquam.</p>
-                    </a>
+                        <h3 class="fs-tertiary-heading fw-bold">RESTORAN</h3>
+                        <p class="fw-regular">Restoran domaće kuhinje sa baštom, smešten u prirodnom okruženju, idealan za porodične ručkove i veće grupe.</p>
+                    </router-link>
                 </div>
                 <div>
-                    <a href="#" class="flow flow-spacer-400">
-                        <div class="image-overlay">
-                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-1.jpg" alt="">
-                        </div>
-                        <h3 class="fs-tertiary-heading fw-bold">LOREM, IPSUM.</h3>
-                        <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, praesentium?</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="flow flow-spacer-400">
-                        <div class="image-overlay">
-                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-2.jpg" alt="">
-                        </div>
-                        <h3 class="fs-tertiary-heading fw-bold">LOREM, IPSUM.</h3>
-                        <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptas!</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="flow flow-spacer-400">
+                    <router-link to="/birthday-parties" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/contact-1.jpg" alt="">
                         </div>
-                        <h3 class="fs-tertiary-heading fw-bold">LOREM, IPSUM.</h3>
-                        <p class="fw-regular">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, itaque.</p>
-                    </a>
+                        <h3 class="fs-tertiary-heading fw-bold">DEČIJI ROĐENDANI</h3>
+                        <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima prilagođenim različitim uzrastim</p>
+                    </router-link>
+                </div>
+                <div>
+                    <router-link to="/teambuilding" class="flow flow-spacer-400">
+                        <div class="image-overlay">
+                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-2.jpg" alt="">
+                        </div>
+                        <h3 class="fs-tertiary-heading fw-bold">TEAM BUILDING</h3>
+                        <p class="fw-regular">Prostor u prirodi sa sadržajima za timske aktivnosti i korporativne skupove u Beogradu.</p>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -72,7 +63,7 @@
     <section class="services padding-block-900">
         <div class="container">
             <div class="flow">
-                <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
+                <h2 class="fs-secondary-heading fw-bold">Naš meni je pažljivo kreiran.</h2>
             </div>
             <div class="menu-list" style="margin-top: 2em;">
                 <div class="even-columns">
@@ -162,7 +153,7 @@
     <section class="services padding-block-900 bg-primary-200">
         <div class="container">
             <div>
-                <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit.</h2>
+                <h2 class="fs-secondary-heading fw-bold">Rezervacija proslave.</h2>
                 <booking-form />
             </div>
         </div>
