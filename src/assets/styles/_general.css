@@ -217,13 +217,13 @@ body {
         grid-auto-rows: auto;
     }
 
-    .form > .span-2 {
-        grid-column: span 2;
+    .form > .span-3 {
+        grid-column: span 3;
     }
 }
 
 .form-message {
-    height: 200px;
+    height: 110px;
 }
 
 .form-input textarea {

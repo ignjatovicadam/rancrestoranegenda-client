@@ -3,7 +3,6 @@
     import { z } from 'zod';
     import { InputText } from '../InputText';
     import { InputEmail } from '../InputEmail';
-    import { InputCombobox } from '../InputCombobox';
     import { InputTextArea } from '../InputTextArea';
 
     const form = reactive({
@@ -12,7 +11,7 @@
         phoneNumber: '',
         email: '',
         bookingDate: '',
-        bookingType: { label: 'Option 1', value: 'option1' },
+        bookingType: '',
         message: '',
     });
 
@@ -21,17 +20,12 @@
         email: z.string().email('Neispravna email adresa'),
         phoneNumber: z.string().min(1, 'Broj telefona je obavezan'),
         bookingDate: z.string().min(1, 'Datum rezervacije je obavezan'),
+        bookingType: z.string().min(1, 'Vrsta proslave je obavezna'),
     });
 
     const errors = ref({});
 
     const success = ref(false);
-
-    const options = [
-        { label: 'Option 1', value: 'option1' },
-        { label: 'Option 2', value: 'option2' },
-        { label: 'Option 3', value: 'option3' },
-    ];
 
     const onFormSubmit = () => {
         const result = schema.safeParse(form);
@@ -51,7 +45,7 @@
             form.phoneNumber = "",
             form.email = "",
             form.bookingDate = "",
-            form.bookingType = { label: 'Option 1', value: 'option1' };
+            form.bookingType = "";
             form.message = "";
         }, 3000);
     };
@@ -84,10 +78,11 @@
                 <input-text v-model="form.bookingDate" name="bookingDate" id="bookingDate" label="Datum proslave" />
                 <div v-if="errors?.properties?.bookingDate" class="error-notice"><span>{{ errors.properties.bookingDate.errors[0] }}</span></div>
             </div>
-            <div class="form-group">
-                <input-combobox v-model="form.bookingType" name="bookingType" id="bookingType" label="Vrsta proslave" placeholder="Izaberite vrstu proslave" :options="options"/>
+            <div :class="['form-group', { 'error': errors?.properties?.bookingType}]">
+                <input-text v-model="form.bookingType" name="bookingType" id="bookingType" label="Vrsta proslave" />
+                <div v-if="errors?.properties?.bookingType" class="error-notice"><span>{{ errors.properties.bookingType.errors[0] }}</span></div>
             </div>
-            <div class="form-group span-2">
+            <div class="form-group span-3">
                 <input-text-area v-model="form.message" name="message" id="message" label="Poruka" />
             </div>
             <div class="form-group">

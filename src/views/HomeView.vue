@@ -1,6 +1,26 @@
 <script setup>
     import { AppHero } from '../components/AppHero';
     import { BookingForm } from '../components/BookingForm';
+
+    const menu = [
+        {
+            category: "Jela sa roštilja",
+            items: [
+            { name: "Ćevapi juneći (300g)", price: "1200 RSD" },
+            { name: "Pljeskavica juneća (300g)", price: "1200 RSD" },
+            { name: "Gurmanska pljeskavica (300g)", price: "1300 RSD" },
+            { name: "Gurmanski uštipci (300g)", price: "1300 RSD" },
+            { name: "Pileći file (300g)", price: "950 RSD" },
+            { name: "Pileći ražnjići rol. slaninicom (300g)", price: "1200 RSD" },
+            { name: "Rebarca na kajmaku (300g)", price: "1200 RSD" },
+            { name: "Svinjski vrat na žaru (300g)", price: "1050 RSD" },
+            { name: "Kobasica (300g)", price: "1100 RSD" },
+            { name: "Bela vešalica (300g)", price: "1100 RSD" },
+            { name: "Rolovana punjena bela vešalica (300g)", price: "1500 RSD" },
+            { name: "Mešano meso za dve osobe (600g)", price: "2300 RSD" },
+            ],
+        },
+    ];
 </script>
 
 <template>
@@ -66,87 +86,23 @@
                 <h2 class="fs-secondary-heading fw-bold">Naš meni je pažljivo kreiran.</h2>
             </div>
             <div class="menu-list" style="margin-top: 2em;">
-                <div class="even-columns">
-                    <div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-item-text">
-                                <h3 class="fs-tertiary-heading fw-bold">Lorem, ipsum.</h3>
-                                <span class="fw-regular">Chicken / Apple / Tomatoes</span>
-                            </div>
-                            <div class="menu-list-item-price">
-                                <span class="fw-bold">$11.05</span>
-                            </div>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-item-text">
-                                <h3 class="fs-tertiary-heading fw-bold">Lorem, ipsum.</h3>
-                                <span class="fw-regular">Chicken / Apple / Tomatoes</span>
-                            </div>
-                            <div class="menu-list-item-price">
-                                <span class="fw-bold">$11.05</span>
-                            </div>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-item-text">
-                                <h3 class="fs-tertiary-heading fw-bold">Lorem, ipsum.</h3>
-                                <span class="fw-regular">Chicken / Apple / Tomatoes</span>
-                            </div>
-                            <div class="menu-list-item-price">
-                                <span class="fw-bold">$11.05</span>
-                            </div>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-item-text">
-                                <h3 class="fs-tertiary-heading fw-bold">Lorem, ipsum.</h3>
-                                <span class="fw-regular">Chicken / Apple / Tomatoes</span>
-                            </div>
-                            <div class="menu-list-item-price">
-                                <span class="fw-bold">$11.05</span>
-                            </div>
-                        </div>
+                <div class="menu-columns">
+                <article
+                    v-for="(item, i) in menu[0].items"
+                    :key="i"
+                    class="menu-list-item"
+                >
+                    <div class="menu-list-item-text">
+                        <span class="fw-regular">{{ item.name }}</span>
                     </div>
-                    <div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-item-text">
-                                <h3 class="fs-tertiary-heading fw-bold">Lorem, ipsum.</h3>
-                                <span class="fw-regular">Chicken / Apple / Tomatoes</span>
-                            </div>
-                            <div class="menu-list-item-price">
-                                <span class="fw-bold">$11.05</span>
-                            </div>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-item-text">
-                                <h3 class="fs-tertiary-heading fw-bold">Lorem, ipsum.</h3>
-                                <span class="fw-regular">Chicken / Apple / Tomatoes</span>
-                            </div>
-                            <div class="menu-list-item-price">
-                                <span class="fw-bold">$11.05</span>
-                            </div>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-item-text">
-                                <h3 class="fs-tertiary-heading fw-bold">Lorem, ipsum.</h3>
-                                <span class="fw-regular">Chicken / Apple / Tomatoes</span>
-                            </div>
-                            <div class="menu-list-item-price">
-                                <span class="fw-bold">$11.05</span>
-                            </div>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-item-text">
-                                <h3 class="fs-tertiary-heading fw-bold">Lorem, ipsum.</h3>
-                                <span class="fw-regular">Chicken / Apple / Tomatoes</span>
-                            </div>
-                            <div class="menu-list-item-price">
-                                <span class="fw-bold">$11.05</span>
-                            </div>
-                        </div>
+                    <div class="menu-list-item-price">
+                        <span class="fw-bold">{{ item.price }}</span>
                     </div>
+                </article>
                 </div>
             </div>
             <div class="menu-action-link" style="margin-top: 2em; display: flex; align-items: center; justify-content: center;">
-                <router-link to="/menu" class="button button-primary">Discover more</router-link>
+                <router-link to="/menu" class="button button-primary">Pogledaj</router-link>
             </div>
         </div>
     </section>
@@ -198,6 +154,18 @@ a:focus .image-overlay img {
 @media (min-width: 50em) {
     .services img {
         height: 370px;
+    }
+}
+
+.menu-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: var(--size-600);
+}
+
+@media (min-width: 50em) {
+    .menu-columns {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 </style>
