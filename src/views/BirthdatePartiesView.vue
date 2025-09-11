@@ -1,15 +1,34 @@
 <script setup>
     import { BookingForm } from '../components/BookingForm';
+    import ImageGallery from '../components/ImageGallery/ImageGallery.vue';
+
+    const images = [
+        {
+            url: "/dec_ro_ova_obaveznoo.jpeg",
+        },
+        {
+            url: "/dec_ro_3.jpeg",
+        },
+        {
+            url: "/dec_ro_4.jpeg",
+        },
+        {
+            url: "/dec_ro_1.jpeg",
+        },
+        {
+            url: "/dec_ro_2.jpeg",
+        },
+    ];
 </script>
 
 <template>
     <section id="birthdayparties" class="template-hero padding-block-900">
         <div class="container">
             <div class="flow">
-                <h2 class="fs-secondary-heading fw-bold">DEČIJI ROĐENDANI.</h2>
+                <h2 class="fs-secondary-heading fw-bold">Dečiji rođendani</h2>
                 <p class="fw-regular">Rođendani kod nas nisu samo zabava, već pravo iskustvo druženja sa životinjama i boravka u zelenilu. Deca mogu da uživaju u igri i istraživanju, dok roditelji bez žurbe i stresa uživaju u domaćoj hrani i prirodnom okruženju. Naša velika bašta, životinje i animacije stvaraju atmosferu koju mališani dugo pamte — veselu, zdravu i drugačiju od klasičnih, zatvorenih proslava.</p>
                 <div class="template-image-preview">
-                    <img src="https://cdn.sanity.io/images/ycnqsi1u/production/6087fa5e24cae8736a76c10ccba7e7d8636ba036-2963x1780.jpg?w=1920&q=75&fit=clip&auto=format" alt="">
+                    <img src="/dec_ro_6.jpeg" alt="">
                 </div>
             </div>
 
@@ -20,12 +39,90 @@
             </div>
         </div>
     </section>
-    <section class="padding-block-900 bg-primary-200">
+    <section class="services padding-block-900 bg-primary-200">
+        <div class="large-container">
+            <div class="even-columns">
+                <div>
+                    <div class="image-overlay">
+                        <img src="/dec_ro_ova_obaveznoo.jpeg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="image-overlay">
+                        <img src="/dec_ro_3.jpeg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="image-overlay">
+                        <img src="/dec_ro_4.jpeg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="image-overlay">
+                        <img src="/dec_ro_1.jpeg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="image-overlay">
+                        <img src="/dec_ro_2.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            <image-gallery
+                :images="images"
+                style="height: 250px;"
+            />
+        </div>
+    </section>
+    <section class="padding-block-900">
         <div class="container">
             <div>
-                <h2 class="fs-secondary-heading fw-bold">Rezervacija proslave.</h2>
+                <h2 class="fs-secondary-heading fw-bold">Rezervacija proslave</h2>
                 <booking-form />
             </div>
         </div>
     </section>
 </template>
+
+<style scoped>
+    .template-image-preview img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .services .even-columns {
+        display: none;
+    }
+
+    .services img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .services .image-overlay {
+        position: relative;
+        margin-bottom: var(--size-400);
+    }
+
+    .services .image-overlay::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+    }
+
+    @media (min-width: 50em) {
+        .services .even-columns {
+            display: grid;
+        }
+
+        .services img {
+            height: 370px;
+        }
+
+        .services .vgo-gallery {
+            display: none;
+        }
+    }
+</style>

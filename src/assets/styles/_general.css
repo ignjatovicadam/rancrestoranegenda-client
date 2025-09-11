@@ -13,6 +13,7 @@ body {
     font-size: var(--fs-button);
     line-height: 1;
     border: 0;
+    border-radius: 24px;
     box-shadow: 0 1.125em 1em -1em rgba(0, 0, 0, 0.171);
 }
 
@@ -242,6 +243,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--size-500) var(--size-500) var(--size-500) 0;
+    padding: var(--size-300) var(--size-500) var(--size-300) 0;
     border-bottom: 1px dashed #a79362;
 }

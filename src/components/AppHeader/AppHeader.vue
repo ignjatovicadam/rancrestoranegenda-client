@@ -17,7 +17,7 @@
         <div class="container">
             <div class="navigation-wrapper">
                 <router-link to="/">
-                    <img src="/vite.svg" alt="Restoran Ranč Legenda logo" />
+                    <img src="/legendA_resized.png" alt="Restoran Ranč Legenda logo" class="logo"/>
                 </router-link>
 
                 <nav class="navigation">
@@ -99,8 +99,11 @@
     background-color: var(--clr-primary-100);
     width: 100%;
     z-index: 3;
-    padding-block: var(--size-500);
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+
+.header .container .navigation-wrapper {
+    height: 80px;
 }
 
 .navigation {
@@ -206,7 +209,7 @@
 .mobile-navigation {
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease-in-out;
     background: var(--clr-primary-100);
 }
 
@@ -242,7 +245,7 @@
 
 .navigation-wrapper {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
 }
 

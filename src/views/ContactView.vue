@@ -5,7 +5,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column">
-                    <h2 class="fs-secondary-heading fw-bold">Kontaktirajte nas.</h2>
+                    <h2 class="fs-secondary-heading fw-bold">Kontaktirajte nas</h2>
                     <p class="fw-regular">Ukoliko imate pitanja, želju za rezervacijom ili bilo kakve sugestije, slobodno nas kontaktirajte putem telefona ili e-mailom. Radujemo se vašoj poseti i trudićemo se da vaš boravak učinimo nezaboravnim.</p>
                     <ul class="contact-list" role="list">
                         <li class="contact-list-item">

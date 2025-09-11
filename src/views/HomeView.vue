@@ -33,8 +33,14 @@
     <section class="padding-block-900">
         <div class="container">
             <div class="flow">
-                <h2 class="fs-secondary-heading fw-bold">Tradicija i kvalitet idu ruku pod ruku.</h2>
-                <p class="fw-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde impedit, repudiandae culpa voluptas dolores necessitatibus nobis dolore accusantium molestiae ad similique maiores est dicta aliquid ipsam in numquam! Amet, voluptas.</p>
+                <h2 class="fs-secondary-heading fw-bold">Tradicija i kvalitet idu ruku pod ruku</h2>
+                <p class="fw-regular">Autentičan etno restoran gde se tradicija,
+                    ukusi domaće kuhinje i iskreno gostoprimstvo
+                    stapaju u nezaboravno iskustvo. Sa dugogodišnjim
+                    iskustvom, kao domaćini, posvećeni smo tome da
+                    svaka proslava – od malih okupljanja do velikih
+                    svečanosti – bude organizovana sa stilom i dušom.
+                </p>
             </div>
         </div>
     </section>
@@ -44,7 +50,7 @@
                 <div>
                     <router-link to="/events" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg" alt="">
+                            <img src="/IMG_6296.jpg" alt="">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">PROSLAVE</h3>
                         <p class="fw-regular">Organizujemo poslovne i porodične proslave na otvorenom, u prirodi, na otvorenom, u zatvorenom ili natkrivenom prostoru.</p>
@@ -53,7 +59,7 @@
                 <div>
                     <router-link to="/restaurant" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg" alt="">
+                            <img src="/RESTORAN_-_POGLEDAJTE_I_-_LEVA_SLIKA.jpeg" alt="">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">RESTORAN</h3>
                         <p class="fw-regular">Restoran domaće kuhinje sa baštom, smešten u prirodnom okruženju, idealan za porodične ručkove i veće grupe.</p>
@@ -62,7 +68,7 @@
                 <div>
                     <router-link to="/birthday-parties" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/contact-1.jpg" alt="">
+                            <img src="/dec_ro_ova_obaveznoo.jpeg" alt="">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">DEČIJI ROĐENDANI</h3>
                         <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima prilagođenim različitim uzrastim</p>
@@ -71,7 +77,7 @@
                 <div>
                     <router-link to="/teambuilding" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/quality-2.jpg" alt="">
+                            <img src="/IMG_6253_1.jpg" alt="">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">TEAM BUILDING</h3>
                         <p class="fw-regular">Prostor u prirodi sa sadržajima za timske aktivnosti i korporativne skupove u Beogradu.</p>
@@ -83,7 +89,7 @@
     <section class="services padding-block-900">
         <div class="container">
             <div class="flow">
-                <h2 class="fs-secondary-heading fw-bold">Naš meni je pažljivo kreiran.</h2>
+                <h2 class="fs-secondary-heading fw-bold">Naš meni je pažljivo kreiran</h2>
             </div>
             <div class="menu-list" style="margin-top: 2em;">
                 <div class="menu-columns">
@@ -109,7 +115,7 @@
     <section class="services padding-block-900 bg-primary-200">
         <div class="container">
             <div>
-                <h2 class="fs-secondary-heading fw-bold">Rezervacija proslave.</h2>
+                <h2 class="fs-secondary-heading fw-bold">Rezervacija proslave</h2>
                 <booking-form />
             </div>
         </div>

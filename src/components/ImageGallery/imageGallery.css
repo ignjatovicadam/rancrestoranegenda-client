@@ -139,6 +139,12 @@
     text-decoration: none !important;
 }
 
+.vgo-gallery__previous img,
+.vgo-gallery__next img {
+    height: 20px;
+    width: 20px;
+}
+
 .vgo-gallery__grabbing .vgo-gallery__previous,
 .vgo-gallery__grabbing .vgo-gallery__next,
 .vgo-gallery__grabbing .vgo-gallery__pager li {

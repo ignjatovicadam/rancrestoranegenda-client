@@ -5,28 +5,28 @@
 
     const upperImages = [
         {
-            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg"
+            url: "/OTVORENI_DEO_1.jpeg"
         },
         {
-            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg"
+            url: "/OTVORENI_DEO_2.jpeg"
         },
     ];
 
     const downImages = [
         {
-            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg"
+            url: "/ZATVORENI_DEO_1_STR_RESTORAN.jpeg"
         },
         {
-            url: "https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg"
+            url: "/ZARVORENI_DEO_2_STR_RESTORAN.jpeg"
         },
     ];
 </script>
 
 
 <template>
-    <app-hero id="hero-restaurant" size="medium" image-url="https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg">
+    <app-hero id="hero-restaurant" size="medium" image-url="/STRANA_RESTORAN_GLAVNA_GORE_SLIKA_SKRATI_JE_MALO_SLOBODNO_GORE_I_DOLE.jpeg">
         <div class="welcome-text flow">
-            <h1 class="fs-primary-heading fw-bold">Restoran Legenda.</h1>
+            <h1 class="fs-primary-heading fw-bold">Restoran Legenda</h1>
             <p class="fw-semi-bold">Nalazi se u hladu velikih vrba, na površini zemljišta od jednog hektara, okružen rekom sa čak 3 strane, sa igralištem na otvorenom i farmom sa domaćim životinjama.</p>
         </div>
     </app-hero>
@@ -35,12 +35,12 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg" alt="">
+                        <img src="/OTVORENI_DEO_1.jpeg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img class="" src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg" alt="">
+                        <img class="" src="/OTVORENI_DEO_2.jpeg" alt="">
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
             />
 
             <div class="flow description-text">
-                <h2 class="fs-secondary-heading fw-bold">Otvoreni deo.</h2>
+                <h2 class="fs-secondary-heading fw-bold">Otvoreni deo</h2>
                 <p class="fw-regular">
                     Otvoreni deo se nalazi u prirodnom hladu velikih vrba, na površini od jednog hektara, potpuno okružen zelenilom i rekom sa čak tri strane.
                 </p>
@@ -67,7 +67,7 @@
     <section class="restaurant padding-block-900 bg-primary-200">
         <div class="container">
             <div class="flow description-text">
-                <h2 class="fs-secondary-heading fw-bold">Zatvoreni deo.</h2>
+                <h2 class="fs-secondary-heading fw-bold">Zatvoreni deo</h2>
                 <p class="fw-regular">
                     Restoran je uređen u autentičnom etno stilu i ima tri funkcionalno opremljene sale.
                 </p>
@@ -89,12 +89,12 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-1.jpg" alt="">
+                        <img src="/ZATVORENI_DEO_1_STR_RESTORAN.jpeg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img class="" src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/dishes-2.jpg" alt="">
+                        <img class="" src="/ZARVORENI_DEO_2_STR_RESTORAN.jpeg" alt="">
                     </div>
                 </div>
             </div>
@@ -104,23 +104,23 @@
         <div class="large-container">
             <div class="even-columns">
                 <div>
-                    <a href="#" class="flow flow-spacer-400">
+                    <a href="#" class="promo-link flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/reservation-1.jpg" alt="">
+                            <img src="/RESTORAN_-_POGLEDAJTE_I_-_LEVA_SLIKA.jpeg" alt="">
                         </div>
                     </a>
                 </div>
                 <div class="central-column-reservation flow">
-                    <h2 class="fs-secondary-heading fw-bold">Pogledajte i.</h2>
-                    <p class="fw-regular">Pogledajte naš meni i otkrijte šta sve nudimo.</p>
+                    <h2 class="fs-secondary-heading fw-bold">Pogledajte i</h2>
+                    <p class="fw-regular">Pogledajte naš meni i otkrijte šta sve nudimo</p>
                     <router-link to="/menu" class="button button-primary">Pogledaj jelovnik</router-link>
                     <p class="fw-regular">Planirate proslavu? Mi imamo pravo mesto!</p>
                     <router-link to="/events" class="button button-primary">Pogledaj proslave</router-link>
                 </div>
                 <div>
-                    <a href="#" class="flow flow-spacer-400">
+                    <a href="#" class="promo-link flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="https://july.finestwp.com/newwp/reston/wp-content/uploads/2024/10/reservation-2.jpg" alt="">
+                            <img src="/RESTORAN_POGLEDAJTE_I_AKO_STAVLJAS_ONU_SA_HRANOM_MOZDA_OVA_IDE_BOLJE_UZ_NJU_TI_BIRAJ.jpeg" alt="">
                         </div>
                     </a>
                 </div>
@@ -130,7 +130,7 @@
     <section class="padding-block-900 bg-primary-200">
         <div class="container">
             <div class="flow">
-                <h2 class="fs-secondary-heading fw-bold">Naš meni je pažljivo kreiran.</h2>
+                <h2 class="fs-secondary-heading fw-bold">Naš meni je pažljivo kreiran</h2>
                 <p class="fw-regular">
                     Već dugi niz godina negujemo filozofiju zasnovanu na kvalitetu i autentičnosti.
                 </p>
@@ -149,7 +149,6 @@
 </template>
 
 <style scoped>
-
 .restaurant .even-columns {
     display: none;
 }

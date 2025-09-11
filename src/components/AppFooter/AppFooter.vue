@@ -5,7 +5,7 @@
         <div class="container footer-flex">
             <div class="two-columns">
                 <div>
-                    <h3 class="fs-tertiary-heading fw-bold">Restoran-Ranč Legenda.</h3>
+                    <h3 class="fs-tertiary-heading fw-bold">Restoran-Ranč Legenda</h3>
                     <p style="margin-top: 2em;">Hvala vam što ste nas posetili. Rezervacije su moguće putem sajta ili telefonom.</p>
 
                     <div class="footer-contact-information" style="margin-top: 1.5em;">

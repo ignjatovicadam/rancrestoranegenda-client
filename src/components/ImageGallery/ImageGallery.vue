@@ -93,7 +93,7 @@
                     href="javascript:void(0)"
                     @click="previous"
                 >
-                    <span class="cb-icon-aws cb-icon-aws--strong cb--chevron-left" />
+                    <img src="/ranc-restoran-legenda-ikonica-strelica-prethodni.svg" alt="Restoran Ranč Legenda logo" />
                 </a>
                 <a
                     class="vgo-gallery__next"
@@ -102,7 +102,7 @@
                     href="javascript:void(0)"
                     @click="next"
                 >
-                    <span class="cb-icon-aws cb-icon-aws--strong cb--chevron-right" />
+                    <img src="/ranc-restoran-legenda-ikonica-strelica-sledeci.svg" alt="Restoran Ranč Legenda logo" />
                 </a>
                 <ol
                     class="vgo-gallery__pager"
