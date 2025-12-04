@@ -4,6 +4,10 @@ body {
     color: var(--clr-primary-400);
 }
 
+body:has(.mobile-navigation.open) {
+    overflow: hidden;
+}
+
 .button {
     display: inline-flex;
     cursor: pointer;

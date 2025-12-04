@@ -1,5 +1,7 @@
 <script setup>
     import { ref } from 'vue';
+    import { MapPinHouse, Phone, Mail } from 'lucide-vue-next';
+    import headerLogo from '../../assets/images/restoran-ranc-legenda-logotip.webp';
 
     const open = ref(false);
 
@@ -17,7 +19,7 @@
         <div class="container">
             <div class="navigation-wrapper">
                 <router-link to="/">
-                    <img src="/legendA_resized.png" alt="Restoran Ranč Legenda logo" class="logo"/>
+                    <img :src="headerLogo" class="header-logo" alt="Restoran ranč Legenda logotip"/>
                 </router-link>
 
                 <nav class="navigation">
@@ -29,7 +31,7 @@
                 </nav>
 
                 <button class="mobile-navigation-toggle">
-                    <span class="visually-hidden">Menu</span>
+                    <span class="visually-hidden">Navigacioni meni</span>
                     <div
                         :class="['mobile-navigation-hamburger', { open: open }]"
                         @click="open = !open"
@@ -45,44 +47,70 @@
         <div :class="['mobile-navigation', { open: open }]">
             <ul role="list" class="mobile-links">
                 <li
-                v-for="link in navigationLinks"
-                :key="link.to"
-                class="fw-semi-bold"
-                @click="open = false"
+                    v-for="link in navigationLinks"
+                    :key="link.to"
+                    class="fw-semi-bold"
+                    @click="open = false"
                 >
                     <router-link :to="link.to">{{ link.label }}</router-link>
                 </li>
             </ul>
 
             <div class="mobile-navigation-contact-information">
-                <h3 class="fs-tertiary-heading fw-bold">Kontakt informacije.</h3>
-                <div class="mobile-navigation-contact-information-list" style="margin-top: 1.5em;">
-                    <div class="mobile-navigation-contact-informatio-item">
-                        <img src="/ranc-restoran-legenda-ikonica-lokacija.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
-                        <span class="mobile-navigation-contact-description">Obrenovacki drum bb</span>
+                <h3 class="fs-tertiary-heading fw-bold">Kontakt informacije</h3>
+
+                <div class="mobile-navigation-contact-information-list">
+                    <div class="mobile-navigation-contact-information-item">
+                        <MapPinHouse class="header-icon"/>
+                        <a href="https://maps.app.goo.gl/LaHBFP5g7YFuhfYt7">
+                            <span class="mobile-navigation-contact-description">Obrenovački drum bb, Beograd</span>
+                        </a>
                     </div>
-                    <div class="mobile-navigation-contact-informatio-item">
-                        <img src="/ranc-restoran-legenda-ikonica-telefon.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
-                        <span class="mobile-navigation-contact-description">+381 65 31 24 189</span>
+
+                    <div class="mobile-navigation-contact-information-item">
+                        <Phone class="header-icon"/>
+                        <span class="mobile-navigation-contact-description">Restoran +381 64 1417 232</span>
                     </div>
-                    <div class="mobile-navigation-contact-informatio-item">
-                        <img src="/ranc-restoran-legenda-ikonica-email.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
-                        <span class="mobile-navigation-contact-description">lorem.ipsum@gmailcom</span>
+
+                    <div class="mobile-navigation-contact-information-item">
+                        <Phone class="header-icon"/>
+                        <span class="mobile-navigation-contact-description">Proslave +381 65 9393 557</span>
+                    </div>
+
+                    <div class="mobile-navigation-contact-information-item">
+                        <Mail class="header-icon"/>
+                        <span class="mobile-navigation-contact-description">kontakt@ranclegenda.rs</span>
                     </div>
                 </div>
             </div>
+
+            <div class="mobile-navigation-contact-information">
+                    <h3 class="fs-tertiary-heading fw-bold">Radno vreme</h3>
+
+                    <div class="mobile-navigation-contact-information-list">
+                        <div class="mobile-navigation-contact-information-item">
+                            <span class="mobile-navigation-contact-description">Zimsko radno vreme:</span>
+                            <span class="mobile-navigation-contact-description">sub - ned 12:00 - 20:00</span>
+                        </div>
+    
+                        <div class="mobile-navigation-contact-information-item">
+                            <span class="mobile-navigation-contact-description">Letnje radno vreme:</span>
+                            <span class="mobile-navigation-contact-description">uto - ned 12:00 - 20:00</span>
+                        </div>
+                    </div>
+                </div>
 
             <div class="mobile-navigation-social-links">
                 <div class="mobile-navigation-social-link-item">
                     <ul role="list">
                         <li class="flow-spacer-200">
-                            <a href="http://">Instagram</a>
+                            <a href="https://www.instagram.com/legenda_ranc/">Instagram</a>
                         </li>
                         <li class="flow-spacer-200">
-                            <a href="http://">Facebook</a>
+                            <a href="https://www.facebook.com/ranclegenda/?locale=sr_RS">Facebook</a>
                         </li>
                         <li class="flow-spacer-200">
-                            <a href="http://">Tiktok</a>
+                            <a href="https://www.tiktok.com/@restoranlegenda">Tiktok</a>
                         </li>
                     </ul>
                 </div>
@@ -207,15 +235,15 @@
 }
 
 .mobile-navigation {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease-in-out;
+    overflow: auto;
+    height: 0;
+    transition: height 0.3s ease-in-out;
     background: var(--clr-primary-100);
 }
 
 .mobile-navigation.open {
-    max-height: 800px;
-    padding-bottom: 50px;
+    height: 100vh;
+    padding-bottom: 4rem;
 }
 
 .mobile-navigation ul.mobile-links {
@@ -257,7 +285,7 @@
 }
 
 .mobile-navigation-contact-information {
-    margin-top: 4em;
+    margin-top: 2rem;
     padding-inline: var(--size-400);
 }
 
@@ -265,17 +293,18 @@
     display: flex;
     flex-direction: column;
     gap: .5em;
+    margin-top: 1rem;
 }
 
-.mobile-navigation-contact-informatio-item {
+.mobile-navigation-contact-information-item {
     display: flex;
     align-items: center;
     gap: .5em;
 }
 
-.mobile-navigation-contact-informatio-item img {
-    width: 15px;
-    height: 15px;
+.mobile-navigation-contact-information-item .header-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .mobile-navigation-contact-description {
@@ -284,7 +313,7 @@
 }
 
 .mobile-navigation-social-links {
-    margin-top: 1em;
+    margin-top: 1rem;
     padding-inline: var(--size-400);
 
     ul {
