@@ -97,6 +97,10 @@
                             <span class="mobile-navigation-contact-description">Letnje radno vreme:</span>
                             <span class="mobile-navigation-contact-description">uto - ned 12:00 - 20:00</span>
                         </div>
+
+                        <div class="mobile-navigation-contact-information-item">
+                            <span class="mobile-navigation-contact-description">Radno vreme za proslave po dogovoru</span>
+                        </div>
                     </div>
                 </div>
 

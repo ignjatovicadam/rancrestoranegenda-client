@@ -1,24 +1,28 @@
-<script setup></script>
+<script setup>
+    import { MapPinHouse, Phone, Mail } from 'lucide-vue-next';
+</script>
 
 <template>
     <footer>
         <div class="container footer-flex">
             <div class="two-columns">
                 <div>
-                    <h3 class="fs-tertiary-heading fw-bold">Restoran-Ranč Legenda</h3>
-                    <p style="margin-top: 2em;">Hvala vam što ste nas posetili. Rezervacije su moguće putem sajta ili telefonom.</p>
+                    <h3 class="fs-tertiary-heading fw-bold">Restoran ranč Legenda</h3>
+                    <p style="margin-top: 2em; margin-bottom: 1rem;">Hvala vam što ste nas posetili. Rezervacije su moguće putem sajta ili telefonom</p>
 
-                    <div class="footer-contact-information" style="margin-top: 1.5em;">
+                    <div class="footer-contact-information">
                         <div class="footer-contact-informatio-item">
-                            <img src="/ranc-restoran-legenda-ikonica-lokacija.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" style="filter: brightness(0) invert(1);" />
-                            <span class="footer-contact-description">Obrenovacki drum bb</span>
+                            <MapPinHouse class="footer-icon"/>
+                            <a href="">
+                                <span class="footer-contact-description">Obrenovački drum bb, Beograd</span>
+                            </a>
                         </div>
                         <div class="footer-contact-informatio-item">
-                            <img src="/ranc-restoran-legenda-ikonica-telefon.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" style="filter: brightness(0) invert(1);"/>
-                            <span class="footer-contact-description">+381 65 31 24 189</span>
+                            <Phone class="footer-icon"/>
+                            <span class="footer-contact-description">+381 64 1417 232</span>
                         </div>
                         <div class="footer-contact-informatio-item">
-                            <img src="/ranc-restoran-legenda-ikonica-email.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" style="filter: brightness(0) invert(1);"/>
+                            <Mail class="footer-icon"/>
                             <span class="footer-contact-description">kontakt@ranclegenda.rs</span>
                         </div>
                     </div>
@@ -28,6 +32,7 @@
                     <div class="footer-item flow">
                         <h3 class="fs-tertiary-heading fw-bold">Restoran</h3>
                         <ul role="list">
+                            <li class="flow-spacer-200"><router-link to="/contact">Kontakt</router-link></li>
                             <li class="flow-spacer-200"><router-link to="/restaurant">Restoran</router-link></li>
                             <li class="flow-spacer-200"><router-link to="/menu">Jelovnik</router-link></li>
                         </ul>
@@ -60,11 +65,13 @@
             </div>
 
             <div class="two-columns footer-note">
-                <p>&copy; 2025 Restoran-Ranč Legenda. Sva prava zadržana.</p>
+                <p>&copy; 2025 Restoran ranč Legenda. Sva prava zadržana.</p>
                 <p>
                 <router-link to="/privacypolicy">Polisa privatnosti</router-link>
                 &nbsp;
                 <router-link to="/termsofuse">Uslovi korišćenja</router-link>
+                &nbsp;
+                <router-link to="/termsofuse">Bitne informacije</router-link>
                 </p>
             </div>
         </div>
@@ -169,6 +176,7 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: .1em;
+    margin-top: 2rem;
 }
 
 .footer-contact-description {
@@ -182,7 +190,11 @@ footer p {
     gap: .35em;
 }
 
-.footer-contact-informatio-item img {
+.footer-contact-informatio-item a {
+    color: inherit;
+}
+
+.footer-contact-informatio-item .footer-icon {
     width: 15px;
     height: 15px;
 }
