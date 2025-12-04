@@ -25,7 +25,13 @@
                 <nav class="navigation">
                     <ul role="list" class="navigation-list">
                         <li v-for="link in navigationLinks" :key="link.to" class="fw-semi-bold">
-                        <router-link :to="link.to">{{ link.label }}</router-link>
+                            <template v-if="link.label === 'Proslave'">
+                                <a href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank">Proslave</a>
+                            </template>
+
+                            <template v-else>
+                                <router-link :to="link.to">{{ link.label }}</router-link>
+                            </template>
                         </li>
                     </ul>
                 </nav>

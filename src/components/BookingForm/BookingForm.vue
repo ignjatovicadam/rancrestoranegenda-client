@@ -86,7 +86,7 @@
                 <input-text-area v-model="form.message" name="message" id="message" label="Poruka" />
             </div>
             <div class="form-group">
-                <button class="button button-primary" @click="onFormSubmit">Rezerviši</button>
+                <button class="button button-primary" @click="onFormSubmit">Rezervišite</button>
             </div>
         </div>
     </div>

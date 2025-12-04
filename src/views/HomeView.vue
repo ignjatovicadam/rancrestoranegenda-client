@@ -1,6 +1,10 @@
 <script setup>
-    import { AppHero } from '../components/AppHero';
-    import { BookingForm } from '../components/BookingForm';
+    import heroImage from '../assets/images/restoran-ranc-legenda-basta-velika.webp'
+    import bannerImageFirst from '../assets/images/restoran-ranc-legenda-basta-otvoreni-deo.webp';
+    import bannerImageSecond from '../assets/images/restoran-ranc-legenda-bife-mlecni-proizvodi.webp';
+    import bannerImageThird from '../assets/images/restoran-ranc-legenda-deciji-rodjendan-vreca-trke.webp';
+    import banngerImageForth from '../assets/images/restoranc-ranc-legenda-aktivnosti-bacanje.webp';
+    import { AppHero, BookingForm } from '../components';
 
     const menu = [
         {
@@ -62,7 +66,7 @@
 </script>
 
 <template>
-    <app-hero id="hero-welcome" size="large" image-url="/rancrestoranegenda-client/STRANA_RESTORAN_GLAVNA_GORE_SLIKA_SKRATI_JE_MALO_SLOBODNO_GORE_I_DOLE-2.jpeg">
+    <app-hero id="hero-welcome" size="large" :image-url="heroImage">
         <div class="welcome-text flow">
             <h1 class="fs-primary-heading fw-bold">Dobro došli u Legendu,</h1>
             <p class="fw-semi-bold">Ranč na obali Save idealan za porodična okupljanja, slavlja i uživanje u domaćim specijalitetima.</p>
@@ -84,20 +88,20 @@
     </section>
     <section class="services padding-block-900 bg-primary-200">
         <div class="large-container">
-            <div class="even-columns">
+            <div class="even-columns" style="margin-top: 2em;">
                 <div>
-                    <router-link to="/events" class="flow flow-spacer-400">
+                    <a href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" class="flow flow-spacer-400" target="_blank">
                         <div class="image-overlay">
-                            <img src="/OTVORENI_DEO_2-2.jpeg" alt="">
+                            <img :src="bannerImageFirst" alt="Restoran ranč Legenda slika bašta otvoren deo">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">PROSLAVE</h3>
                         <p class="fw-regular">Organizujemo poslovne i porodične proslave na otvorenom, u prirodi, na otvorenom, u zatvorenom ili natkrivenom prostoru.</p>
-                    </router-link>
+                    </a>
                 </div>
                 <div>
                     <router-link to="/restaurant" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="/RESTORAN_-_POGLEDAJTE_I_-_LEVA_SLIKA-2.jpeg" alt="">
+                            <img :src="bannerImageSecond" alt="Restoran ranč Legenda slika bašta bife mlečni proizvodi">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">RESTORAN</h3>
                         <p class="fw-regular">Restoran domaće kuhinje sa baštom, smešten u prirodnom okruženju, idealan za porodične ručkove i veće grupe.</p>
@@ -106,7 +110,7 @@
                 <div>
                     <router-link to="/birthday-parties" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="/dec_ro_ova_obaveznoo-2.jpeg" alt="">
+                            <img :src="bannerImageThird" alt="Restoran ranč Legenda rođendani trke">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">DEČIJI ROĐENDANI</h3>
                         <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima prilagođenim različitim uzrastim</p>
@@ -115,7 +119,7 @@
                 <div>
                     <router-link to="/teambuilding" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="/IMG_6253_1-2.jpg" alt="">
+                            <img :src="banngerImageForth" alt="Restoran ranč Legenda timske aktivnosti bacanje">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">TEAM BUILDING</h3>
                         <p class="fw-regular">Prostor u prirodi sa sadržajima za timske aktivnosti i korporativne skupove u Beogradu.</p>
@@ -147,14 +151,14 @@
                 </div>
             </div>
             <div class="menu-action-link" style="margin-top: 2em; display: flex; align-items: center; justify-content: center;">
-                <router-link to="/menu" class="button button-primary">Pogledaj</router-link>
+                <router-link to="/menu" class="button button-primary">Pogledajte detaljnije</router-link>
             </div>
         </div>
     </section>
     <section class="services padding-block-900 bg-primary-200">
         <div class="container">
             <div>
-                <h2 class="fs-secondary-heading fw-bold">Rezervacija proslave</h2>
+                <h2 class="fs-secondary-heading fw-bold">Rezervišite termin</h2>
                 <booking-form />
             </div>
         </div>
