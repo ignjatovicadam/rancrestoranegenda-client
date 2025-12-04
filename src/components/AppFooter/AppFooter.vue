@@ -10,16 +10,16 @@
 
                     <div class="footer-contact-information" style="margin-top: 1.5em;">
                         <div class="footer-contact-informatio-item">
-                            <img src="/ranc-restoran-legenda-ikonica-lokacija.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
+                            <img src="/ranc-restoran-legenda-ikonica-lokacija.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" style="filter: brightness(0) invert(1);" />
                             <span class="footer-contact-description">Obrenovacki drum bb</span>
                         </div>
                         <div class="footer-contact-informatio-item">
-                            <img src="/ranc-restoran-legenda-ikonica-telefon.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
+                            <img src="/ranc-restoran-legenda-ikonica-telefon.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" style="filter: brightness(0) invert(1);"/>
                             <span class="footer-contact-description">+381 65 31 24 189</span>
                         </div>
                         <div class="footer-contact-informatio-item">
-                            <img src="/ranc-restoran-legenda-ikonica-email.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" />
-                            <span class="footer-contact-description">lorem.ipsum@gmailcom</span>
+                            <img src="/ranc-restoran-legenda-ikonica-email.svg" alt="Restoran Ranč Legenda Ikonica Lokacija" style="filter: brightness(0) invert(1);"/>
+                            <span class="footer-contact-description">kontakt@ranclegenda.rs</span>
                         </div>
                     </div>
                 </div>
@@ -73,8 +73,8 @@
 
 <style scoped>
 footer {
-    background-color: var(--clr-primary-100);
-    color: var(--clr-primary-400);
+    background-color: #282828;
+    color: var(--clr-primary-100);
     padding-top: var(--size-900);
     padding-bottom: var(--size-700);
 }

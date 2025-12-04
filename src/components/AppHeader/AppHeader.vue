@@ -215,6 +215,7 @@
 
 .mobile-navigation.open {
     max-height: 800px;
+    padding-bottom: 50px;
 }
 
 .mobile-navigation ul.mobile-links {

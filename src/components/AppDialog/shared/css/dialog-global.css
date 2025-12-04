@@ -1,0 +1,49 @@
+:global(body:has(.cb-dialog[open])) {
+    overflow: hidden;
+    margin-right: var(--vg-scrollbar-width);
+}
+
+:global(body:has(.cb-dialog--leave)) {
+    overflow: hidden;
+    margin-right: var(--vg-scrollbar-width);
+}
+
+:global(body:has(.cb-dialog--enter)) {
+    overflow: hidden;
+    margin-right: var(--vg-scrollbar-width);
+}
+
+.cb-dialog {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cb-dialog::backdrop {
+    /*background-color: rgba(25,25,25,.85);*/
+    background-color: var(--vg-dialog-backdrop-color);
+}
+
+.cb-dialog .cb-dialog--shake {
+    animation: cb-dialog-shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes cb-dialog-shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

@@ -1,0 +1,18 @@
+.cb-dialog[open] {
+    animation: cb-dialog-enter .3s cubic-bezier(.075,.82,.165,1);
+    animation-fill-mode: forwards;
+}
+
+.cb-dialog[open]::backdrop {
+    animation: cb-dialog-fade-in .3s ease-in;
+}
+
+.cb-dialog.cb-dialog--leave {
+    animation: cb-dialog-leave .3s cubic-bezier(.55,.055,.675,.19);
+    animation-fill-mode: forwards;
+}
+
+.cb-dialog.cb-dialog--leave::backdrop {
+    animation: cb-dialog-fade-out .3s ease-out;
+    animation-fill-mode: forwards;
+}

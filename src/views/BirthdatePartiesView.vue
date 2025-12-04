@@ -4,13 +4,13 @@
 
     const images = [
         {
-            url: "/dec_ro_ova_obaveznoo.jpeg",
+            url: "/dec_ro_ova_obaveznoo-2.jpeg",
         },
         {
-            url: "/dec_ro_3.jpeg",
+            url: "/dec_ro_3-2.jpeg",
         },
         {
-            url: "/dec_ro_4.jpeg",
+            url: "/dec_ro_4-2.jpeg",
         },
         {
             url: "/dec_ro_1.jpeg",
@@ -28,7 +28,7 @@
                 <h2 class="fs-secondary-heading fw-bold">Dečiji rođendani</h2>
                 <p class="fw-regular">Rođendani kod nas nisu samo zabava, već pravo iskustvo druženja sa životinjama i boravka u zelenilu. Deca mogu da uživaju u igri i istraživanju, dok roditelji bez žurbe i stresa uživaju u domaćoj hrani i prirodnom okruženju. Naša velika bašta, životinje i animacije stvaraju atmosferu koju mališani dugo pamte — veselu, zdravu i drugačiju od klasičnih, zatvorenih proslava.</p>
                 <div class="template-image-preview">
-                    <img src="/dec_ro_6.jpeg" alt="">
+                    <img src="/dec_ro_7-2.jpeg" alt="">
                 </div>
             </div>
 
@@ -44,27 +44,27 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="/dec_ro_ova_obaveznoo.jpeg" alt="">
+                        <img src="/dec_ro_ova_obaveznoo-2.jpeg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="/dec_ro_3.jpeg" alt="">
+                        <img src="/dec_ro_3-2.jpeg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="/dec_ro_4.jpeg" alt="">
+                        <img src="/dec_ro_4-2.jpeg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="/dec_ro_1.jpeg" alt="">
+                        <img src="/dec_ro_1-2.jpeg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="/dec_ro_2.jpeg" alt="">
+                        <img src="/dec_ro_2-2.jpeg" alt="">
                     </div>
                 </div>
             </div>
@@ -85,11 +85,6 @@
 </template>
 
 <style scoped>
-    .template-image-preview img {
-        object-fit: cover;
-        object-position: center;
-    }
-
     .services .even-columns {
         display: none;
     }
@@ -110,6 +105,7 @@
         position: absolute;
         inset: 0;
         z-index: 2;
+        background-color: rgba(0, 0, 0, 0.2);
     }
 
     @media (min-width: 50em) {

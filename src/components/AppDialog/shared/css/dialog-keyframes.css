@@ -1,0 +1,55 @@
+@keyframes cb-dialog__close-text-in {
+    0% {width: 0; padding-right: 0; color: transparent;}
+    100% {width: 100%; padding-right: 15px; color: #fff;}
+}
+
+@keyframes cb-dialog__close-text-out {
+    0% {width: 100%; padding-right: 15px; color: #fff;}
+    100% {width: 0; padding-right: 0; color: transparent;}
+}
+
+@keyframes cb-dialog-enter {
+    0% {transform: translate3d(0,200px,0); opacity: 0;}
+    100% {transform: translate3d(0,0,0); opacity: 1;}
+}
+
+@keyframes cb-dialog-leave {
+    0% {transform: translate3d(0,0,0); opacity: 1;}
+    100% {transform: translate3d(0,200px,0); opacity: 0;}
+}
+
+@keyframes cb-dialog-fade-out-left {
+    0% {transform: translate3d(0,0,0); opacity: 1;}
+    100% {transform: translate3d(-50px,0,0); opacity: 0;}
+}
+
+@keyframes cb-dialog-fade-out-right {
+    0% {transform: translate3d(0,0,0); opacity: 1;}
+    100% {transform: translate3d(50px,0,0); opacity: 0;}
+}
+
+@keyframes cb-dialog-fade-in-right {
+    0% {transform: translate3d(50px,0,0); opacity: 0;}
+    100% {transform: translate3d(0,0,0); opacity: 1;}
+}
+
+@keyframes cb-dialog-fade-in-left {
+    0% {transform: translate3d(-50px,0,0); opacity: 0;}
+    100% {transform: translate3d(0,0,0); opacity: 1;}
+}
+
+@keyframes cb-dialog-fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes cb-dialog-fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes cb-dialog-summary-height {
+    0% {height: 0; opacity: 0;}
+    100% {height: calc(100vh - 140px); opacity: 1;}
+}
+

@@ -4,27 +4,65 @@
 
     const menu = [
         {
-            category: "Jela sa roštilja",
+            category: "Premium pljeskavice",
             items: [
-            { name: "Ćevapi juneći (300g)", price: "1200 RSD" },
-            { name: "Pljeskavica juneća (300g)", price: "1200 RSD" },
-            { name: "Gurmanska pljeskavica (300g)", price: "1300 RSD" },
-            { name: "Gurmanski uštipci (300g)", price: "1300 RSD" },
-            { name: "Pileći file (300g)", price: "950 RSD" },
-            { name: "Pileći ražnjići rol. slaninicom (300g)", price: "1200 RSD" },
-            { name: "Rebarca na kajmaku (300g)", price: "1200 RSD" },
-            { name: "Svinjski vrat na žaru (300g)", price: "1050 RSD" },
-            { name: "Kobasica (300g)", price: "1100 RSD" },
-            { name: "Bela vešalica (300g)", price: "1100 RSD" },
-            { name: "Rolovana punjena bela vešalica (300g)", price: "1500 RSD" },
-            { name: "Mešano meso za dve osobe (600g)", price: "2300 RSD" },
+                { 
+                    name: "Gratinirani camembert",
+                    description: "Zapečeni sir na tostu, sicilijanski kapar, čeri paradajz",
+                    price: "1200 RSD"
+                },
+                { 
+                    name: "Takitoksi sa aromatizovanom piletinom",
+                    description: "Hrskavi tortilja zalogaj sa piletinom, tartar sos",
+                    price: "1200 RSD"
+                },
+                { 
+                    name: "Brusketi kapreze",
+                    description: "Prepečeni hleb, mocarela, čeri, pesto đenoveze",
+                    price: "890 RSD"
+                },
+                { 
+                    name: "Tanjir Legenda (za dve osobe)",
+                    description: "Njeguška pršuta, suva pečenica, sjenički i dapsićki sir",
+                    price: "1790 RSD"
+                },
+                { 
+                    name: "Pljeskavica Legenda (320g)",
+                    description: "Punjena mladom gaudom, hrskava pančeta, jaje, crveni luk, vedžis krompir",
+                    price: "1750 RSD"
+                },
+                { 
+                    name: "Čedar pljeskavica (320g)",
+                    description: "Punjena čedar kockicama, topljeni čedar, crveni luk, vedžis krompir",
+                    price: "1750 RSD"
+                },
+                { 
+                    name: "Pljeskavica 3 vrste sira (320g)",
+                    description: "Gauda, čedar, rendani parmezan, puter, crveni luk, vedžis krompir",
+                    price: "1750 RSD"
+                },
+                { 
+                    name: "Pljeskavica u sosu od tartufa (320g)",
+                    description: "Sos od tartufa, parmezan, crveni luk, vedžis krompir",
+                    price: "1750 RSD"
+                },
+                { 
+                    name: "Pileći paketići (300g)",
+                    description: "Paketići punjeni gaudom, sos kajmak",
+                    price: "1450 RSD"
+                },
+                { 
+                    name: "Piletina čedar (300g)",
+                    description: "Pileći file, topljeni čedar, hrskava slanina, vedžis krompir",
+                    price: "1450 RSD"
+                },
             ],
         },
     ];
 </script>
 
 <template>
-    <app-hero id="hero-welcome" size="large" image-url="https://laurent.qodeinteractive.com/wp-content/uploads/2019/12/main-h-new-rev-img-1.jpg">
+    <app-hero id="hero-welcome" size="large" image-url="/rancrestoranegenda-client/STRANA_RESTORAN_GLAVNA_GORE_SLIKA_SKRATI_JE_MALO_SLOBODNO_GORE_I_DOLE-2.jpeg">
         <div class="welcome-text flow">
             <h1 class="fs-primary-heading fw-bold">Dobro došli u Legendu,</h1>
             <p class="fw-semi-bold">Ranč na obali Save idealan za porodična okupljanja, slavlja i uživanje u domaćim specijalitetima.</p>
@@ -50,7 +88,7 @@
                 <div>
                     <router-link to="/events" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="/IMG_6296.jpg" alt="">
+                            <img src="/OTVORENI_DEO_2-2.jpeg" alt="">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">PROSLAVE</h3>
                         <p class="fw-regular">Organizujemo poslovne i porodične proslave na otvorenom, u prirodi, na otvorenom, u zatvorenom ili natkrivenom prostoru.</p>
@@ -59,7 +97,7 @@
                 <div>
                     <router-link to="/restaurant" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="/RESTORAN_-_POGLEDAJTE_I_-_LEVA_SLIKA.jpeg" alt="">
+                            <img src="/RESTORAN_-_POGLEDAJTE_I_-_LEVA_SLIKA-2.jpeg" alt="">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">RESTORAN</h3>
                         <p class="fw-regular">Restoran domaće kuhinje sa baštom, smešten u prirodnom okruženju, idealan za porodične ručkove i veće grupe.</p>
@@ -68,7 +106,7 @@
                 <div>
                     <router-link to="/birthday-parties" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="/dec_ro_ova_obaveznoo.jpeg" alt="">
+                            <img src="/dec_ro_ova_obaveznoo-2.jpeg" alt="">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">DEČIJI ROĐENDANI</h3>
                         <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima prilagođenim različitim uzrastim</p>
@@ -77,7 +115,7 @@
                 <div>
                     <router-link to="/teambuilding" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="/IMG_6253_1.jpg" alt="">
+                            <img src="/IMG_6253_1-2.jpg" alt="">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">TEAM BUILDING</h3>
                         <p class="fw-regular">Prostor u prirodi sa sadržajima za timske aktivnosti i korporativne skupove u Beogradu.</p>
@@ -100,6 +138,7 @@
                 >
                     <div class="menu-list-item-text">
                         <span class="fw-regular">{{ item.name }}</span>
+                        <span class="fw-regular menu-list-item-description">{{ item.description }}</span>
                     </div>
                     <div class="menu-list-item-price">
                         <span class="fw-bold">{{ item.price }}</span>
@@ -129,7 +168,7 @@
 }
 
 .services img {
-    height: 250px;
+    height: 350px;
     width: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -148,7 +187,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    /* background-color: rgba(0, 0, 0, .3); */
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
 

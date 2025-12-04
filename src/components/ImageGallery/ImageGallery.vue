@@ -1,5 +1,6 @@
 <script setup>
     import { ref, reactive, watch } from 'vue';
+    import { ChevronLeft, ChevronRight } from 'lucide-vue-next';
     import { useSwipe } from './useSwipe';
 
     const props = defineProps({
@@ -93,7 +94,8 @@
                     href="javascript:void(0)"
                     @click="previous"
                 >
-                    <img src="/ranc-restoran-legenda-ikonica-strelica-prethodni.svg" alt="Restoran Ranč Legenda logo" />
+                    <!-- <img src="/ranc-restoran-legenda-ikonica-strelica-prethodni.svg" alt="Restoran Ranč Legenda logo" /> -->
+                    <ChevronLeft />
                 </a>
                 <a
                     class="vgo-gallery__next"
@@ -102,7 +104,7 @@
                     href="javascript:void(0)"
                     @click="next"
                 >
-                    <img src="/ranc-restoran-legenda-ikonica-strelica-sledeci.svg" alt="Restoran Ranč Legenda logo" />
+                    <ChevronRight />
                 </a>
                 <ol
                     class="vgo-gallery__pager"

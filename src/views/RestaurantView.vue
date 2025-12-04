@@ -5,26 +5,26 @@
 
     const upperImages = [
         {
-            url: "/OTVORENI_DEO_1.jpeg"
+            url: "/rancrestoranegenda-client/OTVORENI_DEO_1-2.jpeg"
         },
         {
-            url: "/OTVORENI_DEO_2.jpeg"
+            url: "/rancrestoranegenda-client/OTVORENI_DEO_2-2.jpeg"
         },
     ];
 
     const downImages = [
         {
-            url: "/ZATVORENI_DEO_1_STR_RESTORAN.jpeg"
+            url: "/rancrestoranegenda-client/ZATVORENI_DEO_1_STR_RESTORAN-2.jpeg"
         },
         {
-            url: "/ZARVORENI_DEO_2_STR_RESTORAN.jpeg"
+            url: "/rancrestoranegenda-client/ZARVORENI_DEO_2_STR_RESTORAN-2.jpeg"
         },
     ];
 </script>
 
 
 <template>
-    <app-hero id="hero-restaurant" size="medium" image-url="/STRANA_RESTORAN_GLAVNA_GORE_SLIKA_SKRATI_JE_MALO_SLOBODNO_GORE_I_DOLE.jpeg">
+    <app-hero id="hero-restaurant" size="medium" image-url="/rancrestoranegenda-client/STRANA_RESTORAN_GLAVNA_GORE_SLIKA_SKRATI_JE_MALO_SLOBODNO_GORE_I_DOLE-2.jpeg">
         <div class="welcome-text flow">
             <h1 class="fs-primary-heading fw-bold">Restoran Legenda</h1>
             <p class="fw-semi-bold">Nalazi se u hladu velikih vrba, na površini zemljišta od jednog hektara, okružen rekom sa čak 3 strane, sa igralištem na otvorenom i farmom sa domaćim životinjama.</p>
@@ -35,12 +35,12 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="/OTVORENI_DEO_1.jpeg" alt="">
+                        <img src="/OTVORENI_DEO_1-2.jpeg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img class="" src="/OTVORENI_DEO_2.jpeg" alt="">
+                        <img class="" src="/OTVORENI_DEO_2-2.jpeg" alt="">
                     </div>
                 </div>
             </div>
@@ -89,12 +89,12 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="/ZATVORENI_DEO_1_STR_RESTORAN.jpeg" alt="">
+                        <img src="/ZATVORENI_DEO_1_STR_RESTORAN-2.jpeg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img class="" src="/ZARVORENI_DEO_2_STR_RESTORAN.jpeg" alt="">
+                        <img class="" src="/ZARVORENI_DEO_2_STR_RESTORAN-2.jpeg" alt="">
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                 <div>
                     <a href="#" class="promo-link flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="/RESTORAN_-_POGLEDAJTE_I_-_LEVA_SLIKA.jpeg" alt="">
+                            <img src="/RESTORAN_POGLEDAJTE_I_AKO_STAVLJAS_ONU_SA_HRANOM_MOZDA_OVA_IDE_BOLJE_UZ_NJU_TI_BIRAJ-4.jpeg" alt="">
                         </div>
                     </a>
                 </div>
@@ -120,7 +120,7 @@
                 <div>
                     <a href="#" class="promo-link flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img src="/RESTORAN_POGLEDAJTE_I_AKO_STAVLJAS_ONU_SA_HRANOM_MOZDA_OVA_IDE_BOLJE_UZ_NJU_TI_BIRAJ.jpeg" alt="">
+                            <img src="/RESTORAN_POGLEDAJTE_I_AKO_STAVLJAS_ONU_SA_HRANOM_MOZDA_OVA_IDE_BOLJE_UZ_NJU_TI_BIRAJ-3.jpeg" alt="">
                         </div>
                     </a>
                 </div>
@@ -164,18 +164,16 @@
     object-fit: cover;
 }
 
-.restaurant .image-overlay {
+.restaurant .image-overlay, .promo-link .image-overlay {
     position: relative;
-    margin-bottom: var(--size-400);
 }
 
-.restaurant .image-overlay::before {
+.restaurant .image-overlay::before, .promo-link .image-overlay::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .2);
     z-index: 2;
-    
 }
 
 @media (min-width: 50em) {
