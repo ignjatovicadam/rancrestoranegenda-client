@@ -100,34 +100,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-primary-400">
-        <div class="large-container">
-            <div class="even-columns">
-                <div>
-                    <a href="#" class="promo-link flow flow-spacer-400">
-                        <div class="image-overlay">
-                            <img src="/RESTORAN_POGLEDAJTE_I_AKO_STAVLJAS_ONU_SA_HRANOM_MOZDA_OVA_IDE_BOLJE_UZ_NJU_TI_BIRAJ-4.jpeg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="central-column-reservation flow">
-                    <h2 class="fs-secondary-heading fw-bold">Pogledajte i</h2>
-                    <p class="fw-regular">Pogledajte naš meni i otkrijte šta sve nudimo</p>
-                    <router-link to="/menu" class="button button-primary">Pogledaj jelovnik</router-link>
-                    <p class="fw-regular">Planirate proslavu? Mi imamo pravo mesto!</p>
-                    <router-link to="/events" class="button button-primary">Pogledaj proslave</router-link>
-                </div>
-                <div>
-                    <a href="#" class="promo-link flow flow-spacer-400">
-                        <div class="image-overlay">
-                            <img src="/RESTORAN_POGLEDAJTE_I_AKO_STAVLJAS_ONU_SA_HRANOM_MOZDA_OVA_IDE_BOLJE_UZ_NJU_TI_BIRAJ-3.jpeg" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="padding-block-900 bg-primary-200">
+    <section class="padding-block-900">
         <div class="container">
             <div class="flow">
                 <h2 class="fs-secondary-heading fw-bold">Naš meni je pažljivo kreiran</h2>

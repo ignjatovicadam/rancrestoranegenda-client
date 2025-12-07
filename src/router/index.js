@@ -1,71 +1,105 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
-import AboutView from '../views/AboutView.vue';
 import RestaurantView from '../views/RestaurantView.vue';
 import TeamBuildingView from '../views/TeamBuildingView.vue';
 import ContactView from '../views/ContactView.vue';
 import PrivacyPolicyView from '../views/PrivacyPolicyView.vue';
 import TermsOfUseView from '../views/TermsOfUseView.vue';
-import BrunchView from '../views/BrunchView.vue';
 import EventsView from '../views/EventsView.vue';
 import MenuView from '../views/MenuView.vue';
 import BirthdatePartiesView from '../views/BirthdatePartiesView.vue';
+import ImportantInfoView from '../views/ImportantInfoView.vue';
 
 const routes = [
     {
         path: '/',
         name: 'Home',
         component: HomeView,
-    },
-    {
-        path: '/about',
-        name: 'About',
-        component: AboutView,
+        meta: {
+            title: 'Ranč restoran Legenda',
+            description: 'Ranč na obali Save idealan za porodična okupljanja, slavlja i uživanje u domaćim specijalitetima.'
+        }
     },
     {
         path: '/restaurant',
         name: 'Restaurant',
         component: RestaurantView,
+        meta: {
+            title: 'O restoranu | Ranč restoran Legenda',
+            description: 'Istražite naš restoran, meni i specijalitete. Rezervišite sto danas.'
+        }
     },
     {
         path: '/teambuilding',
         name: 'TeamBuilding',
         component: TeamBuildingView,
+        meta: {
+            title: 'Team Building | Ranč restoran Legenda',
+            description: 'Organizujte nezaboravan team building za svoj tim.'
+        }
     },
     {
         path: '/contact',
         name: 'Contact',
         component: ContactView,
+        meta: {
+            title: 'Kontakt | Ranč restoran Legenda',
+            description: 'Kontaktirajte nas za rezervacije, događaje ili informacije.'
+        }
     },
     {
         path: '/privacypolicy',
         name: 'PrivacyPolicy',
         component: PrivacyPolicyView,
+        meta: {
+            title: 'Politika privatnosti | Ranč restoran Legenda',
+            description: 'Politika privatnosti Ranclegenda - kako štitimo vaše podatke.'
+        }
     },
     {
         path: '/termsofuse',
         name: 'TermsOfUse',
         component: TermsOfUseView,
+        meta: {
+            title: 'Uslovi korišćenja | Ranč restoran Legenda',
+            description: 'Uslovi korišćenja.'
+        }
     },
     {
-        path: '/brunch',
-        name: 'Brunch',
-        component: BrunchView,
+        path: '/info',
+        name: 'ImportantInfo',
+        component: ImportantInfoView,
+        meta: {
+            title: 'Uslovi korišćenja | Ranč restoran Legenda',
+            description: 'Uslovi korišćenja.'
+        }
     },
     {
         path: '/events',
         name: 'Events',
         component: EventsView,
+        meta: {
+            title: 'Događaji | Ranč restoran Legenda',
+            description: 'Odkrijte naše predstojuće događaje i specijalne večeri na Ranclegenda.'
+        }
     },
     {
         path: '/menu',
         name: 'Menu',
         component: MenuView,
+        meta: {
+            title: 'Meni | Ranč restoran Legenda',
+            description: 'Pregledajte naš kompletan meni sa jelima.'
+        }
     },
     {
         path: '/birthday-parties',
         name: 'BirthdateParties',
         component: BirthdatePartiesView,
+        meta: {
+            title: 'Rođendanske zabave | Ranč restoran Legenda',
+            description: 'Proslavite rođendan uz nezaboravna atmosferu.'
+        }
     }
 ];
 
@@ -75,6 +109,14 @@ const router = createRouter({
     scrollBehavior() {
         return { top: 0 }
     },
-})
+});
+
+router.afterEach((to) => {
+    const title = to.meta.title;
+    document.title = title;
+
+    const description = to.meta.description;
+    document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+});
 
 export default router;

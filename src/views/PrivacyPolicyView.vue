@@ -3,42 +3,53 @@
 <template>
     <section id="privacy-policy" class="padding-block-900">
         <div class="container">
-            <h2 class="fs-secondary-heading fw-bold">Privacy Policy</h2>
+            <h2 class="fs-secondary-heading fw-bold">Politika privatnosti</h2>
 
             <div class="privacy-policy-content flow">
-                <p class="fw-regular"><strong>Last updated: August 4, 2025</strong></p>
+                <p class="fw-regular"><strong>Poslednje ažuriranje: 4. avgust 2025.</strong></p>
+
                 <p class="fw-regular">
-                    This Privacy Policy describes how [Your Restaurant Name], located at [Your Address, Serbia], collects, uses, and protects personal information you provide when using our website. We are committed to handling your data in accordance with the General Data Protection Regulation (GDPR) and relevant Serbian laws.
+                    Ova Politika privatnosti objašnjava na koji način Ranč restoran Legenda, sa sedištem na adresi Obrenovački drum bb Beograd, prikuplja, koristi i štiti lične podatke koje nam dostavljate putem našeg veb-sajta. Posvećeni smo zaštiti Vaših podataka u skladu sa Opštom uredbom o zaštiti podataka (GDPR) i relevantnim zakonima Republike Srbije, uključujući Zakon o zaštiti podataka o ličnosti.
                 </p>
+
                 <p class="fw-regular">
-                    By using our website and submitting forms, you consent to the collection and use of your personal data as outlined in this policy. If you do not agree with the terms, please do not use our site.
+                    Korišćenjem našeg sajta i slanjem formulara saglasni ste sa prikupljanjem i obradom Vaših ličnih podataka na način opisan u ovoj politici. Ako se ne slažete sa ovim uslovima, molimo Vas da ne koristite naš sajt.
                 </p>
+
                 <p class="fw-regular">
-                    We collect personal data that you voluntarily provide through our contact and event booking forms. This may include your name, email address, phone number, and any message content you submit. We use this data solely to respond to your inquiries, manage event requests, and provide relevant services.
+                    Prikupljamo podatke koje dobrovoljno prosledite putem kontakt forme ili forme za rezervaciju događaja. To može uključivati Vaše ime, adresu e-pošte, broj telefona i sadržaj poruke. Ovi podaci koriste se isključivo radi odgovora na Vaše upite, obrade zahteva za događaje i pružanja traženih usluga.
                 </p>
+
                 <p class="fw-regular">
-                    We also collect technical data automatically through our website using Firebase, such as your IP address, browser type, device information, and access time. This helps us secure the site and understand how it’s used, so we can improve functionality and performance.
+                    Takođe automatski prikupljamo tehničke podatke putem našeg sajta koristeći Firebase, kao što su IP adresa, tip pregledača, informacije o uređaju i vreme pristupa. Ovi podaci nam pomažu da unapredimo bezbednost, funkcionalnost i performanse sajta.
                 </p>
+
                 <p class="fw-regular">
-                    The legal basis for processing your data includes your consent (when submitting forms), our legitimate interest in operating a secure and efficient website, and our obligation to comply with legal requirements. You may withdraw your consent at any time by contacting us.
+                    Pravna osnova za obradu Vaših podataka obuhvata Vašu saglasnost (kod slanja formulara), naš legitimni interes da obezbedimo bezbedno i funkcionalno funkcionisanje sajta, kao i ispunjenje zakonskih obaveza. Saglasnost možete povući u bilo kom trenutku slanjem zahteva putem kontakt podataka navedenih u ovoj politici.
                 </p>
+
                 <p class="fw-regular">
-                    Your data is securely stored and managed using Firebase, a platform operated by Google LLC. Firebase complies with GDPR and stores data in EU-based or other compliant data centers. We retain form submission data for up to 12 months unless a longer retention period is required for legal or operational reasons.
+                    Vaši podaci se bezbedno čuvaju i obrađuju putem Firebase platforme, kojom upravlja Google LLC. Firebase je usklađen sa GDPR regulativom i čuva podatke u data centrima u EU ili drugim lokacijama koje ispunjavaju propisane standarde zaštite. Podatke iz formulara čuvamo do 12 meseci, osim ukoliko duži rok čuvanja nije obavezan zakonom ili opravdan operativnim razlozima.
                 </p>
+
                 <p class="fw-regular">
-                    We do not sell or rent your data to third parties. We only share data with trusted service providers, such as Firebase, who act as processors under our instruction and are bound by strict data protection standards.
+                    Vaše podatke ne prodajemo niti iznajmljujemo trećim licima. Podatke delimo samo sa pouzdanim izvođačima, poput Firebase-a, koji deluju isključivo po našem nalogu i u skladu sa strogim standardima zaštite podataka.
                 </p>
+
                 <p class="fw-regular">
-                    As a user, you have the right to access your data, request corrections or deletion, object to processing, or request a copy of your data in a commonly used format. You also have the right to lodge a complaint with the Commissioner for Information of Public Importance and Personal Data Protection in Serbia.
+                    Kao korisnik imate pravo da pristupite svojim podacima, zatražite ispravku ili brisanje, ograničenje obrade, prenosivost podataka, kao i pravo da uložite prigovor na obradu. Takođe imate pravo da podnesete pritužbu Povereniku za informacije od javnog značaja i zaštitu podataka o ličnosti Republike Srbije.
                 </p>
+
                 <p class="fw-regular">
-                    Our website may use essential cookies for analytics and basic functionality. We do not use third-party marketing or behavioral tracking cookies. You may disable cookies through your browser settings.
+                    Naš sajt može koristiti osnovne kolačiće potrebne za analitiku i funkcionisanje sajta. Ne koristimo marketinške kolačiće niti kolačiće za praćenje ponašanja korisnika. Korišćenje kolačića možete ograničiti ili onemogućiti putem podešavanja u Vašem pregledaču.
                 </p>
+
                 <p class="fw-regular">
-                    We may occasionally update this Privacy Policy. When we do, we will revise the “last updated” date. Continued use of the site after such changes implies your acceptance of the updated terms.
+                    Ovu Politiku privatnosti možemo povremeno ažurirati. Kada to učinimo, datum poslednjeg ažuriranja biće izmenjen. Nastavak korišćenja sajta nakon objavljivanja izmena smatra se prihvatanjem novih uslova.
                 </p>
+
                 <p class="fw-regular">
-                    If you have any questions about this Privacy Policy or wish to exercise your rights, please contact us at <strong>[your@email.com]</strong>.
+                    Za sva pitanja u vezi sa Politikom privatnosti ili za ostvarivanje Vaših prava, možete nas kontaktirati putem imejla: <strong>kontakt@ranclegenda.rs</strong>.
                 </p>
             </div>
         </div>

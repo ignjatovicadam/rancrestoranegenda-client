@@ -67,11 +67,11 @@
             <div class="two-columns footer-note">
                 <p>&copy; 2025 Restoran ranč Legenda. Sva prava zadržana.</p>
                 <p>
-                <router-link to="/privacypolicy">Polisa privatnosti</router-link>
+                <router-link to="/privacypolicy">Politika privatnosti</router-link>
                 &nbsp;
                 <router-link to="/termsofuse">Uslovi korišćenja</router-link>
                 &nbsp;
-                <router-link to="/termsofuse">Bitne informacije</router-link>
+                <router-link to="/info">Bitne informacije</router-link>
                 </p>
             </div>
         </div>
