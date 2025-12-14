@@ -1,7 +1,9 @@
 <script setup>
+    import { reactive } from 'vue';
     import { AppHero } from '../components/AppHero';
-    import { BookingForm } from '../components/BookingForm';
     import { ImageGallery } from '../components/ImageGallery';
+
+    const cache = reactive({});
 
     const upperImages = [
         {

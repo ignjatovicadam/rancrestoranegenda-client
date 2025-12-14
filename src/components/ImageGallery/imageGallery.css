@@ -60,6 +60,12 @@
         transition: transform 0.2s ease-in-out;
         -webkit-touch-callout: none;
         will-change: filter;
+
+        opacity: 0;
+
+        &.loaded {
+            opacity: 1;
+        }
     }
 
     .vgo-gallery__cell-blur {

@@ -1,10 +1,13 @@
 <script setup>
+    import { reactive } from 'vue';
     import heroImage from '../assets/images/restoran-ranc-legenda-basta-velika.webp'
     import bannerImageFirst from '../assets/images/restoran-ranc-legenda-basta-otvoreni-deo.webp';
     import bannerImageSecond from '../assets/images/restoran-ranc-legenda-bife-mlecni-proizvodi.webp';
     import bannerImageThird from '../assets/images/restoran-ranc-legenda-deciji-rodjendan-vreca-trke.webp';
     import banngerImageForth from '../assets/images/restoranc-ranc-legenda-aktivnosti-bacanje.webp';
     import { AppHero, BookingForm } from '../components';
+
+    const cache = reactive({});
 
     const menu = [
         {
@@ -92,7 +95,7 @@
                 <div>
                     <a href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" class="flow flow-spacer-400" target="_blank">
                         <div class="image-overlay">
-                            <img :src="bannerImageFirst" alt="Restoran ranč Legenda slika bašta otvoren deo">
+                            <img loading="lazy" :src="bannerImageFirst" alt="Restoran ranč Legenda slika bašta otvoren deo" :class="{ 'loaded': cache[bannerImageFirst] }" @load="cache[bannerImageFirst] = bannerImageFirst">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">PROSLAVE</h3>
                         <p class="fw-regular">Organizujemo poslovne i porodične proslave na otvorenom, u prirodi, na otvorenom, u zatvorenom ili natkrivenom prostoru.</p>
@@ -101,7 +104,7 @@
                 <div>
                     <router-link to="/restaurant" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img :src="bannerImageSecond" alt="Restoran ranč Legenda slika bašta bife mlečni proizvodi">
+                            <img loading="lazy" :src="bannerImageSecond" alt="Restoran ranč Legenda slika bašta bife mlečni proizvodi" :class="{ 'loaded': cache[bannerImageSecond] }" @load="cache[bannerImageSecond] = bannerImageSecond">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">RESTORAN</h3>
                         <p class="fw-regular">Restoran domaće kuhinje sa baštom, smešten u prirodnom okruženju, idealan za porodične ručkove i veće grupe.</p>
@@ -110,7 +113,7 @@
                 <div>
                     <router-link to="/birthday-parties" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img :src="bannerImageThird" alt="Restoran ranč Legenda rođendani trke">
+                            <img loading="lazy" :src="bannerImageThird" alt="Restoran ranč Legenda rođendani trke" :class="{ 'loaded': cache[bannerImageThird] }" @load="cache[bannerImageThird] = bannerImageThird">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">DEČIJI ROĐENDANI</h3>
                         <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima prilagođenim različitim uzrastim</p>
@@ -119,7 +122,7 @@
                 <div>
                     <router-link to="/teambuilding" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img :src="banngerImageForth" alt="Restoran ranč Legenda timske aktivnosti bacanje">
+                            <img loading="lazy" :src="banngerImageForth" alt="Restoran ranč Legenda timske aktivnosti bacanje" :class="{ 'loaded': cache[banngerImageForth] }" @load="cache[banngerImageForth] = banngerImageForth">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">TEAM BUILDING</h3>
                         <p class="fw-regular">Prostor u prirodi sa sadržajima za timske aktivnosti i korporativne skupove u Beogradu.</p>
@@ -178,6 +181,11 @@
     transition: transform 0.3s ease;
     transform-origin: center center;
     transform: scale(1);
+    opacity: 0;
+
+    &.loaded {
+        opacity: 1;
+    }
 }
 
 .services .image-overlay {

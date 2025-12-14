@@ -9,6 +9,7 @@ import EventsView from '../views/EventsView.vue';
 import MenuView from '../views/MenuView.vue';
 import BirthdatePartiesView from '../views/BirthdatePartiesView.vue';
 import ImportantInfoView from '../views/ImportantInfoView.vue';
+import NotFoundView from '../views/NotFoundView.vue';
 
 const routes = [
     {
@@ -16,7 +17,7 @@ const routes = [
         name: 'Home',
         component: HomeView,
         meta: {
-            title: 'Ranč restoran Legenda',
+            title: 'Restoran ranč Legenda',
             description: 'Ranč na obali Save idealan za porodična okupljanja, slavlja i uživanje u domaćim specijalitetima.'
         }
     },
@@ -25,7 +26,7 @@ const routes = [
         name: 'Restaurant',
         component: RestaurantView,
         meta: {
-            title: 'O restoranu | Ranč restoran Legenda',
+            title: 'O restoranu | Restoran ranč Legenda',
             description: 'Istražite naš restoran, meni i specijalitete. Rezervišite sto danas.'
         }
     },
@@ -34,7 +35,7 @@ const routes = [
         name: 'TeamBuilding',
         component: TeamBuildingView,
         meta: {
-            title: 'Team Building | Ranč restoran Legenda',
+            title: 'Team Building | Restoran ranč Legenda',
             description: 'Organizujte nezaboravan team building za svoj tim.'
         }
     },
@@ -43,7 +44,7 @@ const routes = [
         name: 'Contact',
         component: ContactView,
         meta: {
-            title: 'Kontakt | Ranč restoran Legenda',
+            title: 'Kontakt | Restoran ranč Legenda',
             description: 'Kontaktirajte nas za rezervacije, događaje ili informacije.'
         }
     },
@@ -52,7 +53,7 @@ const routes = [
         name: 'PrivacyPolicy',
         component: PrivacyPolicyView,
         meta: {
-            title: 'Politika privatnosti | Ranč restoran Legenda',
+            title: 'Politika privatnosti | Restoran ranč Legenda',
             description: 'Politika privatnosti Ranclegenda - kako štitimo vaše podatke.'
         }
     },
@@ -61,7 +62,7 @@ const routes = [
         name: 'TermsOfUse',
         component: TermsOfUseView,
         meta: {
-            title: 'Uslovi korišćenja | Ranč restoran Legenda',
+            title: 'Uslovi korišćenja | Restoran ranč Legenda',
             description: 'Uslovi korišćenja.'
         }
     },
@@ -70,7 +71,7 @@ const routes = [
         name: 'ImportantInfo',
         component: ImportantInfoView,
         meta: {
-            title: 'Uslovi korišćenja | Ranč restoran Legenda',
+            title: 'Uslovi korišćenja | Restoran ranč Legenda',
             description: 'Uslovi korišćenja.'
         }
     },
@@ -79,7 +80,7 @@ const routes = [
         name: 'Events',
         component: EventsView,
         meta: {
-            title: 'Događaji | Ranč restoran Legenda',
+            title: 'Događaji | Restoran ranč Legenda',
             description: 'Odkrijte naše predstojuće događaje i specijalne večeri na Ranclegenda.'
         }
     },
@@ -88,7 +89,7 @@ const routes = [
         name: 'Menu',
         component: MenuView,
         meta: {
-            title: 'Meni | Ranč restoran Legenda',
+            title: 'Meni | Restoran ranč Legenda',
             description: 'Pregledajte naš kompletan meni sa jelima.'
         }
     },
@@ -97,10 +98,19 @@ const routes = [
         name: 'BirthdateParties',
         component: BirthdatePartiesView,
         meta: {
-            title: 'Rođendanske zabave | Ranč restoran Legenda',
+            title: 'Rođendanske zabave | Restoran ranč Legenda',
             description: 'Proslavite rođendan uz nezaboravna atmosferu.'
         }
-    }
+    },
+    { 
+        path: '/:pathMatch(.*)*', 
+        name: 'NotFound', 
+        component: NotFoundView,
+        meta: {
+            title: 'Stranica nije pronadjena | Restoran ranč Legenda',
+            description: 'Stranica koju tražite ne postoji ili je premeštena.'
+        }
+    },
 ];
 
 const router = createRouter({

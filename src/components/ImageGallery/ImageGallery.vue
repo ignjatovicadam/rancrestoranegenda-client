@@ -77,6 +77,7 @@
                         :loading="i === 0 ? 'eager' : 'lazy'"
                         :src="image.url"
                         :alt="image.description"
+                        :class="{ 'loaded': cache[image.url] }"
                         @load="cache[image.url] = image.url"
                         @dragstart.prevent
                     >

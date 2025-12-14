@@ -1,5 +1,5 @@
 <script setup>
-  import { AppHeader, AppFooter } from './components';
+  import { AppHeader, AppFooter, AppCookieConsent } from './components';
 </script>
 
 <template>
@@ -7,5 +7,6 @@
   <main>
     <router-view />
   </main>
+  <app-cookie-consent />
   <app-footer />
 </template>
