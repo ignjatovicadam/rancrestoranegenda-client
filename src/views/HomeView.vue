@@ -171,8 +171,8 @@
 }
 
 .services img {
-    height: 350px;
     width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
     transform-origin: center center;
@@ -186,6 +186,7 @@
 
 .services .image-overlay {
     position: relative;
+    max-height: 300px;
     margin-bottom: var(--size-400);
     overflow: hidden;
     display: block;
@@ -203,12 +204,6 @@ a:focus .image-overlay img {
     transform: scale(1.1);
 }
 
-@media (min-width: 50em) {
-    .services img {
-        height: 370px;
-    }
-}
-
 .menu-columns {
     display: grid;
     grid-template-columns: 1fr;
@@ -219,5 +214,10 @@ a:focus .image-overlay img {
     .menu-columns {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .services .image-overlay {
+        aspect-ratio: 4 / 5;
+        max-height: unset;
+    }   
 }
 </style>
