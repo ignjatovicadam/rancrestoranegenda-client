@@ -27,6 +27,7 @@
             <div class="flow">
                 <h2 class="fs-secondary-heading fw-bold">Dečiji rođendani</h2>
                 <p class="fw-regular">Rođendani kod nas nisu samo zabava, već pravo iskustvo druženja sa životinjama i boravka u zelenilu. Deca mogu da uživaju u igri i istraživanju, dok roditelji bez žurbe i stresa uživaju u domaćoj hrani i prirodnom okruženju. Naša velika bašta, životinje i animacije stvaraju atmosferu koju mališani dugo pamte — veselu, zdravu i drugačiju od klasičnih, zatvorenih proslava.</p>
+                <a href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank" class="button button-primary">Pogledajte ponudu</a>
                 <div class="template-image-preview">
                     <img src="/dec_ro_7-2.jpeg" alt="">
                 </div>
@@ -77,7 +78,7 @@
     <section class="padding-block-900">
         <div class="container">
             <div>
-                <h2 class="fs-secondary-heading fw-bold">Rezervacija proslave</h2>
+                <h2 class="fs-secondary-heading fw-bold">Rezervišite proslavu</h2>
                 <booking-form />
             </div>
         </div>
@@ -105,7 +106,6 @@
         position: absolute;
         inset: 0;
         z-index: 2;
-        background-color: rgba(0, 0, 0, 0.2);
     }
 
     @media (min-width: 50em) {

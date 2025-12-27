@@ -140,7 +140,7 @@
     <section class="services padding-block-900">
         <div class="container">
             <div>
-                <h2 class="fs-secondary-heading fw-bold">Rezervacija proslave</h2>
+                <h2 class="fs-secondary-heading fw-bold">Rezervišite proslavu</h2>
                 <booking-form />
             </div>
         </div>

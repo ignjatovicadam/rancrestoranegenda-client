@@ -19,7 +19,7 @@
                         </div>
                         <div class="footer-contact-informatio-item">
                             <Phone class="footer-icon"/>
-                            <span class="footer-contact-description">+381 64 1417 232</span>
+                            <span class="footer-contact-description">+381 64 1417 232 / +381 65 9393 557</span>
                         </div>
                         <div class="footer-contact-informatio-item">
                             <Mail class="footer-icon"/>

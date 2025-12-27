@@ -7,6 +7,6 @@
   <main>
     <router-view />
   </main>
-  <app-cookie-consent />
   <app-footer />
+  <app-cookie-consent />
 </template>

@@ -147,7 +147,6 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, .2);
     z-index: 2;
 }
 

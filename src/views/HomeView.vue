@@ -79,12 +79,8 @@
         <div class="container">
             <div class="flow">
                 <h2 class="fs-secondary-heading fw-bold">Tradicija i kvalitet idu ruku pod ruku</h2>
-                <p class="fw-regular">Autentičan etno restoran gde se tradicija,
-                    ukusi domaće kuhinje i iskreno gostoprimstvo
-                    stapaju u nezaboravno iskustvo. Sa dugogodišnjim
-                    iskustvom, kao domaćini, posvećeni smo tome da
-                    svaka proslava – od malih okupljanja do velikih
-                    svečanosti – bude organizovana sa stilom i dušom.
+                <p class="fw-regular">
+                    Autentičan etno restoran u kojem se tradicija, ukusi domaće kuhinje i iskreno gostoprimstvo stapaju u jedinstvenu celinu. Sa dugogodišnjim iskustvom u ugostiteljstvu, kao domaćini smo posvećeni tome da svaka proslava – od malih okupljanja do velikih svečanosti – bude organizovana sa stilom i dušom.
                 </p>
             </div>
         </div>
@@ -98,7 +94,7 @@
                             <img loading="lazy" :src="bannerImageFirst" alt="Restoran ranč Legenda slika bašta otvoren deo" :class="{ 'loaded': cache[bannerImageFirst] }" @load="cache[bannerImageFirst] = bannerImageFirst">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">PROSLAVE</h3>
-                        <p class="fw-regular">Organizujemo poslovne i porodične proslave na otvorenom, u prirodi, na otvorenom, u zatvorenom ili natkrivenom prostoru.</p>
+                        <p class="fw-regular">Organizujemo poslovne i porodične proslave na otvorenom, u prirodi, u zatvorenom ili natkrivenom prostoru.</p>
                     </a>
                 </div>
                 <div>
@@ -116,7 +112,7 @@
                             <img loading="lazy" :src="bannerImageThird" alt="Restoran ranč Legenda rođendani trke" :class="{ 'loaded': cache[bannerImageThird] }" @load="cache[bannerImageThird] = bannerImageThird">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">DEČIJI ROĐENDANI</h3>
-                        <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima prilagođenim različitim uzrastim</p>
+                        <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima <br>prilagođenim različitim uzrastim</p>
                     </router-link>
                 </div>
                 <div>
@@ -161,7 +157,7 @@
     <section class="services padding-block-900 bg-primary-200">
         <div class="container">
             <div>
-                <h2 class="fs-secondary-heading fw-bold">Rezervišite termin</h2>
+                <h2 class="fs-secondary-heading fw-bold">Rezervišite proslavu</h2>
                 <booking-form />
             </div>
         </div>
@@ -199,7 +195,6 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
 

@@ -5,6 +5,8 @@
 
     const open = ref(false);
 
+    const proslaveOpen = ref(false);
+
     const navigationLinks = [
         { to: '/', label: 'Početna' },
         { to: '/menu', label: 'Jelovnik' },
@@ -24,10 +26,39 @@
 
                 <nav class="navigation">
                     <ul role="list" class="navigation-list">
-                        <li v-for="link in navigationLinks" :key="link.to" class="fw-semi-bold">
+                        <li v-for="link in navigationLinks" :key="link.to" class="fw-semi-bold" style="position: relative;">
                             <template v-if="link.label === 'Proslave'">
-                                <a href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank">Proslave</a>
+                                <div @mouseenter="proslaveOpen = true" @mouseleave="proslaveOpen = false">
+                                    <a 
+                                        href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" 
+                                        target="_blank"
+                                    >
+                                        Proslave
+                                    </a>
+                                    <ul
+                                        v-if="proslaveOpen"
+                                        class="dropdown-menu"
+                                        role="menu"
+                                    >
+                                        <li>
+                                        <router-link role="menuitem" to="/events/svadbe">Svadbe</router-link>
+                                        </li>
+                                        <li>
+                                        <router-link role="menuitem" to="/events/rodjendani">Rođendani</router-link>
+                                        </li>
+                                        <li>
+                                        <a
+                                            role="menuitem"
+                                            href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf"
+                                            target="_blank"
+                                        >
+                                            Ponuda (PDF)
+                                        </a>
+                                        </li>
+                                        </ul>
+                                </div>
                             </template>
+
 
                             <template v-else>
                                 <router-link :to="link.to">{{ link.label }}</router-link>
@@ -340,5 +371,28 @@
         display: inline-block;
         font-size: var(--fs-300);
     }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: var(--clr-primary-100);
+  border-radius: 0.5rem;
+  min-width: 200px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  padding: 0.5rem 0;
+  z-index: 10;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: var(--clr-primary-400);
+}
+
+.dropdown-menu a:hover {
+  background: rgba(0,0,0,0.05);
 }
 </style>

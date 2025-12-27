@@ -27,7 +27,7 @@
                     </div>
 
                     <div>
-                        <button @click="open = false" class="button button-primary">Sačuvaj</button>
+                        <button @click="open = false" class="button button-primary">Sačuvajte</button>
                     </div>
                 </div>
             </div>
