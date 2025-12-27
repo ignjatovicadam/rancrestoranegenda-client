@@ -4,8 +4,29 @@
     const open = ref(false);
     const googleAl = ref(true);
 
+    const save = () => {
+        const consent = {
+            googleAnalytics: googleAl.value
+        };
+
+        localStorage.setItem('cookieConsent', JSON.stringify(consent));
+        open.value = false;
+    };
+
+    const validate = () => {
+        const consent = localStorage.getItem('cookieConsent');
+
+        if (consent) {
+            const parsedConsent = JSON.parse(consent);
+            googleAl.value = parsedConsent.googleAnalytics;
+            return false;
+        }
+
+        return true;
+    };
+
     onMounted(() => {
-        open.value = true;
+        open.value = validate();
     });
 </script>
 
@@ -27,7 +48,7 @@
                     </div>
 
                     <div>
-                        <button @click="open = false" class="button button-primary">Sačuvajte</button>
+                        <button @click="save" class="button button-primary">Sačuvajte</button>
                     </div>
                 </div>
             </div>
