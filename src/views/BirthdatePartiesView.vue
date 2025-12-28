@@ -4,19 +4,19 @@
 
     const images = [
         {
-            url: "/dec_ro_ova_obaveznoo-2.jpeg",
+            url: "",
         },
         {
-            url: "/dec_ro_3-2.jpeg",
+            url: "",
         },
         {
-            url: "/dec_ro_4-2.jpeg",
+            url: "",
         },
         {
-            url: "/dec_ro_1.jpeg",
+            url: "",
         },
         {
-            url: "/dec_ro_2.jpeg",
+            url: "",
         },
     ];
 </script>
@@ -29,7 +29,7 @@
                 <p class="fw-regular">Rođendani kod nas nisu samo zabava, već pravo iskustvo druženja sa životinjama i boravka u zelenilu. Deca mogu da uživaju u igri i istraživanju, dok roditelji bez žurbe i stresa uživaju u domaćoj hrani i prirodnom okruženju. Naša velika bašta, životinje i animacije stvaraju atmosferu koju mališani dugo pamte — veselu, zdravu i drugačiju od klasičnih, zatvorenih proslava.</p>
                 <a href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank" class="button button-primary">Pogledajte ponudu</a>
                 <div class="template-image-preview">
-                    <img src="/dec_ro_7-2.jpeg" alt="">
+                    <img src="" alt="">
                 </div>
             </div>
 
@@ -45,27 +45,27 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="/dec_ro_ova_obaveznoo-2.jpeg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="/dec_ro_3-2.jpeg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="/dec_ro_4-2.jpeg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="/dec_ro_1-2.jpeg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="/dec_ro_2-2.jpeg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
             </div>
@@ -106,6 +106,11 @@
         position: absolute;
         inset: 0;
         z-index: 2;
+        background-color: rgb(226, 224, 220);
+    }
+
+    .template-image-preview {
+        background-color: rgb(226, 224, 220);
     }
 
     @media (min-width: 50em) {

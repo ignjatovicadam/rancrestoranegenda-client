@@ -19,7 +19,7 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="/IMG_6210-2.jpg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="/image00031.jpeg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
             </div>
@@ -120,11 +120,11 @@
 
             <div style="margin-top: 2em;">
                     <grid-gallery :images="[
-                        { url: './image00022.jpeg', lqip: './image00022.jpeg', description: 'Leo a diam sollicitudin tempor id eu.' },
-                        { url: './IMG_6253_1.jpg', lqip: './IMG_6253_1.jpg', description: 'Nibh praesent tristique magna sit amet purus gravida quis.' },
-                        { url: './IMG_6237.jpg', lqip: './IMG_6237.jpg', description: 'Quis commodo odio aenean sed adipiscing diam donec. Ac turpis egestas sed tempus urna et pharetra pharetra.' },
-                        { url: './IMG_6156.jpg', lqip: './IMG_6156.jpg', description: 'Lorem ipsum dolorem.' },
-                        { url: './image00023.jpeg', lqip: './image00023.jpeg', description: 'Lorem ipsum dolerum serum!' },
+                        { url: '', lqip: '', description: 'Leo a diam sollicitudin tempor id eu.' },
+                        { url: '', lqip: '', description: 'Nibh praesent tristique magna sit amet purus gravida quis.' },
+                        { url: '', lqip: '', description: 'Quis commodo odio aenean sed adipiscing diam donec. Ac turpis egestas sed tempus urna et pharetra pharetra.' },
+                        { url: '', lqip: '', description: 'Lorem ipsum dolorem.' },
+                        { url: '', lqip: '', description: 'Lorem ipsum dolerum serum!' },
                     ]">
                     </grid-gallery>
                 </div>
@@ -160,6 +160,10 @@
 .accordion-list {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.image-overlay {
+    background-color: rgb(226, 224, 220);
 }
 
 @media (min-width: 50em) {
