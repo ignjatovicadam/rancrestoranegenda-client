@@ -71,14 +71,14 @@
 <template>
     <app-hero id="hero-welcome" size="large" :image-url="heroImage">
         <div class="welcome-text flow">
-            <h1 class="fs-primary-heading fw-bold">Dobro došli u Legendu,</h1>
-            <p class="fw-semi-bold">Ranč na obali Save idealan za porodična okupljanja, slavlja i uživanje u domaćim specijalitetima.</p>
+            <h1 v-reveal="120" class="fs-primary-heading fw-bold">Dobro došli u Legendu,</h1>
+            <p v-reveal="240" class="fw-semi-bold">Ranč na obali Save idealan za porodična okupljanja, slavlja i uživanje u domaćim specijalitetima.</p>
         </div>
     </app-hero>
     <section class="padding-block-900">
         <div class="container">
             <div class="flow">
-                <h2 class="fs-secondary-heading fw-bold">Tradicija i kvalitet idu ruku pod ruku</h2>
+                <h2 v-reveal="60" class="fs-secondary-heading fw-bold">Tradicija i kvalitet idu ruku pod ruku</h2>
                 <p class="fw-regular">
                     Autentičan etno restoran u kojem se tradicija, ukusi domaće kuhinje i iskreno gostoprimstvo stapaju u jedinstvenu celinu. Sa dugogodišnjim iskustvom u ugostiteljstvu, kao domaćini smo posvećeni tome da svaka proslava – od malih okupljanja do velikih svečanosti – bude organizovana sa stilom i dušom.
                 </p>
@@ -88,7 +88,7 @@
     <section class="services padding-block-900 bg-primary-200">
         <div class="large-container">
             <div class="even-columns" style="margin-top: 2em;">
-                <div>
+                <div v-reveal>
                     <a href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" class="flow flow-spacer-400" target="_blank">
                         <div class="image-overlay">
                             <img loading="lazy" :src="bannerImageFirst" alt="Restoran ranč Legenda slika bašta otvoren deo" :class="{ 'loaded': cache[bannerImageFirst] }" @load="cache[bannerImageFirst] = bannerImageFirst">
@@ -97,7 +97,7 @@
                         <p class="fw-regular">Organizujemo poslovne i porodične proslave na otvorenom, u prirodi, u zatvorenom ili natkrivenom prostoru.</p>
                     </a>
                 </div>
-                <div>
+                <div v-reveal>
                     <router-link to="/restaurant" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img loading="lazy" :src="bannerImageSecond" alt="Restoran ranč Legenda slika bašta bife mlečni proizvodi" :class="{ 'loaded': cache[bannerImageSecond] }" @load="cache[bannerImageSecond] = bannerImageSecond">
@@ -106,7 +106,7 @@
                         <p class="fw-regular">Restoran domaće kuhinje sa baštom, smešten u prirodnom okruženju, idealan za porodične ručkove i veće grupe.</p>
                     </router-link>
                 </div>
-                <div>
+                <div v-reveal>
                     <router-link to="/birthday-parties" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img loading="lazy" :src="bannerImageThird" alt="Restoran ranč Legenda rođendani trke" :class="{ 'loaded': cache[bannerImageThird] }" @load="cache[bannerImageThird] = bannerImageThird">
@@ -115,7 +115,7 @@
                         <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima <br>prilagođenim različitim uzrastim</p>
                     </router-link>
                 </div>
-                <div>
+                <div v-reveal>
                     <router-link to="/teambuilding" class="flow flow-spacer-400">
                         <div class="image-overlay">
                             <img loading="lazy" :src="banngerImageForth" alt="Restoran ranč Legenda timske aktivnosti bacanje" :class="{ 'loaded': cache[banngerImageForth] }" @load="cache[banngerImageForth] = banngerImageForth">
@@ -130,7 +130,7 @@
     <section class="services padding-block-900">
         <div class="container">
             <div class="flow">
-                <h2 class="fs-secondary-heading fw-bold">Naš meni je pažljivo kreiran</h2>
+                <h2 v-reveal="60" class="fs-secondary-heading fw-bold">Naš meni je pažljivo kreiran</h2>
             </div>
             <div class="menu-list" style="margin-top: 2em;">
                 <div class="menu-columns">
@@ -157,7 +157,7 @@
     <section class="services padding-block-900 bg-primary-200">
         <div class="container">
             <div>
-                <h2 class="fs-secondary-heading fw-bold">Rezervišite proslavu</h2>
+                <h2 v-reveal="60" class="fs-secondary-heading fw-bold">Rezervišite proslavu</h2>
                 <booking-form />
             </div>
         </div>

@@ -277,13 +277,20 @@
         width: 100%;
         background-color: var(--clr-primary-100);
         max-height: 0;
+        opacity: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+        transition: 
+            max-height 0.4s ease, 
+            opacity 0.4s ease, 
+            transform 0.4s ease;
+        transform: translateY(-10px);
         z-index: 2;
     }
 
     .mobile-menu.open {
-        max-height: 100vh;
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .mobile-navigation-list {

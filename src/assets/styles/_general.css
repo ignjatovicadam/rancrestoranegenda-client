@@ -30,6 +30,20 @@ body:has(.mobile-navigation.open) {
     opacity: 0.8;
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+        opacity 0.5s ease-out,
+        transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Restaurant */
 .restaurant a {
     text-decoration: none;
