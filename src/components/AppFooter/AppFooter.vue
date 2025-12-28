@@ -13,7 +13,7 @@
                     <div class="footer-contact-information">
                         <div class="footer-contact-informatio-item">
                             <MapPinHouse class="footer-icon"/>
-                            <a href="">
+                            <a href="https://maps.app.goo.gl/z85q5vDQtKzKKGCJ6" target="_blank">
                                 <span class="footer-contact-description">Obrenovački drum bb, Beograd</span>
                             </a>
                         </div>

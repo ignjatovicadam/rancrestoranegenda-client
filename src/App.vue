@@ -1,5 +1,5 @@
 <script setup>
-  import { AppFooter, AppCookieConsent } from './components';
+  import { AppFooter, CookieConsent } from './components';
   import AppHeader from './components/AppHeader/AppHeader-New.vue';
 </script>
 
@@ -9,5 +9,5 @@
     <router-view />
   </main>
   <app-footer />
-  <app-cookie-consent />
+  <cookie-consent />
 </template>

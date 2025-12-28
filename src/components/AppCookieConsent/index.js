@@ -1,1 +1,0 @@
-export { default as AppCookieConsent } from './AppCookieConsent.vue';
