@@ -96,6 +96,7 @@
                 <input-text-area v-model="form.message" name="message" id="message" label="Poruka" />
             </div>
             <div class="form-group">
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAACJof3XhhoGunL3u"></div>
                 <button class="button button-primary" @click="onFormSubmit">Rezervišite</button>
             </div>
         </div>
