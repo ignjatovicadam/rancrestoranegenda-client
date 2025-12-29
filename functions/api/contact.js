@@ -15,7 +15,7 @@ export async function onRequestPost({ request, env }) {
 
     const resend = new Resend(env.RESEND_API_KEY);
 
-    resend.emails.send(
+    await resend.emails.send(
     {
         from: 'onboarding@resend.dev',
         to: 'ignjatovicadam@gmail.com',
