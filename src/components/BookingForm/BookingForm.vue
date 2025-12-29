@@ -27,7 +27,7 @@
 
     const success = ref(false);
 
-    const onFormSubmit = () => {
+    const onFormSubmit = async () => {
         const result = schema.safeParse(form);
 
         if (!result.success) {
@@ -36,18 +36,28 @@
         }
 
         errors.value = {};
-        success.value = true;
 
-        setTimeout(() => {
+        try {
+            const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(form),
+            });
+
+            if (!res.ok) throw new Error('Failed');
+
+            success.value = true;
+
+            setTimeout(() => {
             success.value = false;
-            form.firstName = "";
-            form.lastName = "";
-            form.phoneNumber = "",
-            form.email = "",
-            form.bookingDate = "",
-            form.bookingType = "";
-            form.message = "";
-        }, 3000);
+            Object.keys(form).forEach(k => form[k] = '');
+            }, 3000);
+
+        } catch (err) {
+            console.error(err);
+        }
     };
 </script>
 
