@@ -18,6 +18,7 @@ body:has(.mobile-navigation.open) {
     line-height: 1;
     border: 0;
     box-shadow: 0 1.125em 1em -1em rgba(0, 0, 0, 0.171);
+    border-radius: 4px;
 }
 
 .button-primary {

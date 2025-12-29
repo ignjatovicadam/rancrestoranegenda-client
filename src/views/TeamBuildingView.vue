@@ -25,16 +25,16 @@
             </div>
 
             <div class="flow description-text">
-                <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit</h2>
-                <p class="fw-regular">Zamislite dan u prirodi gde se posao pretvara u druženje, a kolege postaju pravi tim. U Legendi organizujemo team building koji spaja rekreaciju, igru i dobru energiju. Umesto klasičnih formata, nudimo nezaboravna iskustva – od aktivnosti koje bude takmičarski duh, do trenutaka mira i povezivanja u prirodnom okruženju.</p>
+                <h2 class="fs-secondary-heading fw-bold">Zamislite dan u prirodi</h2>
+                <p class="fw-regular">Gde se posao pretvara u druženje, a kolege postaju pravi tim. U Legendi organizujemo team building koji spaja rekreaciju, igru i dobru energiju. Umesto klasičnih formata, nudimo nezaboravna iskustva – od aktivnosti koje bude takmičarski duh, do trenutaka mira i povezivanja u prirodnom okruženju.</p>
             </div>
         </div>
     </section>
     <section class="restaurant padding-block-900 bg-primary-200">
         <div class="container">
             <div class="flow description-text">
-                <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit</h2>
-                <p class="fw-regular">Da sve bude potpuno, tu je i naša trpeza – jela pripremljena u profesionalnoj kuhinji od pažljivo biranih namirnica. Kod nas vas očekuju ukusi koji spajaju tradiciju i moderan pristup gastronomiji.</p>
+                <h2 class="fs-secondary-heading fw-bold">Da sve bude potpuno</h2>
+                <p class="fw-regular">Tu je i naša trpeza – jela pripremljena u profesionalnoj kuhinji od pažljivo biranih namirnica. Kod nas vas očekuju ukusi koji spajaju tradiciju i moderan pristup gastronomiji.</p>
                 <p class="fw-regular">U Legendi verujemo da pravi team building nije samo skup aktivnosti već prilika da se ljudi povežu, opuste i stvore zajedničke uspomene. Naša zelena oaza u srcu grada pruža savršen ambijent da izađete iz kancelarije i zakoračite u svet igre, smeha i druženja.</p>
             </div>
             <div class="even-columns">
@@ -50,7 +50,7 @@
         <div class="container">
             <div class="">
                 <div class="flow description-text">
-                    <h2 class="fs-secondary-heading fw-bold">Lorem ipsum dolor sit</h2>
+                    <h2 class="fs-secondary-heading fw-bold">Timske aktivnosti</h2>
                 </div>
                 <div class="description-text" style="margin-top: 2em;">
                     <div class="accordion-list">
@@ -76,7 +76,7 @@
                             <div class="accordion-item flow-spacer-400">
                                 <accordion-button :open="active === 'accordion-panel-4'" @click="toggle('accordion-panel-4')">Cornhole</accordion-button>
                                 <accordion-panel :open="active === 'accordion-panel-4'">
-                                    <span class="menu-list-item-description">zabavna timska igra u kojoj učesnici bacanjem platnenih vrećica pokušavaju da pogode otvor na drvenoj tabli, razvijajući pritom preciznost i takmičarski duh.</span>
+                                    <span class="menu-list-item-description">Zabavna timska igra u kojoj učesnici bacanjem platnenih vrećica pokušavaju da pogode otvor na drvenoj tabli, razvijajući pritom preciznost i takmičarski duh.</span>
                                 </accordion-panel>
                             </div>
                         </div>
@@ -90,7 +90,7 @@
                             <div class="accordion-item flow-spacer-400">
                                 <accordion-button :open="active === 'accordion-panel-6'" @click="toggle('accordion-panel-6')">Streličarstvo</accordion-button>
                                 <accordion-panel :open="active === 'accordion-panel-6'">
-                                    <span class="menu-list-item-description">jedinstveno iskustvo gađanja meta u okviru našeg parka.</span>
+                                    <span class="menu-list-item-description">Jedinstveno iskustvo gađanja meta u okviru našeg parka.</span>
                                 </accordion-panel>
                             </div>
                             <div class="accordion-item flow-spacer-400">
@@ -120,18 +120,18 @@
 
             <div style="margin-top: 2em;">
                     <grid-gallery :images="[
-                        { url: '', lqip: '', description: 'Leo a diam sollicitudin tempor id eu.' },
-                        { url: '', lqip: '', description: 'Nibh praesent tristique magna sit amet purus gravida quis.' },
-                        { url: '', lqip: '', description: 'Quis commodo odio aenean sed adipiscing diam donec. Ac turpis egestas sed tempus urna et pharetra pharetra.' },
-                        { url: '', lqip: '', description: 'Lorem ipsum dolorem.' },
-                        { url: '', lqip: '', description: 'Lorem ipsum dolerum serum!' },
+                        { url: '', lqip: '', },
+                        { url: '', lqip: '', },
+                        { url: '', lqip: '', },
+                        { url: '', lqip: '', },
+                        { url: '', lqip: '', },
                     ]">
                     </grid-gallery>
                 </div>
 
             <div class="flow" style="margin-top: 3em;">
-                <h3 class="fs-tertiary-heading fw-bold fw-bold">Informacije</h3>
-                <p class="fw-regular">Na prostranom ranču, tik uz reku i u društvu naših životinja, najmlađi dobijaju svoj poseban svet igre i zabave. Dok odrasli uživaju u aktivnostima sa kolegama ili jednostavno predahnu uz hranu i piće iz naše kuhinje, decu čekaju dvorac na naduvavanje, face painting, trke u džakovima, susret sa mađioničarem i mnoštvo drugih igara na otvorenom. Celo imanje postaje njihovo igralište, puno smeha, uzbuđenja i novih uspomena, gde mogu uživati u druženju i igrama i sa roditeljima i sa drugarima.</p>
+                <h3 class="fs-tertiary-heading fw-bold fw-bold">Na prostranom ranču,</h3>
+                <p class="fw-regular">Tik uz reku i u društvu naših životinja, najmlađi dobijaju svoj poseban svet igre i zabave. Dok odrasli uživaju u aktivnostima sa kolegama ili jednostavno predahnu uz hranu i piće iz naše kuhinje, decu čekaju dvorac na naduvavanje, face painting, trke u džakovima, susret sa mađioničarem i mnoštvo drugih igara na otvorenom. Celo imanje postaje njihovo igralište, puno smeha, uzbuđenja i novih uspomena, gde mogu uživati u druženju i igrama i sa roditeljima i sa drugarima.</p>
                 <p class="fw-regular">Sve je obezbeđeno – od ukusne hrane i osveženja, do bezbednog prostora za igru i organizovanog programa. Rezultat? Dok se zaposleni zbližavaju u opuštenoj atmosferi, njihova deca provode nezaboravan dan u prirodi, a supružnici uživaju u druženju i odmoru.</p>
                 <p class="fw-regular">Legenda je jedan od retkih restorana u Beogradu, ako ne i jedini, koji nudi ovakav spoj team buildinga i porodičnog dana na otvorenom. Zato vaš događaj kod nas postaje više od okupljanja – on postaje iskustvo koje okuplja kolektiv, porodice i prijatelje na jednom mestu, stvarajući uspomene o kojima će se dugo pričati.</p>
             </div>
