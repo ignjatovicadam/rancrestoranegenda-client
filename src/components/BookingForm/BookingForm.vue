@@ -5,6 +5,8 @@
     import { InputEmail } from '../InputEmail';
     import { InputTextArea } from '../InputTextArea';
 
+    console.log('BookingForm component loaded');
+
     const form = reactive({
         firstName: '',
         lastName: '',
