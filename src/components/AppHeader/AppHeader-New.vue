@@ -18,7 +18,7 @@
             <nav>
                 <ul class="navigation-list" role="list">
                     <li class="navigation-list-item"><router-link to="/" class="fw-semi-bold">Početna</router-link></li>
-                    <li class="navigation-list-item"><router-link to="/menu" class="fw-semi-bold">Jelovnik</router-link></li>
+                    <li class="navigation-list-item"><router-link to="/jelovnik" class="fw-semi-bold">Jelovnik</router-link></li>
                     <li class="navigation-list-item dropdown">
                         <span class="fw-semi-bold">Proslave</span>
                         <div class="dropdown-menu">
@@ -30,13 +30,13 @@
                                     </a>
                                 </li>
                                 <li class="dropdown-menu-item">
-                                    <router-link to="/birthday-parties">
+                                    <router-link to="/rodjendanske-zabave">
                                         <span class="fw-semi-bold">Rođendani</span>
                                         <span class="menu-item-sub">Organizovani rodjendani</span>
                                     </router-link>
                                 </li>
                                 <li class="dropdown-menu-item">
-                                    <router-link to="/teambuilding">
+                                    <router-link to="/team-building">
                                         <span class="fw-semi-bold">Team building</span>
                                         <span class="menu-item-sub">Organizovani team building</span>
                                     </router-link>
@@ -44,8 +44,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="navigation-list-item"><router-link to="/restaurant" class="fw-semi-bold">Restoran</router-link></li>
-                    <li class="navigation-list-item"><router-link to="/contact" class="fw-semi-bold">Kontakt</router-link></li>
+                    <li class="navigation-list-item"><router-link to="/o-restoranu" class="fw-semi-bold">Restoran</router-link></li>
+                    <li class="navigation-list-item"><router-link to="/kontakt" class="fw-semi-bold">Kontakt</router-link></li>
                 </ul>
             </nav>
 
@@ -66,12 +66,12 @@
         <div :class="['mobile-menu', { open: open }]">
             <ul class="mobile-navigation-list" role="list">
                 <li @click="open = false"><router-link to="/">Početna</router-link></li>
-                <li @click="open = false"><router-link to="/menu">Jelovnik</router-link></li>
+                <li @click="open = false"><router-link to="/jelovnik">Jelovnik</router-link></li>
                 <li @click="open = false"><a href="/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank">Ponuda proslave (PDF)</a></li>
-                <li @click="open = false"><router-link to="/birthday-parties">Rođendani</router-link></li>
-                <li @click="open = false"><router-link to="/teambuilding">Team building</router-link></li>
-                <li @click="open = false"><router-link to="/restaurant">Restoran</router-link></li>
-                <li @click="open = false"><router-link to="/contact">Kontakt</router-link></li>
+                <li @click="open = false"><router-link to="/rodjendanske-zabave">Rođendani</router-link></li>
+                <li @click="open = false"><router-link to="/team-building">Team building</router-link></li>
+                <li @click="open = false"><router-link to="/o-restoranu">Restoran</router-link></li>
+                <li @click="open = false"><router-link to="/kontakt">Kontakt</router-link></li>
             </ul>
 
             <div class="mobile-navigation-social-links">

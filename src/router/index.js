@@ -5,7 +5,6 @@ import TeamBuildingView from '../views/TeamBuildingView.vue';
 import ContactView from '../views/ContactView.vue';
 import PrivacyPolicyView from '../views/PrivacyPolicyView.vue';
 import TermsOfUseView from '../views/TermsOfUseView.vue';
-import EventsView from '../views/EventsView.vue';
 import MenuView from '../views/MenuView.vue';
 import BirthdatePartiesView from '../views/BirthdatePartiesView.vue';
 import ImportantInfoView from '../views/ImportantInfoView.vue';
@@ -22,7 +21,7 @@ const routes = [
         }
     },
     {
-        path: '/restaurant',
+        path: '/o-restoranu',
         name: 'Restaurant',
         component: RestaurantView,
         meta: {
@@ -31,7 +30,7 @@ const routes = [
         }
     },
     {
-        path: '/teambuilding',
+        path: '/team-building',
         name: 'TeamBuilding',
         component: TeamBuildingView,
         meta: {
@@ -40,7 +39,7 @@ const routes = [
         }
     },
     {
-        path: '/contact',
+        path: '/kontakt',
         name: 'Contact',
         component: ContactView,
         meta: {
@@ -49,7 +48,7 @@ const routes = [
         }
     },
     {
-        path: '/privacypolicy',
+        path: '/politika-privatnosti',
         name: 'PrivacyPolicy',
         component: PrivacyPolicyView,
         meta: {
@@ -58,7 +57,7 @@ const routes = [
         }
     },
     {
-        path: '/termsofuse',
+        path: '/uslovi-koriscenja',
         name: 'TermsOfUse',
         component: TermsOfUseView,
         meta: {
@@ -67,25 +66,16 @@ const routes = [
         }
     },
     {
-        path: '/info',
+        path: '/bitne-informacije',
         name: 'ImportantInfo',
         component: ImportantInfoView,
         meta: {
-            title: 'Uslovi korišćenja | Restoran ranč Legenda',
-            description: 'Uslovi korišćenja.'
+            title: 'Bitne informacije | Restoran ranč Legenda',
+            description: 'Bitne informacije.'
         }
     },
     {
-        path: '/events',
-        name: 'Events',
-        component: EventsView,
-        meta: {
-            title: 'Događaji | Restoran ranč Legenda',
-            description: 'Odkrijte naše predstojuće događaje i specijalne večeri na Ranclegenda.'
-        }
-    },
-    {
-        path: '/menu',
+        path: '/jelovnik',
         name: 'Menu',
         component: MenuView,
         meta: {
@@ -94,7 +84,7 @@ const routes = [
         }
     },
     {
-        path: '/birthday-parties',
+        path: '/rodjendanske-zabave',
         name: 'BirthdateParties',
         component: BirthdatePartiesView,
         meta: {
