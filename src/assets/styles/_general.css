@@ -158,12 +158,13 @@ body:has(.mobile-navigation.open) {
 
 /* Form */
 .form-input {
-    border: 1px solid lightgray;
+    border-radius: 4px;
     height: 60px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    border: 1px solid lightgray;
 }
 
 .form-input label {
@@ -179,6 +180,7 @@ body:has(.mobile-navigation.open) {
     height: 100%;
     font-size: 16px;
     border: 0;
+    border-radius: 4px;
     appearance: none; /* Remove native select styles in most browsers */
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -262,6 +264,7 @@ body:has(.mobile-navigation.open) {
     resize: none;
     background: transparent;
     background-color: white;
+    border-radius: 4px;
 }
 
 /* Menu */

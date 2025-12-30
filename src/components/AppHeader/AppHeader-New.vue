@@ -24,16 +24,22 @@
                         <div class="dropdown-menu">
                             <ul>
                                 <li class="dropdown-menu-item">
-                                    <a href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank" class="fw-semi-bold">Ponuda (PDF)</a>
-                                    <span class="menu-item-sub">Pogledajte detaljnije ponudu</span>
+                                    <a href="/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank">
+                                        <span class="fw-semi-bold">Ponuda (PDF)</span>
+                                        <span class="menu-item-sub">Pogledajte detaljnije ponudu</span>
+                                    </a>
                                 </li>
                                 <li class="dropdown-menu-item">
-                                    <router-link to="/birthday-parties" class="fw-semi-bold">Rođendani</router-link>
-                                    <span class="menu-item-sub">Organizovani rodjendani</span>
+                                    <router-link to="/birthday-parties">
+                                        <span class="fw-semi-bold">Rođendani</span>
+                                        <span class="menu-item-sub">Organizovani rodjendani</span>
+                                    </router-link>
                                 </li>
                                 <li class="dropdown-menu-item">
-                                    <router-link to="/teambuilding" class="fw-semi-bold">Team building</router-link>
-                                    <span class="menu-item-sub">Organizovani team building</span>
+                                    <router-link to="/teambuilding">
+                                        <span class="fw-semi-bold">Team building</span>
+                                        <span class="menu-item-sub">Organizovani team building</span>
+                                    </router-link>
                                 </li>
                             </ul>
                         </div>
@@ -61,7 +67,7 @@
             <ul class="mobile-navigation-list" role="list">
                 <li @click="open = false"><router-link to="/">Početna</router-link></li>
                 <li @click="open = false"><router-link to="/menu">Jelovnik</router-link></li>
-                <li @click="open = false"><a href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank">Ponuda proslave (PDF)</a></li>
+                <li @click="open = false"><a href="/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank">Ponuda proslave (PDF)</a></li>
                 <li @click="open = false"><router-link to="/birthday-parties">Rođendani</router-link></li>
                 <li @click="open = false"><router-link to="/teambuilding">Team building</router-link></li>
                 <li @click="open = false"><router-link to="/restaurant">Restoran</router-link></li>
@@ -186,12 +192,18 @@
             padding: .7rem 1rem;
         }
 
+        .dropdown-menu-item:hover {
+            background-color: rgb(241, 241, 241);
+        }
+
         .dropdown-menu-item a {
             text-decoration: none;
             color: var(--clr-neutral-900);
             font-weight: 500;
             font-size: var(--fs-nav);
             display: block;
+            display: flex;
+            flex-direction: column;
         }
 
         .menu-item-sub {
