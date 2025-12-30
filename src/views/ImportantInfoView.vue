@@ -3,7 +3,7 @@
 <template>
     <section id="terms-of-service" class="padding-block-900">
         <div class="container">
-            <h2 class="fs-secondary-heading fw-bold">Uslovi korišćenja</h2>
+            <h2 class="fs-secondary-heading fw-bold">Bitne informacije</h2>
 
             <div class="booking-info-section flow">
                 <p class="fw-regular"><strong>Opšti uslovi i bitne informacije</strong></p>

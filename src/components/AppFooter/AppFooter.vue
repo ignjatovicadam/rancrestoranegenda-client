@@ -32,18 +32,17 @@
                     <div class="footer-item flow">
                         <h3 class="fs-tertiary-heading fw-bold">Restoran</h3>
                         <ul role="list">
-                            <li class="flow-spacer-200"><router-link to="/contact">Kontakt</router-link></li>
-                            <li class="flow-spacer-200"><router-link to="/restaurant">Restoran</router-link></li>
-                            <li class="flow-spacer-200"><router-link to="/menu">Jelovnik</router-link></li>
+                            <li class="flow-spacer-200"><router-link to="/kontakt">Kontakt</router-link></li>
+                            <li class="flow-spacer-200"><router-link to="/o-restoranu">Restoran</router-link></li>
+                            <li class="flow-spacer-200"><router-link to="/jelovnik">Jelovnik</router-link></li>
                         </ul>
                     </div>
 
                     <div class="footer-item flow">
                         <h3 class="fs-tertiary-heading fw-bold">Proslave</h3>
                         <ul role="list">
-                            <li class="flow-spacer-200"><router-link to="/events">Proslave</router-link></li>
-                            <li class="flow-spacer-200"><router-link to="/teambuilding">Team building</router-link></li>
-                            <li class="flow-spacer-200"><router-link to="/birthday-parties">Dečiji rođendani</router-link></li>
+                            <li class="flow-spacer-200"><router-link to="/team-building">Team building</router-link></li>
+                            <li class="flow-spacer-200"><router-link to="/rodjendanske-zabave">Dečiji rođendani</router-link></li>
                         </ul>
                     </div>
 
@@ -67,11 +66,11 @@
             <div class="two-columns footer-note">
                 <p>&copy; 2025 Restoran ranč Legenda. Sva prava zadržana.</p>
                 <p>
-                <router-link to="/privacypolicy">Politika privatnosti</router-link>
+                <router-link to="/politika-privatnosti">Politika privatnosti</router-link>
                 &nbsp;
-                <router-link to="/termsofuse">Uslovi korišćenja</router-link>
+                <router-link to="/uslovi-koriscenja">Uslovi korišćenja</router-link>
                 &nbsp;
-                <router-link to="/info">Bitne informacije</router-link>
+                <router-link to="/bitne-informacije">Bitne informacije</router-link>
                 </p>
             </div>
         </div>

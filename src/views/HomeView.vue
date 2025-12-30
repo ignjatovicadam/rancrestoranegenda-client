@@ -1,6 +1,10 @@
 <script setup>
     import { reactive } from 'vue';
     import { AppHero, BookingForm } from '../components';
+    import example1 from '../assets/images/example-1.jpg';
+    import example2 from '../assets/images/example-2.jpg';
+    import example3 from '../assets/images/example-3.jpg';
+    import example4 from '../assets/images/example-4.jpg';
 
     const cache = reactive({});
 
@@ -86,34 +90,34 @@
                 <div v-reveal>
                     <a href="/rancrestoranegenda-client/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" class="flow flow-spacer-400" target="_blank">
                         <div class="image-overlay">
-                            <img loading="lazy" src="" alt="Restoran ranč Legenda slika bašta otvoren deo" :class="{ 'loaded': cache[bannerImageFirst] }" @load="cache[bannerImageFirst] = bannerImageFirst">
+                            <img loading="lazy" :src="example1" alt="Restoran ranč Legenda slika bašta otvoren deo" :class="{ 'loaded': cache[example1] }" @load="cache[example1] = example1">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">PROSLAVE</h3>
                         <p class="fw-regular">Organizujemo poslovne i porodične proslave na otvorenom, u prirodi, u zatvorenom ili natkrivenom prostoru.</p>
                     </a>
                 </div>
                 <div v-reveal>
-                    <router-link to="/restaurant" class="flow flow-spacer-400">
+                    <router-link to="/o-restoranu" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img loading="lazy" src="" alt="Restoran ranč Legenda slika bašta bife mlečni proizvodi" :class="{ 'loaded': cache[bannerImageSecond] }" @load="cache[bannerImageSecond] = bannerImageSecond">
+                            <img loading="lazy" :src="example2" alt="Restoran ranč Legenda slika bašta bife mlečni proizvodi" :class="{ 'loaded': cache[example2] }" @load="cache[example2] = example2">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">RESTORAN</h3>
                         <p class="fw-regular">Restoran domaće kuhinje sa baštom, smešten u prirodnom okruženju, idealan za porodične ručkove i veće grupe.</p>
                     </router-link>
                 </div>
                 <div v-reveal>
-                    <router-link to="/birthday-parties" class="flow flow-spacer-400">
+                    <router-link to="/rodjendanske-zabave" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img loading="lazy" src="" alt="Restoran ranč Legenda rođendani trke" :class="{ 'loaded': cache[bannerImageThird] }" @load="cache[bannerImageThird] = bannerImageThird">
+                            <img loading="lazy" :src="example3" alt="Restoran ranč Legenda rođendani trke" :class="{ 'loaded': cache[example3] }" @load="cache[example3] = example3">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">DEČIJI ROĐENDANI</h3>
                         <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima <br>prilagođenim različitim uzrastim</p>
                     </router-link>
                 </div>
                 <div v-reveal>
-                    <router-link to="/teambuilding" class="flow flow-spacer-400">
+                    <router-link to="/team-building" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img loading="lazy" src="" alt="Restoran ranč Legenda timske aktivnosti bacanje" :class="{ 'loaded': cache[banngerImageForth] }" @load="cache[banngerImageForth] = banngerImageForth">
+                            <img loading="lazy" :src="example4" alt="Restoran ranč Legenda timske aktivnosti bacanje" :class="{ 'loaded': cache[example4] }" @load="cache[example4] = example4">
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">TEAM BUILDING</h3>
                         <p class="fw-regular">Prostor u prirodi sa sadržajima za timske aktivnosti i korporativne skupove u Beogradu.</p>
@@ -192,7 +196,6 @@
     position: absolute;
     inset: 0;
     z-index: 2;
-    background-color: rgb(226, 224, 220);
 }
 
 a:hover .image-overlay img,
