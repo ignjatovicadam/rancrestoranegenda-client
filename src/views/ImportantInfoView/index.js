@@ -1,0 +1,1 @@
+export { default as ImportantInfoView } from './ImportantInfoView.vue';

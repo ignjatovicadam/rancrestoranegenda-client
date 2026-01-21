@@ -1,0 +1,29 @@
+.central-column-reservation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: var(--clr-primary-100);
+}
+
+.accordion-list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.image-overlay {
+    background-color: rgb(226, 224, 220);
+}
+
+@media (min-width: 50em) {
+    .accordion-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+.accordion-item {
+    box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.09);
+    margin-bottom: 1.5em;
+}

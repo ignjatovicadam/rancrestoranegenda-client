@@ -75,12 +75,4 @@
     </div>
 </template>
 
-<style scoped>
-.select-display:hover {
-    cursor: pointer;
-}
-
-li:not(:last-of-type) {
-    border-bottom: 1px solid rgba(15, 15, 15, 0.2);
-}
-</style>
+<style src="./input-combobox.css" scoped />

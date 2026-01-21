@@ -59,27 +59,4 @@
     </transition>
 </template>
 
-<style scoped>
-.expand-enter-active,
-.expand-leave-active {
-    will-change: height;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-    transition: height .2s ease-in-out !important;
-    overflow: hidden;
-}
-
-.expand-enter,
-.expand-leave-to {
-    will-change: height;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-    height: 0;
-}
-
-.accordion-panel div {
-    padding: 1rem;
-}
-</style>
+<style src="./accordion-panel.css" scoped></style>

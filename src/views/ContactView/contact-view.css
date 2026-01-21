@@ -1,0 +1,27 @@
+    ul, p {
+        margin-top: 2em;
+    }
+
+    ul li {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+        margin-bottom: 1em;
+    }
+
+    li img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contact-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: 50em) {
+    .contact-flex {
+        flex-direction: row;
+        gap: 3em;
+    }
+}

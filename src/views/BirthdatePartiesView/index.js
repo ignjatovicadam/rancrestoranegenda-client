@@ -1,0 +1,1 @@
+export { default as BirthdatePartiesView } from './BirthdatePartiesView.vue';

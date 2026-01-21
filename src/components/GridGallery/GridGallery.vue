@@ -70,4 +70,4 @@
     </div>
 </template>
 
-<style src="./gridGallery.css" scoped></style>
+<style src="./grid-gallery.css" scoped></style>
