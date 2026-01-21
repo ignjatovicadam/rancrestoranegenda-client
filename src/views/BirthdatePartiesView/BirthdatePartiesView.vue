@@ -1,21 +1,23 @@
 <script setup>
     import { BookingForm, ImageGallery } from '@/components';
+    import heroImg from '@/assets/images/ranc-restoran-legenda-rodjendani-aktivnosti.webp';
+    import img1 from '@/assets/images/ranc-restoran-legenda-deciji-rodjendan-igre.webp';
+    import img2 from '@/assets/images/ranc-restoran-legenda-deciji-rodjendani-tobogan.webp';
+    import img3 from '@/assets/images/ranc-restoran-legenda-zoo-vrt-poni.webp';
+    import img4 from '@/assets/images/ranc-restoran-legenda-deciji-rodjendani-radionica-igrice.webp';
     
     const images = [
         {
-            url: "",
+            url: img1,
         },
         {
-            url: "",
+            url: img2,
         },
         {
-            url: "",
+            url: img3,
         },
         {
-            url: "",
-        },
-        {
-            url: "",
+            url: img4,
         },
     ];
 </script>
@@ -28,7 +30,7 @@
                 <p class="fw-regular">Rođendani kod nas nisu samo zabava, već pravo iskustvo druženja sa životinjama i boravka u zelenilu. Deca mogu da uživaju u igri i istraživanju, dok roditelji bez žurbe i stresa uživaju u domaćoj hrani i prirodnom okruženju. Naša velika bašta, životinje i animacije stvaraju atmosferu koju mališani dugo pamte — veselu, zdravu i drugačiju od klasičnih, zatvorenih proslava.</p>
                 <a href="/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank" class="button button-primary">Pogledajte ponudu</a>
                 <div class="template-image-preview">
-                    <img src="" alt="">
+                    <img :src="heroImg" alt="Ranč restoran Legenda slika dečji rođendani">
                 </div>
             </div>
 
@@ -44,27 +46,22 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="" alt="">
+                        <img :src="img1" alt="Ranč restoran Legenda slika dečiji rođendani aktivnosti">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="" alt="">
+                        <img :src="img2" alt="Ranč restoran Legenda slika dečiji rođendani tobogan">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="" alt="">
+                        <img :src="img3" alt="Ranč restoran Legenda slika dečiji rođendani sa zivotinjama">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div>
-                    <div class="image-overlay">
-                        <img src="" alt="">
+                        <img :src="img4" alt="Ranč restoran Legenda slika dečiji rođendani sa radionicama">
                     </div>
                 </div>
             </div>

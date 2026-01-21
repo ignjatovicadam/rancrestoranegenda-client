@@ -1,10 +1,11 @@
 <script setup>
     import { reactive } from 'vue';
     import { AppHero, BookingForm } from '@/components';
-    import example1 from '@/assets/images/example-1.jpg';
-    import example2 from '@/assets/images/example-2.jpg';
-    import example3 from '@/assets/images/example-3.jpg';
-    import example4 from '@/assets/images/example-4.jpg';
+    import heroImg from '@/assets/images/ranc-restoran-legenda-basta-rucak.webp';
+    import proslaveImg from '@/assets/images/ranc-restoran-legenda-basta-rucak-proslava.webp';
+    import rodjendaniImg from '@/assets/images/ranc-restoran-legenda-proslave-deciji-rodjendani-basta.webp';
+    import teamBuildingImg from '@/assets/images/ranc-restoran-legenda-proslave-team-building-aktivnost.webp';
+    import restoranImg from '@/assets/images/ranc-restoran-legenda-rucak-basta-fontana.webp';
 
     const cache = reactive({});
 
@@ -68,7 +69,7 @@
 </script>
 
 <template>
-    <app-hero id="hero-welcome" size="large" image-url="''">
+    <app-hero id="hero-welcome" size="large" :image-url="heroImg">
         <div class="welcome-text flow">
             <h1 v-reveal="120" class="fs-primary-heading fw-bold">Dobro došli u Legendu,</h1>
             <p v-reveal="240" class="fw-semi-bold">Ranč na obali Save idealan za porodična okupljanja, slavlja i uživanje u domaćim specijalitetima.</p>
@@ -90,7 +91,13 @@
                 <div v-reveal>
                     <a href="/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" class="flow flow-spacer-400" target="_blank">
                         <div class="image-overlay">
-                            <img loading="lazy" :src="example1" alt="Restoran ranč Legenda slika bašta otvoren deo" :class="{ 'loaded': cache[example1] }" @load="cache[example1] = example1">
+                            <img 
+                                loading="lazy" 
+                                :src="proslaveImg" 
+                                alt="Ranč restoran Legenda slika bašta proslava" 
+                                :class="{ 'loaded': cache[proslaveImg] }" 
+                                @load="cache[proslaveImg] = proslaveImg"
+                            >
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">PROSLAVE</h3>
                         <p class="fw-regular">Organizujemo poslovne i porodične proslave na otvorenom, u prirodi, u zatvorenom ili natkrivenom prostoru.</p>
@@ -99,7 +106,13 @@
                 <div v-reveal>
                     <router-link to="/o-restoranu" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img loading="lazy" :src="example2" alt="Restoran ranč Legenda slika bašta bife mlečni proizvodi" :class="{ 'loaded': cache[example2] }" @load="cache[example2] = example2">
+                            <img 
+                                loading="lazy" 
+                                :src="restoranImg" 
+                                alt="Ranč restoran Legenda slika bašta jelo" 
+                                :class="{ 'loaded': cache[restoranImg] }" 
+                                @load="cache[restoranImg] = restoranImg"
+                            >
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">RESTORAN</h3>
                         <p class="fw-regular">Restoran domaće kuhinje sa baštom, smešten u prirodnom okruženju, idealan za porodične ručkove i veće grupe.</p>
@@ -108,7 +121,13 @@
                 <div v-reveal>
                     <router-link to="/rodjendanske-zabave" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img loading="lazy" :src="example3" alt="Restoran ranč Legenda rođendani trke" :class="{ 'loaded': cache[example3] }" @load="cache[example3] = example3">
+                            <img 
+                                loading="lazy" 
+                                :src="rodjendaniImg" 
+                                alt="Ranč restoran Legenda slika dečji rođendani" 
+                                :class="{ 'loaded': cache[rodjendaniImg] }" 
+                                @load="cache[rodjendaniImg] = rodjendaniImg"
+                            >
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">DEČIJI ROĐENDANI</h3>
                         <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima <br>prilagođenim različitim uzrastim</p>
@@ -117,7 +136,13 @@
                 <div v-reveal>
                     <router-link to="/team-building" class="flow flow-spacer-400">
                         <div class="image-overlay">
-                            <img loading="lazy" :src="example4" alt="Restoran ranč Legenda timske aktivnosti bacanje" :class="{ 'loaded': cache[example4] }" @load="cache[example4] = example4">
+                            <img 
+                                loading="lazy" 
+                                :src="teamBuildingImg" 
+                                alt="Ranč restoran Legenda slika timske aktivnosti" 
+                                :class="{ 'loaded': cache[teamBuildingImg] }" 
+                                @load="cache[teamBuildingImg] = teamBuildingImg"
+                            >
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">TEAM BUILDING</h3>
                         <p class="fw-regular">Prostor u prirodi sa sadržajima za timske aktivnosti i korporativne skupove u Beogradu.</p>
