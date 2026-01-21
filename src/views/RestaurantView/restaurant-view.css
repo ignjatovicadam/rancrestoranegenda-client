@@ -1,0 +1,68 @@
+.restaurant .even-columns {
+    display: none;
+}
+
+.restaurant a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.restaurant img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.restaurant .image-overlay, .promo-link .image-overlay {
+    position: relative;
+}
+
+.restaurant .image-overlay::before, .promo-link .image-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: rgb(226, 224, 220);
+}
+
+@media (min-width: 50em) {
+    .restaurant img {
+        height: 350px;
+    }
+
+    .restaurant .even-columns {
+        display: grid;
+    }
+
+    .restaurant .vgo-gallery {
+        display: none;
+    }
+}
+
+.restaurant .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.restaurant .container .even-columns {
+    flex-basis: 50%;
+}
+
+@media (min-width: 50em) {
+    .restaurant .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .restaurant .container .even-columns {
+        flex-basis: 50%;
+    }
+
+    .description-text {
+        flex-basis: 50%;
+    }
+}

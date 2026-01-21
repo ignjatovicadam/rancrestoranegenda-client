@@ -1,0 +1,126 @@
+footer {
+    background-color: #282828;
+    color: var(--clr-primary-100);
+    padding-top: var(--size-900);
+    padding-bottom: var(--size-700);
+}
+
+footer .even-columns {
+    gap: 2em;
+}
+
+footer p {
+    max-width: 42ch;
+    opacity: 0.7;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+@media (min-width: 50em) {
+    .two-columns {
+        gap: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer-item ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item ul li a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-item ul li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--clr-accent-400);
+    transition: width 0.3s ease;
+}
+
+.footer-item ul li a:hover::after,
+.footer-item ul li .router-link-exact-active::after {
+    width: 100%;
+}
+
+.footer-note {
+    border-top: 1px solid lightgray;
+    justify-content: flex-start;
+    gap: 1em;
+    padding-top: var(--size-500);
+}
+
+.footer-note p {
+    font-size: var(--fs-300);
+}
+
+.footer-note a {
+    color: inherit;
+}
+
+.footer-note a:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 50em) {
+    .footer-note {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer-contact-information {
+    display: flex;
+    flex-direction: column;
+    gap: .1em;
+    margin-top: 2rem;
+}
+
+.footer-contact-description {
+    font-size: var(--fs-300);
+    opacity: 0.7;
+}
+
+.footer-contact-informatio-item {
+    display: flex;
+    align-items: center;
+    gap: .35em;
+}
+
+.footer-contact-informatio-item a {
+    color: inherit;
+}
+
+.footer-contact-informatio-item .footer-icon {
+    width: 15px;
+    height: 15px;
+}
+
+@media (min-width: 50em) {
+    .footer-contact-information {
+        flex-direction: row;
+        gap: .7em;
+    }
+}

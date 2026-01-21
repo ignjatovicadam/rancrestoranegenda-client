@@ -1,0 +1,40 @@
+.services .even-columns {
+    display: none;
+}
+
+.services img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.services .image-overlay {
+    position: relative;
+    margin-bottom: var(--size-400);
+}
+
+.services .image-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: rgb(226, 224, 220);
+}
+
+.template-image-preview {
+    background-color: rgb(226, 224, 220);
+}
+
+@media (min-width: 50em) {
+    .services .even-columns {
+        display: grid;
+    }
+
+    .services img {
+        height: 370px;
+    }
+
+    .services .vgo-gallery {
+        display: none;
+    }
+}

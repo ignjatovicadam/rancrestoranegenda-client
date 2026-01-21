@@ -1,6 +1,5 @@
 <script setup>
-  import { AppFooter, CookieConsent } from './components';
-  import AppHeader from './components/AppHeader/AppHeader-New.vue';
+  import { AppFooter, AppHeader, CookieConsent } from './components';
 </script>
 
 <template>

@@ -95,7 +95,6 @@
                     href="javascript:void(0)"
                     @click="previous"
                 >
-                    <!-- <img src="/ranc-restoran-legenda-ikonica-strelica-prethodni.svg" alt="Restoran Ranč Legenda logo" /> -->
                     <ChevronLeft />
                 </a>
                 <a
@@ -124,4 +123,4 @@
     </div>
 </template>
 
-<style scoped src="./imageGallery.css" />
+<style scoped src="./image-gallery.css" />

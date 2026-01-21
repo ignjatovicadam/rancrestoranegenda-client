@@ -1,1 +1,1 @@
-export { default as DialogGallery } from './DialogGallery.vue';
+export { DialogGallery } from './src/components/DialogGallery';

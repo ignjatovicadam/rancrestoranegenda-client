@@ -20,36 +20,4 @@
     </section>
 </template>
 
-<style scoped>
-.hero {
-    background-size: cover;
-    background-position: center;
-    color: var(--clr-primary-100);
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 80px;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgb(226, 224, 220);
-}
-
-:slotted(.hero .welcome-text) {
-    max-width: 650px;
-    position: relative;
-    z-index: 1;
-}
-
-.hero.large {
-    height: min(calc(100vh - 80px), 1000px);  
-}
-
-.hero.medium {
-    min-height: 620px;
-    max-height: 620px;
-}
-</style>
+<style src="./app-hero.css" scoped></style>

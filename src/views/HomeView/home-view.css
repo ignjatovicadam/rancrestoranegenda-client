@@ -1,0 +1,55 @@
+.services a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.services img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    transform: scale(1);
+    opacity: 0;
+
+    &.loaded {
+        opacity: 1;
+    }
+}
+
+.services .image-overlay {
+    position: relative;
+    max-height: 300px;
+    margin-bottom: var(--size-400);
+    overflow: hidden;
+    display: block;
+}
+
+.services .image-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+a:hover .image-overlay img,
+a:focus .image-overlay img {
+    transform: scale(1.1);
+}
+
+.menu-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: var(--size-600);
+}
+
+@media (min-width: 50em) {
+    .menu-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services .image-overlay {
+        aspect-ratio: 4 / 5;
+        max-height: unset;
+    }   
+}

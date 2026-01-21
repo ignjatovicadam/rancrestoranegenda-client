@@ -1,14 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
-import RestaurantView from '../views/RestaurantView.vue';
-import TeamBuildingView from '../views/TeamBuildingView.vue';
-import ContactView from '../views/ContactView.vue';
-import PrivacyPolicyView from '../views/PrivacyPolicyView.vue';
-import TermsOfUseView from '../views/TermsOfUseView.vue';
-import MenuView from '../views/MenuView.vue';
-import BirthdatePartiesView from '../views/BirthdatePartiesView.vue';
-import ImportantInfoView from '../views/ImportantInfoView.vue';
-import NotFoundView from '../views/NotFoundView.vue';
+import {
+    HomeView,
+    RestaurantView,
+    TeamBuildingView,
+    ContactView,
+    PrivacyPolicyView,
+    TermsOfUseView,
+    MenuView,
+    BirthdatePartiesView,
+    ImportantInfoView,
+    NotFoundView,
+} from '@/views'
 
 const routes = [
     {

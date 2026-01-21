@@ -1,0 +1,18 @@
+.dialog[open] {
+    animation: dialog-enter .3s cubic-bezier(.075,.82,.165,1);
+    animation-fill-mode: forwards;
+}
+
+.dialog[open]::backdrop {
+    animation: dialog-fade-in .3s ease-in;
+}
+
+.dialog.dialog--leave {
+    animation: dialog-leave .3s cubic-bezier(.55,.055,.675,.19);
+    animation-fill-mode: forwards;
+}
+
+.dialog.dialog--leave::backdrop {
+    animation: dialog-fade-out .3s ease-out;
+    animation-fill-mode: forwards;
+}

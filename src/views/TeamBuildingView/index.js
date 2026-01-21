@@ -1,0 +1,1 @@
+export { default as TeamBuildingView } from './TeamBuildingView.vue';
