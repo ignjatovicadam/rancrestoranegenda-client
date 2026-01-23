@@ -56,7 +56,9 @@
             body: JSON.stringify(form),
             });
 
-            if (!res.ok) throw new Error('Failed');
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            };
 
             success.value = true;
             loading.value = false;
