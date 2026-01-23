@@ -1,31 +1,36 @@
 <script setup>
     import { reactive } from 'vue';
     import { AppHero, ImageGallery } from '@/components';
+    import heroImg from '@/assets/images/ranc-restoran-legenda-restoran-hrana.webp';
+    import img1 from '@/assets/images/ranc-restoran-legenda-rucak-otvoreni-deo.webp';
+    import img2 from '@/assets/images/ranc-restoran-legenda-postavka-za-rucak.webp';
+    import img3 from '@/assets/images/ranc-restoran-legenda-unutra-postavka.webp';
+    import img4 from '@/assets/images/ranc-restoran-legenda-unutra-proslava.webp'
 
     const cache = reactive({});
 
     const upperImages = [
         {
-            url: ""
+            url: img1
         },
         {
-            url: ""
+            url: img2
         },
     ];
 
     const downImages = [
         {
-            url: ""
+            url: img3
         },
         {
-            url: ""
+            url: img4
         },
     ];
 </script>
 
 
 <template>
-    <app-hero id="hero-restaurant" size="medium" image-url="">
+    <app-hero id="hero-restaurant" size="medium" :image-url="heroImg">
         <div class="welcome-text flow">
             <h1 class="fs-primary-heading fw-bold">Restoran Legenda</h1>
             <p class="fw-semi-bold">Nalazi se u hladu velikih vrba, na površini zemljišta od jednog hektara, okružen rekom sa čak 3 strane, sa igralištem na otvorenom i farmom sa domaćim životinjama.</p>
@@ -36,12 +41,12 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="" alt="">
+                        <img :src="img1" alt="Ranč restoran Legenda - otvoreni deo">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img class="" src="" alt="">
+                        <img :src="img2" alt="Ranč restoran Legenda - postavka za ručak">
                     </div>
                 </div>
             </div>
@@ -90,12 +95,12 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="" alt="">
+                        <img :src="img3" alt="Ranč restoran Legenda - unutrašnja postavka">
                     </div>
                 </div>
                 <div>
                     <div class="image-overlay">
-                        <img class="" src="" alt="">
+                        <img :src="img4" alt="Ranč restoran Legenda - unutrašnja proslava za svečane prilike">
                     </div>
                 </div>
             </div>

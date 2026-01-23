@@ -9,15 +9,19 @@
     const images = [
         {
             url: img1,
+            description: 'Ranč restoran Legenda slika dečiji rođendani aktivnosti',
         },
         {
             url: img2,
+            description: 'Ranč restoran Legenda slika dečiji rođendani tobogan',
         },
         {
             url: img3,
+            description: 'Ranč restoran Legenda slika dečiji rođendani zoo vrt poni',
         },
         {
             url: img4,
+            description: 'Ranč restoran Legenda slika dečiji rođendani sa radionicama',
         },
     ];
 </script>

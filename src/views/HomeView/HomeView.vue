@@ -80,7 +80,7 @@
             <div class="flow">
                 <h2 v-reveal="60" class="fs-secondary-heading fw-bold">Tradicija i kvalitet idu ruku pod ruku</h2>
                 <p class="fw-regular">
-                    Autentičan etno restoran u kojem se tradicija, ukusi domaće kuhinje i iskreno gostoprimstvo stapaju u jedinstvenu celinu. Sa dugogodišnjim iskustvom u ugostiteljstvu, kao domaćini smo posvećeni tome da svaka proslava – od malih okupljanja do velikih svečanosti – bude organizovana sa stilom i dušom.
+                    Autentičan etno restoran u kom se tradicija, ukusi domaće kuhinje i iskreno gostoprimstvo stapaju u jedinstvenu celinu. Sa dugogodišnjim iskustvom u ugostiteljstvu, kao domaćini posvećeni smo tome da svaka proslava – od malih okupljanja do velikih svečanosti – bude organizovana sa stilom i dušom.
                 </p>
             </div>
         </div>
@@ -130,7 +130,7 @@
                             >
                         </div>
                         <h3 class="fs-tertiary-heading fw-bold">DEČIJI ROĐENDANI</h3>
-                        <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima <br>prilagođenim različitim uzrastim</p>
+                        <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima <br>prilagođenim različitim uzrastima</p>
                     </router-link>
                 </div>
                 <div v-reveal>
