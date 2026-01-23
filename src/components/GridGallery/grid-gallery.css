@@ -1,7 +1,6 @@
 .cb-product-gallery {
     container-type: inline-size;
     overflow: hidden;
-    /*border-radius: var(--vg-card-all-border-radius);*/
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
@@ -64,7 +63,6 @@
         display: block;
         margin: 0 auto;
         position: relative;
-        /*transition: transform .2s;*/
         transition: opacity 0.2s ease-out;
         will-change: opacity;
         opacity: 0;
@@ -79,15 +77,10 @@
             z-index: 2;
             opacity: .3;
         }
-
-        img {
-            /*transform: scale(1.02);*/
-        }
     }
 }
 
 /* Grid-area */
-
 .cb-product-gallery__index__1 {
     grid-area: a;
 }

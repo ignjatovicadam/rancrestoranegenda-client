@@ -1,11 +1,19 @@
 <script setup>
     import { AppHero, BookingForm, GridGallery, AccordionButton, AccordionPanel, useAccordion } from '@/components';
+    import heroImg from '@/assets/images/ranc-restoran-legenda-team-building-aktivnosti.webp';
+    import img1 from '@/assets/images/ranc-restoran-legenda-team-building-igre.webp';
+    import img2 from '@/assets/images/ranc-restoran-legenda-team-building-strelicarstvo.webp';
+    import img3 from '@/assets/images/ranc-restoran-legenda-veliki-porstor-napolju-deca-basta-piknik.webp';
+    import img4 from '@/assets/images/ranc-restoran-legenda-veliki-prostor-za-decu-tobogan.webp';
+    import img5 from '@/assets/images/ranc-restoran-legenda-svedski-sto-hrana-team-building.webp';
+    import img6 from '@/assets/images/ranc-restoran-legenda-zoo-vrt-deca-konji.webp';
+    import img7 from '@/assets/images/ranc-restoran-legenda-svedksi-sto-basta.webp';
 
     const { active, toggle } = useAccordion('single');
 </script>
 
 <template>
-    <app-hero id="hero-team-building" size="medium" image-url="/rancrestoranegenda-client/IMG_6237-2.jpg">
+    <app-hero id="hero-team-building" size="medium" :image-url="heroImg">
         <div class="welcome-text flow">
             <h1 class="fs-primary-heading fw-bold">Učvrstite timske veze</h1>
             <p class="fw-semi-bold">Team building park u okviru Ranča Legenda pruža jedinstveno iskustvo za timove koji žele da se povežu, opuste i provedu dan van kancelarije — u prirodnom okruženju.</p>
@@ -16,7 +24,7 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="" alt="">
+                        <img :src="img1" alt="Ranč restoran Legenda - team building igre">
                     </div>
                 </div>
             </div>
@@ -37,7 +45,7 @@
             <div class="even-columns">
                 <div>
                     <div class="image-overlay">
-                        <img src="" alt="">
+                        <img :src="img2" alt="Ranč restoran Legenda - team building streličarstvo">
                     </div>
                 </div>
             </div>
@@ -117,11 +125,11 @@
 
             <div style="margin-top: 2em;">
                     <grid-gallery :images="[
-                        { url: '', lqip: '', },
-                        { url: '', lqip: '', },
-                        { url: '', lqip: '', },
-                        { url: '', lqip: '', },
-                        { url: '', lqip: '', },
+                        { url: img3, lqip: img3, description: 'Ranč restoran Legenda - veliki prostor napolju za decu, bašta i piknik'},
+                        { url: img4, lqip: img4, description: 'Ranč restoran Legenda - veliki prostor za decu, tobogan'},
+                        { url: img5, lqip: img5, description: 'Ranč restoran Legenda - svedski sto hrana za team building'},
+                        { url: img6, lqip: img6, description: 'Ranč restoran Legenda - zoo vrt za decu i konje'},
+                        { url: img7, lqip: img7, description: 'Ranč restoran Legenda - svedski sto bašta'},
                     ]">
                     </grid-gallery>
                 </div>

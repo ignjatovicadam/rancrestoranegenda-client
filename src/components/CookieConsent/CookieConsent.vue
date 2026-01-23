@@ -37,7 +37,7 @@
                 <div class="two-cl-layout">
                     <div>
                         <h3 class="fs-tertiary-heading fw-bold mb-1">Cenimo vašu privatnost</h3>
-                        <span class="fw-regular fs-small mb-2">Koristimo kolačiće da bismo poboljšali vaše iskustvo pregledanja, pružili personalizovane oglase ili sadržaje i analizirali naš saobraćaj.<router-link to="/privacypolicy">Politika privatnosti</router-link></span>
+                        <span class="fw-regular fs-small mb-2">Koristimo kolačiće da bismo poboljšali vaše iskustvo pregledanja, pružili personalizovane oglase ili sadržaje i analizirali naš saobraćaj.<router-link to="/politika-privatnosti">Politika privatnosti</router-link></span>
                         <div class="toggle-group">
                             <label class="toggle-label fw-semi-bold fs-small">
                                 <input v-model="googleAl" type="checkbox" class="toggle-input" />
