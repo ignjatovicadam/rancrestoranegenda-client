@@ -1,34 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://ranclegenda.rs/</loc>
-    </url>
+<url>
+    <loc>https://ranclegenda.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+</url>
 
-    <url>
-        <loc>https://ranclegenda.rs/restaurant</loc>
-    </url>
+<url>
+    <loc>https://ranclegenda.com/o-restoranu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
 
-    <url>
-        <loc>https://ranclegenda.rs/menu</loc>
-    </url>
+<url>
+    <loc>https://ranclegenda.com/team-building</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>
 
-    <url>
-        <loc>https://ranclegenda.rs/teambuilding</loc>
-    </url>
+<url>
+    <loc>https://ranclegenda.com/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
 
-    <url>
-        <loc>https://ranclegenda.rs/birthday-parties</loc>
-    </url>
+<url>
+    <loc>https://ranclegenda.com/jelovnik</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+</url>
 
-    <url>
-        <loc>https://ranclegenda.rs/contact</loc>
-    </url>
+<url>
+    <loc>https://ranclegenda.com/rodjendanske-zabave</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>
 
-    <url>
-        <loc>https://ranclegenda.rs/privacypolicy</loc>
-    </url>
+<url>
+    <loc>https://ranclegenda.com/bitne-informacije</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+</url>
 
-    <url>
-        <loc>https://ranclegenda.rs/termsofuse</loc>
-    </url>
+<url>
+    <loc>https://ranclegenda.com/kontakt</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+</url>
+
+<url>
+    <loc>https://ranclegenda.com/politika-privatnosti</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+</url>
+
+<url>
+    <loc>https://ranclegenda.com/uslovi-koriscenja</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+</url>
 </urlset>
