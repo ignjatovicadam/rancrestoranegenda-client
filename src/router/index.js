@@ -119,6 +119,8 @@ router.afterEach((to) => {
 
     const description = to.meta.description;
     document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+    let canonicalTag = document.querySelector('link[rel="canonical"]');
+    canonicalTag.setAttribute('href', 'https://ranclegenda.com' + to.fullPath);
 });
 
 export default router;

@@ -50,13 +50,13 @@
                         <h3 class="fs-tertiary-heading fw-bold">Prati nas</h3>
                         <ul role="list">
                             <li class="flow-spacer-200">
-                                <a href="https://www.instagram.com/legenda_ranc/">Instagram</a>
+                                <a href="https://www.instagram.com/legenda_ranc/" target="_blank">Instagram</a>
                             </li>
                             <li class="flow-spacer-200">
-                                <a href="https://www.facebook.com/ranclegenda/?locale=sr_RS">Facebook</a>
+                                <a href="https://www.facebook.com/ranclegenda/?locale=sr_RS" target="_blank">Facebook</a>
                             </li>
                             <li class="flow-spacer-200">
-                                <a href="https://www.tiktok.com/@restoranlegenda">Tiktok</a>
+                                <a href="https://www.tiktok.com/@restoranlegenda" target="_blank">Tiktok</a>
                             </li>
                         </ul>
                     </div>
