@@ -94,7 +94,7 @@ footer p {
 .footer-contact-information {
     display: flex;
     flex-direction: column;
-    gap: .1em;
+    gap: .5em;
     margin-top: 2rem;
 }
 
@@ -120,7 +120,6 @@ footer p {
 
 @media (min-width: 50em) {
     .footer-contact-information {
-        flex-direction: row;
         gap: .7em;
     }
 }

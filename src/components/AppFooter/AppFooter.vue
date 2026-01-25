@@ -7,8 +7,8 @@
         <div class="container footer-flex">
             <div class="two-columns">
                 <div>
-                    <h3 class="fs-tertiary-heading fw-bold">Restoran ranč Legenda</h3>
-                    <p style="margin-top: 2em; margin-bottom: 1rem;">Hvala vam što ste nas posetili. Rezervacije su moguće putem sajta ili telefonom</p>
+                    <h3 class="fs-tertiary-heading fw-bold">Ranč restoran Legenda</h3>
+                    <p style="margin-top: 2em; margin-bottom: 1rem;">Radujemo se vašoj poseti. Rezervacije su dostupne putem sajta ili telefonom.</p>
 
                     <div class="footer-contact-information">
                         <div class="footer-contact-informatio-item">
@@ -19,7 +19,11 @@
                         </div>
                         <div class="footer-contact-informatio-item">
                             <Phone class="footer-icon"/>
-                            <span class="footer-contact-description">+381 64 1417 232 / +381 65 9393 557</span>
+                            <span class="footer-contact-description">Restoran +381 64 1417 232</span>
+                        </div>
+                        <div class="footer-contact-informatio-item">
+                            <Phone class="footer-icon"/>
+                            <span class="footer-contact-description">Proslave +381 65 9393 557</span>
                         </div>
                         <div class="footer-contact-informatio-item">
                             <Mail class="footer-icon"/>
@@ -43,6 +47,7 @@
                         <ul role="list">
                             <li class="flow-spacer-200"><router-link to="/team-building">Team building</router-link></li>
                             <li class="flow-spacer-200"><router-link to="/rodjendanske-zabave">Dečiji rođendani</router-link></li>
+                            <li class="flow-spacer-200"><a href="/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank">Ponuda proslave (PDF)</a></li>
                         </ul>
                     </div>
 
@@ -64,7 +69,7 @@
             </div>
 
             <div class="two-columns footer-note">
-                <p>&copy; 2025 Restoran ranč Legenda. Sva prava zadržana.</p>
+                <p>&copy; 2026 Ranč restoran Legenda. Sva prava zadržana.</p>
                 <p>
                 <router-link to="/politika-privatnosti">Politika privatnosti</router-link>
                 &nbsp;
