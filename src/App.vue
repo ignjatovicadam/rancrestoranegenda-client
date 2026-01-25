@@ -1,5 +1,5 @@
 <script setup>
-  import { AppFooter, AppHeader, CookieConsent } from './components';
+  import { AppFooter, AppHeader, CookieConsent } from '@/components';
 </script>
 
 <template>

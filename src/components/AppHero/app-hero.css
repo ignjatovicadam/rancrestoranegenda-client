@@ -22,7 +22,7 @@
 }
 
 .hero.large {
-    height: min(calc(100vh - 80px), 1000px);  
+    height: min(calc(100vh - 80px), 800px);  
 }
 
 .hero.medium {
