@@ -27,7 +27,7 @@
                         </div>
                         <div class="footer-contact-informatio-item">
                             <Mail class="footer-icon"/>
-                            <span class="footer-contact-description">kontakt@ranclegenda.rs</span>
+                            <span class="footer-contact-description">info@ranclegenda.com</span>
                         </div>
                     </div>
                 </div>
@@ -36,9 +36,9 @@
                     <div class="footer-item flow">
                         <h3 class="fs-tertiary-heading fw-bold">Restoran</h3>
                         <ul role="list">
-                            <li class="flow-spacer-200"><router-link to="/kontakt">Kontakt</router-link></li>
-                            <li class="flow-spacer-200"><router-link to="/o-restoranu">Restoran</router-link></li>
                             <li class="flow-spacer-200"><router-link to="/jelovnik">Jelovnik</router-link></li>
+                            <li class="flow-spacer-200"><router-link to="/o-restoranu">Restoran</router-link></li>
+                            <li class="flow-spacer-200"><router-link to="/kontakt">Kontakt</router-link></li>
                         </ul>
                     </div>
 
