@@ -24,9 +24,15 @@
                         <div class="dropdown-menu">
                             <ul>
                                 <li class="dropdown-menu-item">
-                                    <a href="/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank">
-                                        <span class="fw-semi-bold">Ponuda (PDF)</span>
-                                        <span class="menu-item-sub">Pogledajte detaljnije ponudu</span>
+                                    <a href="/docs/ranc-restoran-legenda-ponuda-za-proslave-novembar-mart-2026.pdf" target="_blank">
+                                        <span class="fw-semi-bold">Proslave novembar - mart (PDF)</span>
+                                        <span class="menu-item-sub">Pogledajte detaljnije ponudu za zimksi period</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu-item">
+                                    <a href="/docs/ranc-restoran-legenda-ponuda-za-proslave-april-oktobar-2026.pdf" target="_blank">
+                                        <span class="fw-semi-bold">Proslave april - oktobar (PDF)</span>
+                                        <span class="menu-item-sub">Pogledajte detaljnije ponudu za letnji period</span>
                                     </a>
                                 </li>
                                 <li class="dropdown-menu-item">
@@ -45,7 +51,6 @@
                         </div>
                     </li>
                     <li class="navigation-list-item"><router-link to="/o-restoranu" class="fw-semi-bold">Restoran</router-link></li>
-                    <!-- <li class="navigation-list-item"><router-link to="/kontakt" class="fw-semi-bold">Kontakt</router-link></li> -->
                     <router-link to="/kontakt" class="button button-primary">Kontakt</router-link>
                 </ul>
             </nav>
@@ -68,7 +73,8 @@
             <ul class="mobile-navigation-list" role="list">
                 <li @click="open = false"><router-link to="/">Početna</router-link></li>
                 <li @click="open = false"><router-link to="/jelovnik">Jelovnik</router-link></li>
-                <li @click="open = false"><a href="/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank">Ponuda proslave (PDF)</a></li>
+                <li @click="open = false"><a href="/docs/ranc-restoran-legenda-ponuda-za-proslave-novembar-mart-2026.pdf" target="_blank">Ponuda proslave novembar - mart (PDF)</a></li>
+                <li @click="open = false"><a href="/docs/ranc-restoran-legenda-ponuda-za-proslave-april-oktobar-2026.pdf" target="_blank">Ponuda proslave april - oktobar(PDF)</a></li>
                 <li @click="open = false"><router-link to="/rodjendanske-zabave">Rođendani</router-link></li>
                 <li @click="open = false"><router-link to="/team-building">Team building</router-link></li>
                 <li @click="open = false"><router-link to="/o-restoranu">Restoran</router-link></li>

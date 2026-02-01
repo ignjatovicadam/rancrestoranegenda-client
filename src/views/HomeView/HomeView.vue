@@ -129,7 +129,7 @@
                                 @load="cache[rodjendaniImg] = rodjendaniImg"
                             >
                         </div>
-                        <h3 class="fs-tertiary-heading fw-bold">Dečji rođendani</h3>
+                        <h3 class="fs-tertiary-heading fw-bold">Dečiji rođendani</h3>
                         <p class="fw-regular">Organizovani rođendani na otvorenom sa životinjama, animacijom i programima <br>prilagođenim različitim uzrastima</p>
                     </router-link>
                 </div>
