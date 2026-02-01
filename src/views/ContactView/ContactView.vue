@@ -25,7 +25,7 @@
                             </li>
                             <li class="contact-list-item">
                                 <Mail/>
-                                <span>kontakt@ranclegenda.rs</span>
+                                <span>info@ranclegenda.com</span>
                             </li>
                         </ul>
     

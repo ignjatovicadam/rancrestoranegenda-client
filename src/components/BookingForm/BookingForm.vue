@@ -48,7 +48,7 @@
         errors.value = {};
 
         try {
-            const res = await fetch('/api/contact', {
+            const res = await fetch('/send-mail.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

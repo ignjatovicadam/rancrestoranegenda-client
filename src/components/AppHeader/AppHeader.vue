@@ -45,7 +45,8 @@
                         </div>
                     </li>
                     <li class="navigation-list-item"><router-link to="/o-restoranu" class="fw-semi-bold">Restoran</router-link></li>
-                    <li class="navigation-list-item"><router-link to="/kontakt" class="fw-semi-bold">Kontakt</router-link></li>
+                    <!-- <li class="navigation-list-item"><router-link to="/kontakt" class="fw-semi-bold">Kontakt</router-link></li> -->
+                    <router-link to="/kontakt" class="button button-primary">Kontakt</router-link>
                 </ul>
             </nav>
 
