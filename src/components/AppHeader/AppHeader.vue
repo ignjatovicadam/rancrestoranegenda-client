@@ -24,13 +24,13 @@
                         <div class="dropdown-menu">
                             <ul>
                                 <li class="dropdown-menu-item">
-                                    <a href="/docs/ranc-restoran-legenda-ponuda-za-proslave-novembar-mart-2026.pdf" target="_blank">
+                                    <a href="/docs/ranc-restoran-legenda-ponuda-zimski-period.pdf?v=2" target="_blank">
                                         <span class="fw-semi-bold">Proslave novembar - mart</span>
-                                        <span class="menu-item-sub">Pogledajte detaljnije ponudu za zimksi period</span>
+                                        <span class="menu-item-sub">Pogledajte detaljnije ponudu za zimski period</span>
                                     </a>
                                 </li>
                                 <li class="dropdown-menu-item">
-                                    <a href="/docs/ranc-restoran-legenda-ponuda-za-proslave-april-oktobar-2026.pdf" target="_blank">
+                                    <a href="/docs/ranc-restoran-legenda-ponuda-letnji-period.pdf?v=2" target="_blank">
                                         <span class="fw-semi-bold">Proslave april - oktobar</span>
                                         <span class="menu-item-sub">Pogledajte detaljnije ponudu za letnji period</span>
                                     </a>
@@ -38,7 +38,7 @@
                                 <li class="dropdown-menu-item">
                                     <router-link to="/rodjendanske-zabave">
                                         <span class="fw-semi-bold">Rođendani</span>
-                                        <span class="menu-item-sub">Organizovani rodjendani</span>
+                                        <span class="menu-item-sub">Organizovani rođendani</span>
                                     </router-link>
                                 </li>
                                 <li class="dropdown-menu-item">
@@ -73,8 +73,8 @@
             <ul class="mobile-navigation-list" role="list">
                 <li @click="open = false"><router-link to="/">Početna</router-link></li>
                 <li @click="open = false"><router-link to="/jelovnik">Jelovnik</router-link></li>
-                <li @click="open = false"><a href="/docs/ranc-restoran-legenda-ponuda-za-proslave-novembar-mart-2026.pdf" target="_blank">Ponuda proslave novembar - mart</a></li>
-                <li @click="open = false"><a href="/docs/ranc-restoran-legenda-ponuda-za-proslave-april-oktobar-2026.pdf" target="_blank">Ponuda proslave april - oktoba</a></li>
+                <li @click="open = false"><a href="/docs/ranc-restoran-legenda-ponuda-zimski-period.pdf?v=2" target="_blank">Ponuda proslave novembar - mart</a></li>
+                <li @click="open = false"><a href="/docs/ranc-restoran-legenda-ponuda-letnji-period.pdf?v=2" target="_blank">Ponuda proslave april - oktobar</a></li>
                 <li @click="open = false"><router-link to="/rodjendanske-zabave">Rođendani</router-link></li>
                 <li @click="open = false"><router-link to="/team-building">Team building</router-link></li>
                 <li @click="open = false"><router-link to="/o-restoranu">Restoran</router-link></li>
