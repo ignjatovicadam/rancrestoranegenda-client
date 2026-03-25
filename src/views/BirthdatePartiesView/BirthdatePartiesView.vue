@@ -32,7 +32,7 @@
             <div class="flow">
                 <h2 class="fs-secondary-heading fw-bold">Dečiji rođendani</h2>
                 <p class="fw-regular">Rođendani kod nas nisu samo zabava, već pravo iskustvo druženja sa životinjama i boravka u zelenilu. Deca mogu da uživaju u igri i istraživanju, dok roditelji bez žurbe i stresa uživaju u domaćoj hrani i prirodnom okruženju. Naša velika bašta, životinje i animacije stvaraju atmosferu koju mališani dugo pamte — veselu, zdravu i drugačiju od klasičnih, zatvorenih proslava.</p>
-                <a href="/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" target="_blank" class="button button-primary">Pogledajte ponudu</a>
+                <a href="/docs/ranc-restoran-legenda-ponuda-letnji-period.pdf?v=2" target="_blank" class="button button-primary">Pogledajte ponudu</a>
                 <div class="template-image-preview">
                     <img :src="heroImg" alt="Ranč restoran Legenda slika dečji rođendani">
                 </div>

@@ -89,7 +89,7 @@
         <div class="large-container">
             <div class="even-columns" style="margin-top: 2em;">
                 <div v-reveal="60">
-                    <a href="/docs/restoranc-ranc-legenda-ponuda-proslave-2025.pdf" class="flow flow-spacer-400" target="_blank">
+                    <a href="/docs/ranc-restoran-legenda-ponuda-letnji-period.pdf?v=2" class="flow flow-spacer-400" target="_blank">
                         <div class="image-overlay">
                             <img 
                                 loading="lazy" 

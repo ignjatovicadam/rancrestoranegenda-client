@@ -47,8 +47,8 @@
                         <ul role="list">
                             <li class="flow-spacer-200"><router-link to="/team-building">Team building</router-link></li>
                             <li class="flow-spacer-200"><router-link to="/rodjendanske-zabave">Dečiji rođendani</router-link></li>
-                            <li class="flow-spacer-200"><a href="/docs/ranc-restoran-legenda-ponuda-za-proslave-april-oktobar-2026.pdf" target="_blank">Proslave april - oktobar</a></li>
-                            <li class="flow-spacer-200"><a href="/docs/ranc-restoran-legenda-ponuda-za-proslave-novembar-mart-2026.pdf" target="_blank">Proslave novembar - mart</a></li>
+                            <li class="flow-spacer-200"><a href="/docs/ranc-restoran-legenda-ponuda-letnji-period.pdf?v=2" target="_blank">Proslave april - oktobar</a></li>
+                            <li class="flow-spacer-200"><a href="/docs/ranc-restoran-legenda-ponuda-zimski-period.pdf?v=2" target="_blank">Proslave novembar - mart</a></li>
                         </ul>
                     </div>
 
