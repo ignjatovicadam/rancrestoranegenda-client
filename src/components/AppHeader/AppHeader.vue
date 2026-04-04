@@ -14,7 +14,6 @@
                     <img :src="headerLogo" alt="Restoran ranč Legenda logotip"/>
                 </router-link>
             </div>
-
             <nav>
                 <ul class="navigation-list" role="list">
                     <li class="navigation-list-item"><router-link to="/" class="fw-semi-bold">Početna</router-link></li>

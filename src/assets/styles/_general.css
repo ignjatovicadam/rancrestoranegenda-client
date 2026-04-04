@@ -295,4 +295,8 @@ body:has(.mobile-navigation.open) {
         flex-direction: row;
         align-items: center;
     }
+
+    .menu-list-item-description {
+        max-width: 450px;
+    }
 }
